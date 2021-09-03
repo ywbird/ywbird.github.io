@@ -12,6 +12,4 @@ author_profile: true
 
 마인크래프트 리소스팩 **강좌, 만들기, 배포**
 **파이썬 공부 기록** 등 을 포스팅할 예정입니다.
-___
-
-블로그에 관한 내용은 [여기](https://ylwbook.github.io/blog/blogstart/)로
+(블로그에 관한 내용은 [여기](https://ylwbook.github.io/blog/blogstart/)로)
