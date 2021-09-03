@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "소개"
 toc: false
 layout: single
 author_profile: true
