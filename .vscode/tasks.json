@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "New Post",
+            "type": "shell",
+            "command": "start newpost.bat",
+            "problemMatcher": []
+        },{
+            "label": "Run Jekyll Server",
+            "type": "shell",
+            "command": "bundle exec jekyll serve",
+            "problemMatcher": []
+        }
+    ]
+}
