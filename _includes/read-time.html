@@ -13,8 +13,3 @@
 {% else %}
 {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 {% endif %}
-
-
-{% if post.date %}
-    <span class="page__date"><i class="far fa-clock" aria-hidden="true"></i>{{ post.date | date: "%Y-%M-%d" }}</span>
-{% endif %}
