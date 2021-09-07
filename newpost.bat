@@ -14,7 +14,6 @@ echo categories:>>"_posts\%today%-%title%.md"
 echo     - category>>"_posts\%today%-%title%.md"
 echo excerpt: "미리보기">>"_posts\%today%-%title%.md"
 echo --->>"_posts\%today%-%title%.md"
-echo.>>"_posts\%today%-%title%.md"
 echo **New Post**>>"_posts\%today%-%title%.md"
 
 @REM copy "template.md" "_posts\%today%-%title%.md"
