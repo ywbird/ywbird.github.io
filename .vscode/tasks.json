@@ -11,7 +11,7 @@
         },{
             "label": "Run Jekyll Server",
             "type": "shell",
-            "command": "start runserver.bat",
+            "command": "bundle exec jekyll serve",
             "problemMatcher": []
         }
     ]
