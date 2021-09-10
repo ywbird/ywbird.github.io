@@ -40,6 +40,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .masthead {
 	font-size: 25px;
@@ -70,7 +76,8 @@
 }
 
 .u-url, .p-note{
-	font-family: $serif;
+	font-family: $fat;
+	font-weight: lighter;
 }
 
 .page__title {
@@ -84,4 +91,22 @@
 
 .archive__item-excerpt{
 	font-size: large;
+}
+
+.greedy-nav {
+	font-family: $fat;
+}
+
+.page__meta {
+	font-family: $fat;
+}
+
+.archive__subtitle {
+	font-family: $fat;
+	font-size: x-large;
+	font-weight: lighter;
+}
+
+.page__footer {
+	font-size: 110%;
 }
