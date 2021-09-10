@@ -7,20 +7,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.utterances {
-	background-color: $background-color;
-}
-
-.utterances-frame {
-	color: $border-color;
-}
-
-@font-face {
-	font-family: 'RIDIBatang';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	}
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @font-face{
 	font-family: 'JetBrains Mono';
@@ -37,7 +23,6 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 @font-face {
@@ -122,4 +107,9 @@
 .archive__item-title {
 	font-family: $fat;
 	font-weight: lighter;
+}
+
+.language-plaintext:not(.key) {
+	background-color: rgb(59, 59, 59);
+	color: #fff06a;
 }

@@ -1,0 +1,55 @@
+// Keys
+
+.key {
+	color: #000;
+	font-family: $monospace;
+	font-weight: bold;
+	background: #fff;
+
+	align-items: center;
+	
+	display: inline-block;
+	border: 0em;
+	margin: .1em;
+	padding: 0em;
+	padding-right: .1em;
+	padding-left: .1em;
+	box-shadow: 0 0 0 0 #fff, 0 .25em 0 0 #bbb;
+	
+	cursor: pointer;
+	
+	transition: .1s cubic-bezier(0, 0, .8, 1);
+}
+
+.key:active {
+	transform: translate(0, .2em);
+	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb;
+}
+
+//special
+
+.key.sp {
+	color: #000;
+	font-family: $monospace;
+	font-weight: bold;
+	background: #fff06a;
+
+	align-items: center;
+	
+	display: inline-block;
+	border: 0em;
+	margin: .1em;
+	padding: 0em;
+	padding-right: .1em;
+	padding-left: .1em;
+	box-shadow: 0 0 0 0 #fff06a, 0 .25em 0 0 #bda157;
+	
+	cursor: pointer;
+	
+	transition: .1s cubic-bezier(0, 0, .8, 1);
+}
+
+.key.sp:active {
+	transform: translate(0, .2em);
+	box-shadow: 0 0 0 0 #fff06a, 0 .05em 0 0 #bda157;
+}
