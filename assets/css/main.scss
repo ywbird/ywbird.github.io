@@ -68,7 +68,7 @@
 
 .nav__title{
 	font-family: $serif, Georgia, Times, serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .page__share, .grid__item, h2, h2, h3, h4, h5, h6 {
@@ -81,12 +81,15 @@
 }
 
 .page__title {
-	font-size: 50px;
+	font-size: 40px;
+	font-family: $fat;
+	font-weight: lighter;
 }
 
 .breadcrumbs {
 	font-family: $sans-serif;
-	font-size: X-large;
+	font-weight: lighter;
+	font-size: x-large;
 }
 
 .archive__item-excerpt{
@@ -109,4 +112,14 @@
 
 .page__footer {
 	font-size: 110%;
+}
+
+.author__urls {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.archive__item-title {
+	font-family: $fat;
+	font-weight: lighter;
 }
