@@ -42,7 +42,7 @@
 	padding: 0em;
 	padding-right: .1em;
 	padding-left: .1em;
-	box-shadow: 0 0 0 0 #fff6a8, 0 .25em 0 0 #fff6a8;
+	box-shadow: 0 0 0 0 #fff6a8, 0 .25em 0 0 #a89f6b;
 	
 	cursor: pointer;
 	
@@ -51,5 +51,5 @@
 
 .key.sp:active {
 	transform: translate(0, .2em);
-	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #fff6a8;
+	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #a89f6b;
 }
