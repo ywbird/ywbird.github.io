@@ -96,13 +96,14 @@ Ctrl + W 를 쓰고싶으면
 ### 📄_keys.scss 에 추가
 
 ```css
+
 //special
 
-.key.special {
+.key.sp {
 	color: #000;
 	font-family: $monospace;
 	font-weight: bold;
-	background: #fff06a;
+	background: #fff6a8;
 
 	align-items: center;
 	
@@ -112,17 +113,18 @@ Ctrl + W 를 쓰고싶으면
 	padding: 0em;
 	padding-right: .1em;
 	padding-left: .1em;
-	box-shadow: 0 0 0 0 #fff06a, 0 .25em 0 0 #bda157;
+	box-shadow: 0 0 0 0 #fff6a8, 0 .25em 0 0 #a89f6b;
 	
 	cursor: pointer;
 	
 	transition: .1s cubic-bezier(0, 0, .8, 1);
 }
 
-.key.special:active {
+.key.sp:active {
 	transform: translate(0, .2em);
-	box-shadow: 0 0 0 0 #fff06a, 0 .05em 0 0 #bda157;
+	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #a89f6b;
 }
+
 ```
 
 그리고
