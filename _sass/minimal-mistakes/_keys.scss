@@ -22,7 +22,7 @@
 }
 
 .key:active {
-	transform: translate(0, .2em);
+	top: 2em;
 	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb;
 }
 
@@ -50,7 +50,6 @@
 }
 
 .key.sp:active {
-	//transform: translate(0, .2em);
         top: 2em;
-	box-shadow: 0 0 0 0 #fff6a8, 0 .25em 0 0 #a89f6b;
+	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #a89f6b;
 }
