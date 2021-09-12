@@ -1,7 +1,7 @@
 ---
 title: "강좌"
 layout: archive
-permalink: /tutorial
+permalink: /tutorial/
 author_profile: true
 sidebar_main: true
 ---

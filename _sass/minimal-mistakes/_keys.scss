@@ -10,10 +10,12 @@
 	
 	display: inline-block;
 	border: 0em;
-	margin: .1em;
+	margin: 0;
+	margin-left: .1em;
+	margin-right: .1em;
 	padding: 0em;
-	padding-right: .1em;
-	padding-left: .1em;
+	padding-right: .07em;
+  	padding-left: .07em;
 	box-shadow: 0 0 0 0 #fff, 0 .25em 0 0 #bbb;
 	
 	cursor: pointer;
@@ -22,6 +24,7 @@
 }
 
 .key:active {
+	transform: translate(0, .2em);
 	top: 2em;
 	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb;
 }
@@ -32,17 +35,19 @@
 	color: #000;
 	font-family: $monospace;
 	font-weight: bold;
-	background: #fff6a8;
+	background: #fffad1;
 
 	align-items: center;
 	
 	display: inline-block;
 	border: 0em;
-	margin: .1em;
+	margin: 0em;
+	margin-left: .1em;
+	margin-right: .1em;
 	padding: 0em;
-	padding-right: .1em;
-	padding-left: .1em;
-	box-shadow: 0 0 0 0 #fff6a8, 0 .25em 0 0 #a89f6b;
+	padding-right: .07em;
+  	padding-left: .07em;
+	box-shadow: 0 0 0 0 #fff098, 0 .25em 0 0 #afab8c;
 	
 	cursor: pointer;
 	
@@ -50,6 +55,7 @@
 }
 
 .key.sp:active {
-        top: 2em;
-	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #a89f6b;
+	transform: translate(0, .2em);
+	top: 2em;
+	box-shadow: 0 0 0 0 #fff098, 0 .05em 0 0 #afab8c;
 }

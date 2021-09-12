@@ -5,8 +5,8 @@ main:
   - title: "카테고리"
     url: /categories/
   - title: "리소스팩"
-    url: /release
+    url: /release/
   - title: "강좌"
-    url: /tutorial
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /tutorial/
+  - title: "파이썬"
+    url: /python/
