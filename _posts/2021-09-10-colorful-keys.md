@@ -26,29 +26,29 @@ excerpt: "키보드 모양 CSS로 만들기"
 // Keys
 
 .key {
-	color: #000; //기본 글자색
-	font-family: $monospace; //기본 폰트
-	font-weight: bold; //글자 두께
-	background: #fff; //배경색
+	color: #000;
+	font-family: $monospace;
+	font-weight: bold;
+	background: #fff;
 
-	align-items: center; //중앙정렬
+	align-items: center;
 	
-	display: inline-block; //배경 분리(중요)
-	border: 0em; //테두리
-	margin: .1em; //간격
-	padding: 0em; //글자 간격
-	padding-right: .1em; //글자 간격 오른쪽
-	padding-left: .1em; //글자 간격 왼쪽
-	box-shadow: 0 0 0 0 #fff, 0 .25em 0 0 #bbb; //그림자(아래에 입체 표현)
+	display: inline-block;
+	border: 0em;
+	margin: .1em;
+	padding: 0em;
+	padding-right: .1em;
+	padding-left: .1em;
+	box-shadow: 0 0 0 0 #fff, 0 .25em 0 0 #bbb;
 	
-	cursor: pointer; //마우스 커서 바꾸기
+	cursor: pointer;
 	
-	transition: .1s cubic-bezier(0, 0, .8, 1); //애니메이션화 설정
+	transition: .1s cubic-bezier(0, 0, .8, 1);
 }
 
-.key:active { //눌릴때 애니메이션및 위치조정
-	transform: translate(0, .2em); //움직임
-	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb; //그림자(아래에 입체 표현)
+.key:active {
+	top: 2em;
+	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb;
 }
 ```
 
@@ -121,10 +121,9 @@ Ctrl + W 를 쓰고싶으면
 }
 
 .key.sp:active {
-	transform: translate(0, .2em);
+        top: 2em;
 	box-shadow: 0 0 0 0 #fff6a8, 0 .05em 0 0 #a89f6b;
 }
-
 ```
 
 그리고
