@@ -24,8 +24,8 @@
 }
 
 .key:active {
-	//transform: translate(0, .2em);
-	top: 2em;
+	transform: translate(0, .2em);
+	//top: 2em;
 	box-shadow: 0 0 0 0 #fff, 0 .05em 0 0 #bbb;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .key.sp:active {
-	//transform: translate(0, .2em);
-	top: 2em;
+	transform: translate(0, .2em);
+	//top: 2em;
 	box-shadow: 0 0 0 0 #fff098, 0 .05em 0 0 #afab8c;
 }
