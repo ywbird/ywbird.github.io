@@ -7,6 +7,7 @@ toc_sticky_: true
 categories:
     - Python
 excerpt: "파이썬 포매팅의 쓸모와 사용법"
+permalink: /writing/python-formatting
 ---
 ***
 
