@@ -6,6 +6,3 @@ set fday=00%Day%
 set today=%Year%-%fmonth:~-2%-%fday:~-2%
 set /p title=Title:
 echo. >"_posts\%today%-%title%.md"
-
-@REM copy "template.md" "_posts\%today%-%title%.md"
-@echo on

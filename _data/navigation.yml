@@ -6,7 +6,7 @@ main:
     url: /categories/
   - title: "리소스팩"
     url: /release/
-  - title: "강좌"
+  - title: "리소스팩 강좌"
     url: /tutorial/
   - title: "파이썬"
     url: /python/

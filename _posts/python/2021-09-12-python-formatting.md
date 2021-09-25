@@ -7,7 +7,6 @@ toc_sticky_: true
 categories:
     - Python
 excerpt: "파이썬 포매팅의 쓸모와 사용법"
-permalink: /writing/python-formatting
 ---
 ***
 
@@ -209,4 +208,7 @@ format 함수 방식은 앞에나온 C 방식보다 더 쉽고 나은 방식이�
 
 ## 마무리
 
-이상으로 **파이썬 문자열 포메팅** 포스팅을 마치겠다.
+이상으로 **파이썬 문자열 포메팅** 포스팅을 마치겠습니다..
+
+📌이 포스팅은 `박응용`님의 [`DOIT! 점프투 파이썬`](https://wikidocs.net/book/1)을 보고 배운대로 만들었습니다. 비슷한 부분이 있을 수 있습니다.
+{: .notice--info}
