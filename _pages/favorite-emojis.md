@@ -18,7 +18,7 @@ breadcrumbs: false
 📝
 ※
 
-<details markdown="1" class='bd'>
+<details markdown="1" class='bdd'>{: .bd}
 <summary>d</summary>
 fwf
 </details>
