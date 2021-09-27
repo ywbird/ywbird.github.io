@@ -17,3 +17,8 @@ breadcrumbs: false
 📍
 📝
 ※
+
+<details markdown="1" class='bd'>
+<summary>d</summary>
+fwf
+</details>
