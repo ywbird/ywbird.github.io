@@ -10,6 +10,16 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 ---
 ***
 
+# 이번 글 망함 ㅎ
+
+글을 힘들게 다 쓰고 드디어 깃허브에 `push`했는데...
+깃헙 페이지에서는 플러그인이 작동을 안한다... ㅎ
+그래서 결국 `Jekyll`전용 이모지인 `Jemoji`를 설치했다...
+
+
+<details markdown="1">
+<summary>**망한 포스트**</summary>
+
 ## :question: Twemoji는 무었인가?
 
 Twemoji는 [트위터(Twitter)](https://twitter.com/)에서 만든 이모지입니다.
@@ -139,3 +149,5 @@ jekyll-twemoji:
 ## 마무리
 
 이상으로 **{{ page.title }}** 포스팅을 마치겠습니다.
+
+</details>
