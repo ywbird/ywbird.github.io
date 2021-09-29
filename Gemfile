@@ -1,5 +1,3 @@
 source "https://rubygems.org"
 gemspec
-group :jekyll_plugins do
-  gem "jekyll-twemoji"
-end
+gem "jekyll-twemoji", group: :jekyll_plugins

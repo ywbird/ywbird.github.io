@@ -226,9 +226,6 @@ whitelist:
   - jekyll-include-cache
   - jekyll/twemoji
 
-jekyll-twemoji:
-  image_type: "svg" # defaults to "svg"
-
 after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
   - assets/js/clipboardrouge.js

@@ -13,6 +13,16 @@
             "type": "shell",
             "command": "start runserver.bat",
             "problemMatcher": []
+        },
+        {
+            "label": "Bundle Install",
+            "type": "shell",
+            "command": "bundle install"
+        },
+        {
+            "label": "Bundle Update",
+            "type": "shell",
+            "command": "bundle update"
         }
     ]
 }
