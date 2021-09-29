@@ -16,6 +16,8 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 깃헙 페이지에서는 플러그인이 작동을 안한다... ㅎ
 그래서 결국 `Jekyll`전용 이모지인 `Jemoji`를 설치했다...
 
+![허탈](https://user-images.githubusercontent.com/83404333/135237577-a4f5ca27-3970-4bcf-ac53-63d92e47f5c9.png)
+
 
 <details markdown="1">
 <summary>**망한 포스트**</summary>
