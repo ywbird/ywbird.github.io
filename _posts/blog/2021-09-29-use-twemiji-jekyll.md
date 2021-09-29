@@ -20,7 +20,7 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 
 
 <details markdown="1">
-<summary>**망한 포스트**</summary>
+<summary><strong>망한 포스트</strong></summary>
 
 ## :question: Twemoji는 무었인가?
 
