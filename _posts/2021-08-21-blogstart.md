@@ -2,7 +2,7 @@
 title: "깃헙 블로그 시작"
 date: 2021-08-21
 toc: true
-toc_sticky_: true
+toc_sticky: true
 categories:
     - Blog
 excerpt: "깃허브 블로그를 시작했습니다."

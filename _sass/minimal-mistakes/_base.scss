@@ -21,7 +21,8 @@ body {
   }
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   background: skyblue;
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 a {
-  text-decoration: none;                // 추가된 코드입니다.
+  text-decoration: none; // 추가된 코드입니다.
 
   &:focus {
     @extend %tab-focus;

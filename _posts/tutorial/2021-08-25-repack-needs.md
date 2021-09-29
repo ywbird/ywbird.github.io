@@ -2,7 +2,7 @@
 title: "리소스팩 만들때 준비물"
 date: 2021-08-25
 toc: true
-toc_sticky_: true
+toc_sticky: true
 categories:
     - Tutorial
 excerpt: "리소스팩 만들때는 준비물이 필요하죠."

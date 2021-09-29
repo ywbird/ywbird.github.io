@@ -6,7 +6,8 @@ author_profile: false
 breadcrumbs: false
 ---
 📙
-📜
+<br>
+📜엌ㅋㅋ
 📄
 📁
 📂
@@ -17,6 +18,14 @@ breadcrumbs: false
 📍
 📝
 ※
+:tangerine:
+
+<br>
+
+
+I give this plugin :+1: !
+
+<i class="twa twa-heart">d</i>
 
 <details markdown="1" class='bdd'>{: .bd}
 <summary>d</summary>

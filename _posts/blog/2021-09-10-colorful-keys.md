@@ -3,9 +3,10 @@ title: "키보드 모양"
 date: "2021-09-10"
 toc: true
 toc_sticky_: true
-toc_sticky_: true
+toc_label: 목차
 categories:
-    - HTML&CSS
+    - CSS
+    - Blog
 excerpt: "키보드 모양 CSS로 만들기"
 ---
 ***

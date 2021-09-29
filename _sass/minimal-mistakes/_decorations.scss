@@ -20,3 +20,12 @@ details.bd > summary {
 details.bd > summary::-webkit-details-marker {
   display: none;
 }
+
+.fat {
+  font-family: $fat;
+}
+
+.emoji {
+  width: 1em;
+  display: inline-block;
+}
