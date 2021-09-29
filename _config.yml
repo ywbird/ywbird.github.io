@@ -215,16 +215,16 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll/twemoji
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-sitemaps
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll/twemoji
+  - jemoji
 
 after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
