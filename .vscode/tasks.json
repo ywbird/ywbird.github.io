@@ -8,7 +8,8 @@
             "type": "shell",
             "command": "start newpost.bat",
             "problemMatcher": []
-        },{
+        },
+        {
             "label": "Run Jekyll Server",
             "type": "shell",
             "command": "start runserver.bat",
@@ -17,7 +18,8 @@
         {
             "label": "Bundle Install",
             "type": "shell",
-            "command": "bundle install"
+            "command": "bundle install",
+            "problemMatcher": []
         },
         {
             "label": "Bundle Update",
