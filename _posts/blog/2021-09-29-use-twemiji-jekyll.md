@@ -18,6 +18,14 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 
 ![허탈](https://user-images.githubusercontent.com/83404333/135237577-a4f5ca27-3970-4bcf-ac53-63d92e47f5c9.png)
 
+## Jemoji 테스트
+
+```
+:sweat_smile:
+```
+`:sweat_smile:`
+<br>
+링크 :arrow_right:[:sweat_smile:](#)
 
 <details markdown="1">
 <summary><strong>망한 포스트</strong></summary>
