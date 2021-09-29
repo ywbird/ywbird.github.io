@@ -93,9 +93,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-SK6TWT0PJE"
+    tracking_id          : "G-FYZZ1L9V43"
     anonymize_ip         : # true, false (default)
 
 
@@ -202,7 +202,7 @@ sass:
 
 
 # Outputting
-permalink: /post/:title/
+permalink: /:categories/:title/
 paginate: 4 # amount of posts to show
 paginate_path: "/page=:num/"
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -229,6 +229,10 @@ whitelist:
 jekyll-twemoji:
   image_type: "svg" # defaults to "svg"
 
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
+  - assets/js/clipboardrouge.js
+  
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)

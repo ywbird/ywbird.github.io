@@ -5,7 +5,6 @@ toc: true
 toc_sticky_: true
 toc_label: 목차
 categories:
-    - CSS
     - Blog
 excerpt: "키보드 모양 CSS로 만들기"
 ---
@@ -53,6 +52,7 @@ excerpt: "키보드 모양 CSS로 만들기"
 }
 ```
 
+### 📄minimal-mistakes.scss 에 임포트 하기
 
 그후 📁`_sass` 폴더에 📄`minimal-mistakes.scss` 파일을 열고 마지막줄에 다음 내용을 입력합니다.
 
