@@ -21,7 +21,7 @@ Twemoji는 오픈소스로 `svg`파일, 소스, `JavaScript`가 공개되어 있
 ## :eyes: 미리보기
 
 ```markdown
-작은거: :‎orange_book‎: 🧨🎃🎏🎐
+작은거: :‎orange_book‎:
 
 큰거: :‎orange_book‎:{: .large}
 
@@ -37,6 +37,8 @@ Twemoji는 오픈소스로 `svg`파일, 소스, `JavaScript`가 공개되어 있
 매우 큰거: :orange_book:{: .x-large}
 
 >※ :‎orange_book‎:을 그대로 쓰게되면 플러그인의 HTML 코드가 나와버려서 `:`와 이모지 이름 사이에 공백문자를 넣었습니다.
+
+🧨🎃🎏🎐
 
 :arrow_down: 공백문자 복사
 ```
