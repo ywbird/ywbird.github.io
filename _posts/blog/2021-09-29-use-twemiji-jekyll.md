@@ -21,7 +21,7 @@ Twemoji는 오픈소스로 `svg`파일, 소스, `JavaScript`가 공개되어 있
 ## :eyes: 미리보기
 
 ```markdown
-작은거: :‎orange_book‎:
+작은거: :‎orange_book‎: 🧨🎃🎏🎐
 
 큰거: :‎orange_book‎:{: .large}
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ylwbook.github.io/sitemap/sitemap.xml
+Sitemap: https://ywbook.github.io/sitemap/sitemap.xml
