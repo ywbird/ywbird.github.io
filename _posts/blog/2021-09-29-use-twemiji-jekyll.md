@@ -137,7 +137,7 @@ jekyll-twemoji:
 그리고 :page_facing_up:`_decorations.scss`를 📁`_sass\minimal-mistakes.scss`에 임포트 해준다.
 임포트 하는 방법은 [키보드 모양](/blog/colorful-keys/#minimal-mistakesscss-에-임포트-하기)에서 나와있으니 참고하자.
 
-> 내 [📝_decorations.scss](https://github.com/ywbook/blog/blob/master/_sass/minimal-mistakes/_decorations.scss) 파일
+> 내 [📝_decorations.scss](https://github.com/ywbook/blog/blob/master/_sass/minimal-mistakes/_decorations.scss)
 
 ## 사용하기
 
