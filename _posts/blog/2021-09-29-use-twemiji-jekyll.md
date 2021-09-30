@@ -119,7 +119,7 @@ jekyll-twemoji:
 
 ```scss
 .emoji {
-  width: 1em;
+  width: 1.1em;
   display: inline-block;
 }
 
