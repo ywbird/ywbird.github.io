@@ -13,4 +13,4 @@ jobs:
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.JEKYLL_TOKEN }}
-          jekyll-src: "./"
+          jekyll-src: ywbook.github.io
