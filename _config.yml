@@ -216,6 +216,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll/twemoji
+
   # - jemoji
 
 # mimic GitHub Pages with --safe
@@ -226,6 +227,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll/twemoji
+  
   # - jemoji
 
 after_footer_scripts:
