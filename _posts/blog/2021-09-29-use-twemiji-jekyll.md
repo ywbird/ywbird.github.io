@@ -17,7 +17,6 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 그래서 결국 `Jekyll`전용 이모지인 `Jemoji`를 설치했다...:anger:
 
 ![허탈](https://user-images.githubusercontent.com/83404333/135237577-a4f5ca27-3970-4bcf-ac53-63d92e47f5c9.png)
-
 ## Jemoji 테스트
 
 ```
