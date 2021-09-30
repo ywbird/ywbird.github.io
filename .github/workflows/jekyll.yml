@@ -1,23 +1,15 @@
-name: Jekyll CI
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
-  push
+  push:
+    branches:
+      - main # or master before October 2020
 
 jobs:
-  jekyll:
-    runs-on: ubuntu-16.04
+  github-pages:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-
-    # Standard usage
-    - uses:  helaili/jekyll-action@2.0.3
-      env:
-        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
