@@ -25,7 +25,7 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 ```
 `:sweat_smile:`
 <br>
-링크 :arrow_right:[:sweat_smile:](#이번-글-망함-ㅎ)
+링크 : 테스트 [:sweat_smile:](#이번-글-망함-ㅎ)
 
 <details markdown="1">
 <summary><strong>망한 포스트</strong></summary>
