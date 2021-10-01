@@ -327,14 +327,7 @@
     text-decoration: none;
 
     &:hover {
-      // text-decoration: underline;
-      width: auto;
-      margin-bottom: 4px;
-      border-bottom-style: solid;
-      border-bottom: 1px solid #fff;
-      padding-bottom: 0.1em;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      text-decoration: underline;
     }
   }
 }
