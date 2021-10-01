@@ -38,13 +38,13 @@ Github Action이란 GitHub에서 제공하는 액션 입니다(?)
 
 새로운 방법을 소개드리겠습니다.
 
-### 1. 원글(망했던글)을 그대로 따라한다.
+### 원글(망했던글)을 그대로 따라한다.
 
 [원글 링크](/blog/use-twemoji-jekyll/#적용하기)
 
-### 2. Jekyll Action을 사용한다.
+### Jekyll Action을 사용한다.
 
-#### 기본 Branch를 ***main*** 으로 바꿔준다.
+#### 1. 기본 Branch를 ***main*** 으로 바꿔준다.
 
 깃헙 리포의 기본 branch를 `main`으로 바꿔야합니다.
 
@@ -64,7 +64,7 @@ Github Action이란 GitHub에서 제공하는 액션 입니다(?)
 
 > 필자는 이미 Jekyll Action을 이미 적용한 상태이기때문에 기본 branch가 `main`입니다. `master`라고 생각하고 봐주세요 :)
 
-#### 3. Personal access token 생성
+#### 2. Personal access token 생성
 
 ![image](https://user-images.githubusercontent.com/83404333/135552579-84c83ce4-5550-474a-8441-50cf4c063eff.png)
 
@@ -99,7 +99,7 @@ Github Action이란 GitHub에서 제공하는 액션 입니다(?)
 내용(Value)을 아까 얻은 토큰을 넣어주면 됩니다.<br>
 그후 `Add secret`을 눌러 생성합니다.
 
-#### 4. Jekyll Action용 파일 생성
+#### 3. Jekyll Action용 파일 생성
 
 ![image](https://user-images.githubusercontent.com/83404333/135551638-6e4574bb-d376-4671-8e91-1931d468729c.png){: .align-center}
 
@@ -136,7 +136,7 @@ jobs:
 "jekyll-src" 부분은 자신의 jekyll 블로그 위치를 지정합니다.<br>
 minimal-mistakes 처럼 /docs에 샘플 블로그가 있는경우 오류가 나므로 꼭 `/`로 지정해야 합니다. 
 
-#### 5. 깃헙 페이지 설정
+#### 4. 깃헙 페이지 설정
 
 이제 설정에서 `Pages`를 클릭합니다.
 
