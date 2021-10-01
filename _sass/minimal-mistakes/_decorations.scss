@@ -31,4 +31,15 @@ details.bd > summary::-webkit-details-marker {
 
 .emoji {
   width: 1.1em;
+  display: inline-block;
+}
+
+.emoji.large {
+  width: 2em;
+  display: inline-block;
+}
+
+.emoji.x-large {
+  width: 3em;
+  display: inline-block;
 }

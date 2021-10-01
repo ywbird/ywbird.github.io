@@ -26,11 +26,6 @@ excerpt: "Jekyll에서 Twemoji를 사용하는법"
 <br>
 링크 : 테스트 [:sweat_smile:](#이번-글-망함-ㅎ)
 
-가능..?
-
-<details markdown="1">
-<summary><strong>망한 포스트</strong></summary>
-
 ## :question: Twemoji는 무었인가?
 
 Twemoji는 [트위터(Twitter)](https://twitter.com/)에서 만든 이모지입니다.
@@ -153,12 +148,10 @@ jekyll-twemoji:
 
 이모지 리스트는 [여기](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)서 찾을 수 있습니다.
 
-기본적으로 이모지의 크기가 `1em`이 입니다.
+기본적으로 이모지의 크기가 `1.1em`이 입니다.
 이모지 뒤에 `{: .large}`를 넣으면 커지고
 이모지 뒤에 `{: .x-large}`를 넣으면 **더** 커집니다.
 
 ## 마무리
 
 이상으로 **{{ page.title }}** 포스팅을 마치겠습니다.
-
-</details>
