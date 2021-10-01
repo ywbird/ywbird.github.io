@@ -4,7 +4,7 @@ date: 2021-08-28
 toc: true
 toc_sticky: true
 categories:
-    - Tutorial
+    - Pack
 excerpt: "마인크래프트 리소스팩 을 만들려면 일단 베이스가 되는 기본 리소스팩이 있어야합니다."
 ---
 ***

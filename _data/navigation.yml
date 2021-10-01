@@ -1,12 +1,8 @@
 # main links
 main:
-  - title: "소개"
-    url: /about/
   - title: "카테고리"
     url: /categories/
   - title: "리소스팩"
-    url: /release/
-  - title: "리소스팩 강좌"
-    url: /tutorial/
+    url: /pack/
   - title: "파이썬"
     url: /python/

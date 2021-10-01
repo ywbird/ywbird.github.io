@@ -4,7 +4,7 @@ date: 2021-08-25
 toc: true
 toc_sticky: true
 categories:
-    - Tutorial
+    - Pack
 excerpt: "리소스팩 만들때는 준비물이 필요하죠."
 ---
 ***
