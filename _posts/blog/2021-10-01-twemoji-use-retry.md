@@ -126,7 +126,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: helaili/jekyll-action@v2
         with:
-          token: $(중괄호 열기 2개) secrets.JEKYLL_TOKEN (중괄호 닫기 2개) #Liquid 문법 쓰면 진짜 Liquid로 적용되어서 ㅠㅠ
+          token: ${% raw %}{{ secrets.JEKYLL_TOKEN }}{% endraw %}
           jekyll-src: / 
 
 ```
