@@ -95,8 +95,8 @@ Github Action이란 GitHub에서 제공하는 액션 입니다(?)
 
 ![image](https://user-images.githubusercontent.com/83404333/135555572-e8fff5b9-9a0c-486f-a96e-8b6321165bd4.png)
 
-제목(Name)을 `JEKYLL_TOKEN`으로 설정합니다.(중요!!)
-내용(Value)을 아까 얻은 토큰을 넣어주면 됩니다.
+제목(Name)을 `JEKYLL_TOKEN`으로 설정합니다.(중요!!)<br>
+내용(Value)을 아까 얻은 토큰을 넣어주면 됩니다.<br>
 그후 `Add secret`을 눌러 생성합니다.
 
 #### Jekyll Action용 파일 생성
@@ -133,7 +133,7 @@ jobs:
 
 "token" 부분 안에 `JEKYLL_TOKEN` 은 아까 생성한 `secret`의 제목입니다. 만약에 위의 내용을 바꾸고 싶다면 `secret`의 제목도 바꿔줘야 합니다.
 
-"jekyll-src" 부분은 자신의 jekyll 블로그 위치를 지정합니다.
+"jekyll-src" 부분은 자신의 jekyll 블로그 위치를 지정합니다.<br>
 minimal-mistakes 처럼 /docs에 샘플 블로그가 있는경우 오류가 나므로 꼭 `/`로 지정해야 합니다. 
 
 #### 깃헙 페이지 설정
@@ -147,7 +147,7 @@ minimal-mistakes 처럼 /docs에 샘플 블로그가 있는경우 오류가 나�
 
 ### 끝.
 
-이렇게 하면 외부 플러그인을 깃헙 블로그에 불러올 수 있습니다.
+이렇게 하면 외부 플러그인을 깃헙 블로그에 불러올 수 있습니다.<br>
 깃헙 내용을 `push`할때마다 깃헙 블로그 페이지가 재생성 됩니다.
 > 만약 블로그의 내용이 많을경우 깃헙 페이지에 적용되는 시간이 꽤 걸립니다.
 
