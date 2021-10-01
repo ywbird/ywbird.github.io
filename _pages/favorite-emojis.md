@@ -19,7 +19,7 @@ breadcrumbs: false
 📝
 ※
 :tangerine:
-
+:e-mail:
 <br>
 
 
