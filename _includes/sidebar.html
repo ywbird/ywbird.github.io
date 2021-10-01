@@ -15,6 +15,18 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
-  <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fywbook.github.io%2F&labelColor=%23697689&countColor=%23555555" style="width: 60%; border-radius: 5px;" />
+  {% assign sum = site.posts | size %}
+  <li>
+    <img draggable="false" title=":bust_in_silhouette:" alt="👤" src="https://twemoji.maxcdn.com/2/svg/1f464.svg" class="emoji"> <span style="font-size: large; font-family: 'SBAggroL';">방문자<span id="visits" style="padding-right: 6px; padding-left: 5px;"></span>명</span><br>
+    <img draggable="false" title=":file_folder:" alt="📁" src="https://twemoji.maxcdn.com/2/svg/1f4c1.svg" class="emoji"> <span style="font-family: 'SBAggroL'; font-size: large; padding-right: 5px;">전체 글 수</span><span style="font-family:'SBAggroL'; font-size: large;">{{sum}}</span> <span style="font-family:'SBAggroL'; font-size: large;">개</span>
+
+    <script>
+      function cb(response) {
+          document.getElementById('visits').innerText = response.value;
+      }
+      </script>
+      <script async src="https://api.countapi.xyz/hit/ywbook.github.io/visits?callback=cb"></script>
+
+  </li>
   </div>
 {% endif %}
