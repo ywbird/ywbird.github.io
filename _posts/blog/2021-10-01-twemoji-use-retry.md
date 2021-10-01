@@ -103,7 +103,7 @@ Github Action이란 GitHub에서 제공하는 액션 입니다(?)
 
 ![image](https://user-images.githubusercontent.com/83404333/135551638-6e4574bb-d376-4671-8e91-1931d468729c.png){: .align-center}
 
-▶`Actions` 탭에 들어간후 `set up a workflow yourself`{: .u} 를 눌러줍니다.
+▶`Actions` 탭에 들어간후 <u markdown="1">`set up a workflow yourself`</u> 를 눌러줍니다.
 
 ![image](https://user-images.githubusercontent.com/83404333/135551992-a7f1bdb9-52b9-4cb4-a4db-5e76027a63cb.png){: .align-center}
 
