@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "고앵이"
   avatar           : "/assets/nyan.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "황혼에서 포스팅하고 게임하고있는 고앵이 입니다."
+  bio              : "황혼에서 코딩하고\n 게임하고있는 고앵이 입니다."
   location         : 
   email            :
   links:
@@ -186,17 +186,13 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-  highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
 
 
 
