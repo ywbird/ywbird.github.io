@@ -237,7 +237,7 @@ whitelist:
   
 
 after_footer_scripts:
-  - assets/js/clipboard/clipboardrouge.js
+  - assets/js/clipboard/clipboard.min.js
   - assets/js/clipboard/clipboardrouge.js
 
 # Archives
