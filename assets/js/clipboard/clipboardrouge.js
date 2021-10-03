@@ -8,12 +8,11 @@ function sleep(ms) {
 async function buttonBlink(btn, style) {
   btn.classList.remove("btn-light");
   btn.classList.add(style);
-  await sleep(250); //Blink ms
+  await sleep(700); //Blink ms
   btn.classList.remove(style);
   btn.classList.add("btn-light");
 }
 // End
-
 
 // Select highlghted codes
 var codeChunk = document.querySelectorAll("td.rouge-code");
