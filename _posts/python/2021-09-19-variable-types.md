@@ -372,5 +372,5 @@ true
 이상으로 **{{ page.title }}** 포스팅을 마치겠습니다.
 
 📌 이 포스팅은 **박응용** 님의 **DOIT! 점프투 파이썬**을 보고 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.
-🏷 [강의 링크](https://wikidocs.net/book/1)
+🏷 [**강의 링크**](https://wikidocs.net/book/1)
 {: .notice--info}
