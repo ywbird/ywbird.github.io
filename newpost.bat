@@ -7,3 +7,5 @@ set today=%Year%-%fmonth:~-2%-%fday:~-2%
 set /p category=Category:
 set /p title=Title:
 echo !po>"_posts\%category%\%today%-%title%.md"
+
+exit
