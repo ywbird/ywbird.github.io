@@ -20,10 +20,10 @@ title                    : "노란책"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "😺고앵이"
-description              : "고앵이의 프로그래밍, 리소스팩 이야기"
-url                      : "https://ywbook.github.io/" # the base hostname & protocol for your site e.g. "https://1972.github.io"
+description              : "고앵이의 프로그래밍 이야기"
+url                      : "https://ywbird.github.io/" # the base hostname & protocol for your site e.g. "https://1972.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "ywbook/ywbook.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ywbird/ywbird.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/android-chrome-192x192.png" # path of logo image to display in the masthead, eg. "/assets/images/88x88.png"
 masthead_title           : "노란책" # overrides the website title displayed in the masthead, use " " for no title
@@ -125,7 +125,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ywbook"
+      url: "https://github.com/ywbird"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
