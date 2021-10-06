@@ -30,6 +30,14 @@
 }
 
 @font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Bazzi";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff")
     format("woff");
@@ -83,18 +91,14 @@ h6 {
   font-weight: lighter;
 }
 
-.breadcrumbs {
-  font-family: $sans-serif;
-  font-weight: lighter;
-  font-size: x-large;
-}
+// .breadcrumbs {
+//   font-family: $sans-serif;
+//   font-weight: lighter;
+//   font-size: x-large;
+// }
 
 .archive__item-excerpt {
   font-size: large;
-}
-
-.greedy-nav {
-  font-family: $fat;
 }
 
 .page__meta {
@@ -105,11 +109,6 @@ h6 {
   font-family: $fat;
   font-size: x-large;
   font-weight: lighter;
-}
-
-.page__footer {
-  font-size: 110%;
-  font-family: $serif;
 }
 
 .author__urls {
