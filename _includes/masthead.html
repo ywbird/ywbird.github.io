@@ -10,7 +10,6 @@
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-          <img draggable="false" title=":smiley_cat:" alt="😺" src="https://twemoji.maxcdn.com/2/svg/1f63a.svg" class="emoji">
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
