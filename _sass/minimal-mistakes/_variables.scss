@@ -30,14 +30,14 @@ $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
 /* serif typefaces */
-$georgia: "jetbrains mono", Georgia, serif !default;
-$times: "nanumsquare", Times, serif !default;
+$georgia: Georgia, Georgia, serif !default;
+$times: "Iropke Batang", Times, serif !default;
 $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
+$global-font-family: $serif !default;
+$header-font-family: $serif !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
@@ -129,26 +129,42 @@ $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
 /* notices */
-$notice-background-mix: 80% !default;
-$code-notice-background-mix: 90% !default;
+$notice-background-mix: 85% !default;
+$code-notice-background-mix: 80% !default;
 
 /* syntax highlighting (base16) */
-$base00: #263238 !default;
-$base01: #2e3c43 !default;
-$base02: #314549 !default;
-$base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
-$base06: #eeffff !default;
+$base00: #1d1f21 !default;
+$base01: #282a2e !default;
+$base02: #373b41 !default;
+$base03: #969896 !default;
+$base04: #b4b7b4 !default;
+$base05: #c5c8c6 !default;
+$base06: #e0e0e0 !default;
 $base07: #ffffff !default;
-$base08: #f07178 !default;
-$base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
-$base0e: #c792ea !default;
-$base0f: #ff5370 !default;
+$base08: #cc6666 !default;
+$base09: #de935f !default;
+$base0a: #f0c674 !default;
+$base0b: #b5bd68 !default;
+$base0c: #8abeb7 !default;
+$base0d: #81a2be !default;
+$base0e: #b294bb !default;
+$base0f: #a3685a !default;
+// $base00: #263238 !default;
+// $base01: #2e3c43 !default;
+// $base02: #314549 !default;
+// $base03: #546e7a !default;
+// $base04: #b2ccd6 !default;
+// $base05: #eeffff !default;
+// $base06: #eeffff !default;
+// $base07: #ffffff !default;
+// $base08: #f07178 !default;
+// $base09: #f78c6c !default;
+// $base0a: #ffcb6b !default;
+// $base0b: #c3e88d !default;
+// $base0c: #89ddff !default;
+// $base0d: #82aaff !default;
+// $base0e: #c792ea !default;
+// $base0f: #ff5370 !default;
 
 /*
       Breakpoints

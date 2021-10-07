@@ -59,3 +59,8 @@
   //top: 2em;
   box-shadow: 0 0 0 0 #fff098, 0 0.05em 0 0 #afab8c;
 }
+
+.language-plaintext:not(.key) {
+  background-color: rgb(59, 59, 59);
+  color: $primary-color;
+}

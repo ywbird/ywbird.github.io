@@ -87,7 +87,8 @@
 
   .results__found {
     margin-top: 0.5em;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
+    font-family: $fat;
   }
 
   .archive__item {
@@ -108,6 +109,7 @@
 
   .archive__item-excerpt {
     margin-bottom: 0;
+    font-family: $serif;
   }
 }
 
