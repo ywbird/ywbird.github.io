@@ -17,14 +17,16 @@ table {
 }
 
 thead {
-  background-color: $border-color;
-  border: 3px solid $border-color;
+  // background-color: mix($background-color, $border-color, 80%);
+  // border: 2.1px solid $border-color;
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
+  background-color: mix($background-color, $border-color, 80%); //백그라운드 색
+  border: 2.1px solid $border-color; //겹침 현상 해결
 }
 
 td {
@@ -37,4 +39,13 @@ tr,
 td,
 th {
   vertical-align: middle;
+}
+
+td:first-child,
+th:first-child {
+  border-left: 0 solid $border-color;
+}
+
+th:last-child {
+  border-right: 0 solid;
 }

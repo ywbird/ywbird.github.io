@@ -37,9 +37,9 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $serif !default;
-$header-font-family: $serif !default;
-$caption-font-family: $serif !default;
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif !default;
+$caption-font-family: $sans-serif !default;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
@@ -51,6 +51,7 @@ $type-size-4-2: 1.1em !default; // ~20px
 $type-size-5: 1em !default; // ~16px
 $type-size-5-2: 0.9em !default; // ~12px
 $type-size-6: 0.75em !default; // ~12px
+$type-size-6-2: 0.7em !default; // ~12px
 $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
@@ -77,7 +78,7 @@ $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 // $muted-text-color: mix(#fff, $text-color, 20%) !default;
-$muted-text-color: mix($background-color, $text-color, 50%) !default;
+$muted-text-color: mix($background-color, $text-color, 10%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: $lighter-gray !default;
@@ -176,7 +177,7 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1450px !default;
+$x-large: 1370px !default;
 $max-width: $x-large !default;
 
 /*

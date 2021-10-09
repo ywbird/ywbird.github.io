@@ -436,7 +436,7 @@
     }
 
     ul {
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
     }
 
     a {
@@ -508,7 +508,7 @@
     max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
     overflow: visible;
     opacity: 1;
-    margin-top: 1em;
+    margin-top: 0.5em;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -518,18 +518,18 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 0.75rem;
-  font-family: $serif;
+  font-family: $global-font-family;
   // font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
-  font-weight: bold;
+  font-size: $type-size-4;
+  font-weight: normal;
 }
 
 .nav__sub-title {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
   padding: 0.25rem 0;
-  font-size: $type-size-3;
-  font-family: $serif;
+  font-size: $type-size-5-2;
+  font-family: $global-font-family;
   color: mix(#fff, $primary-color, 35%);
   border-bottom: 0px solid $border-color;
 }
@@ -539,7 +539,7 @@
        ========================================================================== */
 
 .toc {
-  font-family: $serif;
+  font-family: $global-font-family;
   // font-family: $sans-serif;
   color: $gray;
   background-color: $background-color;
@@ -551,7 +551,7 @@
 
   .nav__title {
     color: $muted-text-color;
-    font-size: $type-size-5;
+    font-size: $type-size-5-2;
     // background: mix(#fff, $primary-color, 30%);
     // border-top-left-radius: $border-radius;
     // border-top-right-radius: $border-radius;
@@ -559,7 +559,8 @@
 
   // Scrollspy marks toc items as .active when they are in focus
   .active a {
-    @include yiq-contrasted($active-color);
+    // @include yiq-contrasted($active-color);
+    color: $text-color;
   }
 }
 
@@ -568,20 +569,20 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-4;
+  font-size: $type-size-5-2;
 
   @include breakpoint($large) {
-    font-size: $type-size-5;
+    font-size: $type-size-5-2;
   }
 
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    color: mix($background-color, $muted-text-color, 30%);
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 0px solid $border-color;
-    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &:hover {
       color: $text-color;

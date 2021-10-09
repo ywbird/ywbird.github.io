@@ -272,7 +272,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       comments: true # true
       share: true
@@ -280,6 +280,7 @@ defaults:
       toc: true
       toc_sticky: true
       toc_label: "목차"
+      toc_icon: "fas fa-list-ul"
 
   # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
   - scope:
