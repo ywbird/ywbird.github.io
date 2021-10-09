@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "카테고리"
+  - title: "Categories"
     url: /categories/
-  - title: "리소스팩"
+  - title: "Pack"
     url: /pack/
-  - title: "파이썬"
+  - title: "Python"
     url: /python/
-  - title: "자바스크립트"
+  - title: "JavaScript"
     url: /js/

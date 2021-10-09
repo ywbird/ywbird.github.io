@@ -19,7 +19,7 @@ $sans-serif: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", -apple-system,
   Arial, sans-serif !default;
 $monospace: "JetBrains Mono", "Spoqa Han Sans Neo", "Spoqa Han Sans JP", Monaco,
   Consolas, "Lucida Console", monospace !default;
-$round: "Cafe24Ssurround", -apple-system, BlinkMacSystemFont, "Roboto",
+$round: "Cafe24SsurroundAir", -apple-system, BlinkMacSystemFont, "Roboto",
   "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $fat: "SBAggroL", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
@@ -76,7 +76,8 @@ $background-color: #fff !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
-$muted-text-color: mix(#fff, $text-color, 20%) !default;
+// $muted-text-color: mix(#fff, $text-color, 20%) !default;
+$muted-text-color: mix($background-color, $text-color, 50%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: $lighter-gray !default;

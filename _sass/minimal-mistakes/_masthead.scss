@@ -10,7 +10,7 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  font-size: 1.5em;
+  font-size: 1.2em;
 
   &__inner-wrap {
     @include clearfix;
@@ -24,7 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $round;
+    font-family: $sans-serif;
     // font-family: $sans-serif-narrow;
     // font-family: $serif;
 

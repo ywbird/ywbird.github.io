@@ -7,6 +7,7 @@ toc_sticky_: true
 categories:
     - Python
 excerpt: "파이썬의 여러 변수의 속성"
+author_profile: false
 ---
 ***
 
