@@ -323,3 +323,19 @@ figure.highlight {
     border-bottom: 0;
   }
 }
+
+.language-plaintext:not(code.key) {
+  // background-color: rgb(59, 59, 59);
+  color: $primary-color;
+  padding: 1px;
+  background-color: mix(#fff, $background-color, 10%);
+  color: $text-color;
+}
+
+code.language-plaintext.highlighter-rouge:not(.key) {
+  // background-color: rgb(59, 59, 59);
+  color: $primary-color;
+  padding: 1px;
+  background-color: mix(#fff, $background-color, 10%);
+  color: mix(#fff, $primary-color, 50%);
+}

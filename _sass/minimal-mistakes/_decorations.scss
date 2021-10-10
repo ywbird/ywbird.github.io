@@ -50,3 +50,31 @@ details.bd > summary::-webkit-details-marker {
 .soft {
   color: mix($text-color, $background-color, 50%);
 }
+
+.yellow {
+  color: #fff06c;
+}
+
+.blue {
+  color: #296cff;
+}
+
+.green {
+  color: #78e222;
+}
+
+.red {
+  color: #ff3a20;
+}
+
+.purple {
+  color: #c22ce7;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lighter {
+  font-weight: lighter;
+}

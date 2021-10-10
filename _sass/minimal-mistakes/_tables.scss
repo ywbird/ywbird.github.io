@@ -25,14 +25,15 @@ th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
-  background-color: mix($background-color, $border-color, 80%); //백그라운드 색
-  border: 2.1px solid $border-color; //겹침 현상 해결
+  // background-color: mix($background-color, $border-color, 80%); //백그라운드 색
+  border: 1px solid $border-color; //겹침 현상 해결
+  border-bottom: 2px solid $border-color;
 }
 
 td {
   padding: 0.5em;
-  border-left: 2px solid mix($border-color, $background-color, 40%);
-  border-bottom: 2px solid mix($border-color, $background-color, 40%);
+  border-left: 1px solid mix($border-color, $background-color, 40%);
+  border-bottom: 1px solid mix($border-color, $background-color, 40%);
 }
 
 tr,

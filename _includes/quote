@@ -1,0 +1,10 @@
+{% capture text %}{{ include.text }}{% endcapture %}
+{% capture by %}{{ include.by }}{% endcapture %}
+<div class="quote text-center" style="opacity: 70%; font-style: italic;">
+<i class="fas fa-quote-left"></i><br>
+<span>{{ text }}</span><br>
+<i class="fas fa-quote-right"></i><br>
+{% if include.by %}
+- {{ by }}
+{% endif %}
+</div>
