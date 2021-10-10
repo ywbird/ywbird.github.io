@@ -73,6 +73,8 @@
 
 .sidebar__right {
   margin-bottom: 1em;
+  opacity: 70%;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   @include breakpoint($large) {
     position: absolute;
@@ -96,6 +98,9 @@
           max-height: calc(100vh - 7em);
         }
       }
+    }
+    &:hover {
+      opacity: 100%;
     }
   }
 
