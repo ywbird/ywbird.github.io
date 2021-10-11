@@ -6,6 +6,10 @@
 *.sublime-project
 *.sublime-workspace
 
+runserver.bat
+newpost.bat
+.prettierrc
+
 # Ruby Gem
 *.gem
 .bundle
@@ -27,3 +31,4 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+.vscode
