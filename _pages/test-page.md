@@ -10,11 +10,14 @@ toc_sticky: true
 
 🎨{: .large}👓{: .large}🕶{: .large}💋{: .large}💎{: .large}🎮{: .large}🕹{: .large}🔮{: .large}🔈{: .large}🔊{: .large}📢{: .large}📣{: .large}🔔{: .large}🎧{: .large}🔒{: .large}⚒{: .large}🔨{: .large}⚙{: .large}⚔{: .large}💊{: .large}
 
+
+
 ```
 test text
 ㅋㅋㅋㅋ
 ```
 
+{%- include code title="banana.py" -%}
 ```python
 print('banana')
 ```
@@ -55,6 +58,11 @@ Light
    - 순서 없는 리스트 2
    - 순서 없는 리스트 3
 
+{% include code title="banan" type="normal" %}
+```
+test
+text
+```
 
 ***
 

@@ -33,6 +33,7 @@ details.bd > summary::-webkit-details-marker {
   width: 1em;
   padding-bottom: 3px;
   display: inline-block;
+  margin-right: 2px;
 }
 
 .emoji.large {
@@ -49,6 +50,10 @@ details.bd > summary::-webkit-details-marker {
 
 .soft {
   color: mix($text-color, $background-color, 50%);
+}
+
+.void {
+  background-color: transparent;
 }
 
 .yellow {
@@ -77,6 +82,16 @@ details.bd > summary::-webkit-details-marker {
 
 .lighter {
   font-weight: lighter;
+}
+
+.var {
+  color: $base0e;
+  font-family: $monospace;
+  font-weight: bold;
+}
+
+.mns {
+  font-family: $monospace;
 }
 
 .quote {
