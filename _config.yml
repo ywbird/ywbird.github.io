@@ -212,7 +212,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll/twemoji
 
   # - jemoji
 
@@ -223,7 +222,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll/twemoji
 
   # - jemoji
 
