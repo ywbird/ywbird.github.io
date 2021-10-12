@@ -1,4 +1,4 @@
-{% unless post.working == 1 %}
+{% unless post.unlisted == 1 %}
 
   {% if post.header.teaser %}
     {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
