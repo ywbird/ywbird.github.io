@@ -46,7 +46,7 @@ permalink: /fonts/
 ### 📄Cute 폰트
 
 <div class='cute' markdown='1'>
-**넥슨 배찌체**
+넥슨 배찌체
 
 🔨제작사 사이트 : <a href='http://levelup.nexon.com/font/index.aspx' target='_blank'>🔗넥슨</a><br>
 🏷눈누 링크 : <a href='https://noonnu.cc/font_page/423' target='_blank'>🔗눈누</a>
