@@ -94,6 +94,32 @@ details.bd > summary::-webkit-details-marker {
   font-family: $monospace;
 }
 
+.serif {
+  font-family: $serif;
+}
+
+.cute {
+  font-family: $cute;
+}
+
+.fat {
+  font-family: $fat;
+}
+
 .quote {
   font-family: $serif;
+}
+
+.code-title {
+  margin-bottom: -8px;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: $base00; //코드 블럭 색
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  font-size: medium; //↓ monospace 폰트 ↓
+  font-family: $monospace;
 }

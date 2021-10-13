@@ -17,10 +17,8 @@ $serif: "Iropke Batang", Georgia, Times, serif !default;
 $sans-serif: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", -apple-system,
   BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
   Arial, sans-serif !default;
-$monospace: "JetBrains Mono", "Spoqa Han Sans Neo", "Spoqa Han Sans JP", Monaco,
+$monospace: "Fira Code", "Spoqa Han Sans Neo", "Spoqa Han Sans JP", Monaco,
   Consolas, "Lucida Console", monospace !default;
-$round: "Cafe24SsurroundAir", -apple-system, BlinkMacSystemFont, "Roboto",
-  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $fat: "SBAggroL", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $cute: "Bazzi", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
@@ -214,7 +212,7 @@ $right-sidebar-width-wide: 400px !default;
 
 $border-radius: 5px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$nav-height: 2em !default;
+$nav-height: 1.4em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
