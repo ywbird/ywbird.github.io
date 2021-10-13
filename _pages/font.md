@@ -22,7 +22,7 @@ permalink: /fonts/
 
 **스포카 한 산스 네오**  
   
-🔨제작사 사이트 : <a href='https://spoqa.github.io/spoqa-han-sans/ko-KR/' target='_blank'>🔗스포카</a>
+🔨제작사 사이트 : <a href='https://spoqa.github.io/spoqa-han-sans/ko-KR/' target='_blank'>🔗스포카</a><br>
 🏷눈누 링크 : <a href='https://noonnu.cc/font_page/744' target='_blank'>🔗눈누</a>
 
 ### 📄MonoSpace 폰트
@@ -30,7 +30,7 @@ permalink: /fonts/
 <div class='mns' markdown='1'>
 **Fira Code**
 
-🔨제작사 사이트 : <a href='https://github.com/tonsky/FiraCode' target='_blank'>🔗Tonsky</a>
+🔨제작사 사이트 : <a href='https://github.com/tonsky/FiraCode' target='_blank'>🔗Tonsky</a><br>
 🏷구글 폰트 링크 : <a href='https://fonts.google.com/specimen/Fira+Code' target='_blank'>🔗구글 폰트</a>
 </div>
 
@@ -39,7 +39,7 @@ permalink: /fonts/
 <div class='fat' markdown='1'>
 **이사만루 공고딕**
 
-🔨제작사 사이트 : <a href='https://www.gonggames.com/' target='_blank'>🔗공게임즈</a>
+🔨제작사 사이트 : <a href='https://www.gonggames.com/' target='_blank'>🔗공게임즈</a><br>
 🏷눈누 링크 : <a href='https://noonnu.cc/font_page/463' target='_blank'>🔗눈누</a>
 </div>
 
@@ -48,6 +48,6 @@ permalink: /fonts/
 <div class='cute' markdown='1'>
 **넥슨 배찌체**
 
-🔨제작사 사이트 : <a href='http://levelup.nexon.com/font/index.aspx' target='_blank'>🔗넥슨</a>
+🔨제작사 사이트 : <a href='http://levelup.nexon.com/font/index.aspx' target='_blank'>🔗넥슨</a><br>
 🏷눈누 링크 : <a href='https://noonnu.cc/font_page/423' target='_blank'>🔗눈누</a>
 </div>
