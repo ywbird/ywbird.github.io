@@ -30,22 +30,10 @@ details.bd > summary::-webkit-details-marker {
 }
 
 .emoji {
-  width: 1em;
+  width: 1rem;
   padding-bottom: 3px;
   display: inline-block;
   margin-right: 2px;
-}
-
-.emoji.large {
-  width: 2em;
-  padding-bottom: 7px;
-  display: inline-block;
-}
-
-.emoji.x-large {
-  width: 3em;
-  padding-bottom: 7px;
-  display: inline-block;
 }
 
 .soft {

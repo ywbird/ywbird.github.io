@@ -1,7 +1,7 @@
 ---
-permalink: /about/
 title: "소개"
 toc: false
+permalink: /about/
 layout: single
 author_profile: true
 ---
