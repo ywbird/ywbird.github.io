@@ -7,6 +7,7 @@ toc_label: "목차"
 categories:
   - Pack
 excerpt: "너무 알아보기 어려울 솔직히..."
+emoji: "d"
 ---
 ***
 
@@ -59,7 +60,7 @@ excerpt: "너무 알아보기 어려울 솔직히..."
 ctm(connected texture method)를 넣으려면 넣을 수 있지만 굳이 안넣음 ㅎ
 ctm 넣어서 만들었다면 공유좀(만들기 귀찮 ㅎ)
 
-[⬇다운로드](https://github.com/ywbird/pack/raw/main/03fa48bc09dd6e7ae539ddd102fe605e5b0697a5640eba8a63b1612f5598d409/!%20%C2%A7cP%C2%A79ix%C2%A7ae%C2%A7el%20%C2%A7fParty.zip){: .btn .btn--primary .btn--large}
+[📥다운로드](https://github.com/ywbird/pack/raw/main/03fa48bc09dd6e7ae539ddd102fe605e5b0697a5640eba8a63b1612f5598d409/!%20%C2%A7cP%C2%A79ix%C2%A7ae%C2%A7el%20%C2%A7fParty.zip){: .btn .btn--primary .btn--large}
 
 ## 마무리
 
