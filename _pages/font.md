@@ -51,3 +51,12 @@ permalink: /fonts/
 🔨제작사 사이트 : <a href='http://levelup.nexon.com/font/index.aspx' target='_blank'>🔗넥슨</a><br>
 🏷눈누 링크 : <a href='https://noonnu.cc/font_page/423' target='_blank'>🔗눈누</a>
 </div>
+
+### 📄제목 폰트
+
+<div class='cute-serif' markdown='1'>
+배민 연성체
+
+🔨제작사 사이트 : <a href='http://font.woowahan.com/yeonsung/' target='_blank'>🔗우아한 형제들</a><br>
+🏷눈누 링크 : <a href='https://noonnu.cc/font_page/54' target='_blank'>🔗눈누</a>
+</div>

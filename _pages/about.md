@@ -15,4 +15,4 @@ author_profile: true
 **웹 공부 기록** <br>
 마인크래프트 리소스팩 **강좌, 만들기, 배포**<br>
 포스팅할 예정입니다.<br> 
-(블로그에 관한 내용은 [여기](https://08u.github.io/blog/blogstart/)로)
+(블로그에 관한 내용은 [여기](/blog/blogstart/)로)
