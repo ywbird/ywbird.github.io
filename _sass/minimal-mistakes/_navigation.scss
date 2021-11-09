@@ -75,9 +75,9 @@
       display: block;
       margin-bottom: 0.25em;
       padding: 0.2em 0.7em;
-      font-family: "JetBrains Mono", "SBAggroL";
+      font-family: $sans-serif;
       font-size: 16px;
-      font-weight: lighter;
+      font-weight: normal;
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
@@ -256,7 +256,7 @@
       position: relative;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: 0;
@@ -305,7 +305,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: -11px;
       right: 10px;
@@ -318,7 +318,7 @@
     }
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: -10px;
       right: 10px;
@@ -358,7 +358,7 @@
 .nav__list {
   margin-bottom: 1.5em;
 
-  input[type="checkbox"],
+  input[type='checkbox'],
   label {
     display: none;
   }
@@ -380,7 +380,7 @@
 
       &:before,
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         right: 1em;
         top: 1.25em;
