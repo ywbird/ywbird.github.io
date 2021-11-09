@@ -80,7 +80,7 @@
     visibility: visible;
 
     &::after {
-      content: "";
+      content: '';
       display: block;
     }
   }
@@ -88,7 +88,7 @@
   .results__found {
     margin-top: 0.5em;
     font-size: $type-size-5;
-    font-family: $fat;
+    font-family: $global-font-family;
   }
 
   .archive__item {
