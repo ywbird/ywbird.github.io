@@ -1,14 +1,15 @@
 ---
-title: "안카이드님의 비공개 리팩"
+title: '안카이드님의 비공개 리팩'
 date: 2021-10-23
 toc: true
 toc_sticky: true
-toc_label: "목차"
+toc_label: '목차'
 categories:
   - Pack
-excerpt: "안카님 리팩 예뻐서 따라만듦"
+excerpt: '안카님 리팩 예뻐서 따라만듦'
 ---
-***
+
+---
 
 ## 다운로드
 
@@ -18,7 +19,7 @@ excerpt: "안카님 리팩 예뻐서 따라만듦"
 
 {% include video id="X0l1pYy2HgQ" provider="youtube" %}
 
-[📥다운로드](https://github.com/ywbird/pack/raw/main/03fa48bc09dd6e7ae539ddd102fe605e5b0697a5640eba8a63b1612f5598d409/!%20%C2%A7cP%C2%A79ix%C2%A7ae%C2%A7el%20%C2%A7fParty.zip){: .btn .btn--primary .btn--large}
+[<i class="fas fa-download"></i> 다운로드](https://github.com/ywbird/pack/raw/main/03fa48bc09dd6e7ae539ddd102fe605e5b0697a5640eba8a63b1612f5598d409/!%20%C2%A7cP%C2%A79ix%C2%A7ae%C2%A7el%20%C2%A7fParty.zip){: .btn .btn--success}
 
 따라 만든겁니다. 배포 허가 받았습니다.
 

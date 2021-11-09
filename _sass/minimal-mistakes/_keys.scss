@@ -4,18 +4,19 @@
   color: #000;
   font-family: $monospace;
   font-weight: bold;
-  background-color: rgb(247, 247, 247);
+  background: #fff;
 
   align-items: center;
 
   display: inline-block;
   border: 0em;
-  margin: 0;
+  margin: 0em;
   margin-left: 0.1em;
   margin-right: 0.1em;
   padding: 0em;
-  padding-right: 0.07em;
-  padding-left: 0.07em;
+  padding-right: 0em;
+  padding-left: 0em;
+  border-radius: 3px;
   box-shadow: 0 0 0 0 #fff, 0 0.25em 0 0 #bbb;
 
   cursor: pointer;
@@ -26,7 +27,7 @@
 .key.h:active {
   transform: translate(0, 0.2em);
   //top: 2em;
-  box-shadow: 0 0 0 0 #fff, 0 0.05em 0 0 #bbb;
+  box-shadow: 0 0 0 0 #fff098, 0 0.05em 0 0 #afab8c;
 }
 
 //special
@@ -41,12 +42,13 @@
 
   display: inline-block;
   border: 0em;
+  border-radius: 3px;
   margin: 0em;
   margin-left: 0.1em;
   margin-right: 0.1em;
   padding: 0em;
-  padding-right: 0.07em;
-  padding-left: 0.07em;
+  padding-right: 0em;
+  padding-left: 0em;
   box-shadow: 0 0 0 0 #ffed9c, 0 0.25em 0 0 #afab8c;
 
   cursor: pointer;
