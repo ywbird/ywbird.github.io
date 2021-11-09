@@ -12,25 +12,25 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: 'dark' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "ko-KR"
-title: "노란 리본"
-title_separator: "-"
+locale: 'ko-KR'
+title: '묘발개발'
+title_separator: '-'
 subtitle: # site tagline that appears below site title in masthead
-name: "고앵이"
-description: "고앵이의 프로그래밍 이야기"
-url: "https://ywbird.github.io/" # the base hostname & protocol for your site e.g. "https://1972.github.io"
+name: '고앵이'
+description: '고앵이의 프로그래밍 이야기'
+url: 'https://ywbird.github.io/' # the base hostname & protocol for your site e.g. "https://1972.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "ywbird/ywbird.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: 'ywbird/ywbird.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/android-chrome-512x512.png" # path of logo image to display in the masthead, eg. "/assets/images/88x88.png"
-masthead_title: "노란 리본 Yellow Ribbon" # overrides the website title displayed in the masthead, use " " for no title
+logo: # path of logo image to display in the masthead, eg. "/assets/images/88x88.png"
+masthead_title: '🤔 묘발개발' # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: false # true, false (default)
 words_per_minute: 200
 comments:
-  provider: "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: 'utterances' # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -41,9 +41,9 @@ comments:
     num_posts: # 5 (default)
     colorscheme: # "light" (default), "dark"
   utterances:
-    theme: "photon-dark" # "github-light" (default), "github-dark"
-    issue_term: "pathname" # "pathname" (default)
-    repo: "ywbird/comments"
+    theme: 'photon-dark' # "github-light" (default), "github-dark"
+    issue_term: 'pathname' # "pathname" (default)
+    repo: 'ywbird/comments'
   giscus:
     repo_id: # Shown during giscus setup at https://giscus.app
     category_name: # Full text name of the category
@@ -94,15 +94,15 @@ social:
 
 # Analytics
 analytics:
-  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: 'google-gtag' # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id: "G-FYZZ1L9V43"
+    tracking_id: 'G-FYZZ1L9V43'
     anonymize_ip: # true, false (default)
 
 # Site Author
 author:
-  name: "고앵이"
-  avatar: "/assets/nyan.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name: '고앵이'
+  avatar: '/assets/nyan.png' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "황혼에서 코딩하고\n 게임하고있는 고앵이 입니다."
   location:
   email:
@@ -117,23 +117,23 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ywbird"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/ywbird'
+    - label: 'GitLab'
+      icon: 'fab fa-fw fa-gitlab'
       # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
+    - label: 'Bitbucket'
+      icon: 'fab fa-fw fa-bitbucket'
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    - label: 'Instagram'
+      icon: 'fab fa-fw fa-instagram'
       # url:
 
 # Reading Files
@@ -141,8 +141,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -170,8 +170,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 # Conversion
 markdown: kramdown
@@ -203,7 +203,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 13 # amount of posts to show
-paginate_path: "/page=:num/"
+paginate_path: '/page=:num/'
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
@@ -267,7 +267,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -278,12 +278,12 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
-      toc_label: "목차"
-      toc_icon: "fas fa-list-ul"
+      toc_label: '목차'
+      toc_icon: 'fas fa-list-ul'
 
   # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
   - scope:
-      path: "_pages"
+      path: '_pages'
       type: pages
     values:
       layout: single

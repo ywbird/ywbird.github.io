@@ -13,27 +13,27 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$serif: "Iropke Batang", Georgia, Times, serif !default;
-$sans-serif: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", -apple-system, BlinkMacSystemFont, "Roboto",
-  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: "Fira Code", "Spoqa Han Sans Neo", "Spoqa Han Sans JP", Monaco, Consolas, "Lucida Console",
+$serif: 'Iropke Batang', Georgia, Times, serif !default;
+$sans-serif: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', -apple-system, BlinkMacSystemFont, 'Roboto',
+  'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif !default;
+$monospace: 'Fira Code', 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', Monaco, Consolas, 'Lucida Console',
   monospace !default;
-$fat: "SBAggroL", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
+$fat: 'SBAggroL', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
   Arial, sans-serif !default;
-$cute: "Bazzi", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
+$cute: 'Bazzi', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
   Arial, sans-serif !default;
-$cute-serif: "BMYEONSUNG", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue",
-  "Lucida Grande", Arial, sans-serif !default;
+$scrawl: 'KyoboHand', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue',
+  'Lucida Grande', Arial, sans-serif !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$helvetica: Helvetica, 'Helvetica Neue', Arial, sans-serif !default;
 
 /* serif typefaces */
 $georgia: Georgia, Georgia, serif !default;
-$times: "Iropke Batang", Times, serif !default;
-$bodoni: "Bodoni MT", serif !default;
-$calisto: "Calisto MT", serif !default;
+$times: 'Iropke Batang', Times, serif !default;
+$bodoni: 'Bodoni MT', serif !default;
+$calisto: 'Calisto MT', serif !default;
 $garamond: Garamond, serif !default;
 
 $global-font-family: $sans-serif !default;
