@@ -185,7 +185,7 @@
 }
 .sidebar .author__name {
   font-family: $global-font-family;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: $type-size-5;
 }
 
@@ -218,7 +218,7 @@
     span.label {
       padding-left: 5px;
       font-family: $global-font-family;
-      font-weight: lighter;
+      font-weight: normal;
     }
   }
 
@@ -267,7 +267,7 @@
   box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
   cursor: default;
   font-family: $global-font-family;
-  font-weight: lighter;
+  font-weight: normal;
 
   &.is--visible {
     display: block;
