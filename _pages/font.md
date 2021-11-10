@@ -1,8 +1,8 @@
 ---
-title: '폰트 사용에 관해서'
+title: "폰트 사용에 관해서"
 toc: true
 toc_sticky: true
-toc_label: '목차'
+toc_label: "목차"
 permalink: /fonts/
 ---
 
@@ -34,18 +34,6 @@ permalink: /fonts/
 
 🔨제작사 사이트 : <a href='https://github.com/tonsky/FiraCode' target='_blank'>🔗Tonsky</a><br>
 🏷구글 폰트 링크 : <a href='https://fonts.google.com/specimen/Fira+Code' target='_blank'>🔗구글 폰트</a>
-
-</div>
-
-### 📄Fat 폰트
-
-<div class='fat' markdown='1'>
-**이사만루 공고딕**
-
-🔨제작사 사이트 : <a href='https://www.gonggames.com/' target='_blank'>🔗공게임즈</a><br>
-🏷눈누 링크 : <a href='https://noonnu.cc/font_page/463' target='_blank'>🔗눈누</a>
-
-</div>
 
 ### 📄Cute 폰트
 

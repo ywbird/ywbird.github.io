@@ -141,17 +141,11 @@
   img {
     width: 90%;
     max-width: 110px;
-    border-radius: 15%;
+    border-radius: 3px;
 
     @include breakpoint($large) {
-      border: 3px solid #ffdf77;
+      border: 2px solid mix($background-color, $text-color, 0.5);
     }
-
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
-  img:hover {
-    transform: scale(110%) translate(5px, -5px);
   }
 }
 
