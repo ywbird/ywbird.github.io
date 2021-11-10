@@ -200,6 +200,10 @@
   }
 }
 
+.sidebar-emoji {
+  font-size: large;
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
@@ -253,7 +257,6 @@
     }
   }
 }
-
 .author__urls {
   display: none;
   position: absolute;
