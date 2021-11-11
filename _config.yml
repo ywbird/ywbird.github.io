@@ -229,7 +229,6 @@ whitelist:
 after_footer_scripts:
     - assets/js/clipboard/clipboard.min.js
     - assets/js/clipboard/clipboardrouge.js
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
