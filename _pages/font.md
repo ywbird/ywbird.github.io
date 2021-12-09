@@ -1,8 +1,8 @@
 ---
-title: "폰트 사용에 관해서"
+title: '폰트 사용에 관해서'
 toc: true
 toc_sticky: true
-toc_label: "목차"
+toc_label: '목차'
 permalink: /fonts/
 ---
 
@@ -48,9 +48,9 @@ permalink: /fonts/
 ### 📄제목 폰트
 
 <div class='scrawl' markdown='1'>
-교보 손글씨
+배민 연성체
 
-🔨제작사 사이트 : <a href='http://www.kyobobook.co.kr/handwriting/2021/font.jsp#' target='_blank'>🔗교보문고</a><br>
-🏷눈누 링크 : <a href='https://noonnu.cc/font_page/419' target='_blank'>🔗눈누</a>
+🔨제작사 사이트 : <a href='https://www.woowahan.com/#/fonts/yeonsung' target='_blank'>🔗우아한형제들</a><br>
+🏷눈누 링크 : <a href='https://noonnu.cc/font_page/54' target='_blank'>🔗눈누</a>
 
 </div>
