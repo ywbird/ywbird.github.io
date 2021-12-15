@@ -69,8 +69,8 @@ body {
 }
 
 .highlighter-rouge {
-  font-family: "JetBrains Mono", "nanumsquare", Monaco, Consolas,
-    "Lucida Console", monospace;
+  font-family: 'JetBrains Mono', 'nanumsquare', Monaco, Consolas,
+    'Lucida Console', monospace;
 }
 
 .page__title {
@@ -321,7 +321,7 @@ body {
 }
 
 .page__meta-sep::before {
-  content: "\2022";
+  content: '\2022';
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
