@@ -1,7 +1,8 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
 <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %} {% if
-  page.sidebar %} {% for s in page.sidebar %} {% if s.image %}
+  {% if page.author_profile or layout.author_profile %}{% include
+  author-profile.html %}{% endif %} {% if page.sidebar %} {% for s in
+  page.sidebar %} {% if s.image %}
   <img
     src="{{ s.image | relative_url }}"
     alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}"
@@ -9,67 +10,78 @@
   />
   {% endif %} {% if s.title %}
   <h3>{{ s.title }}</h3>
-  {% endif %} {% if s.text %}{{ s.text | markdownify }}{% endif %} {% if s.nav %}{% include nav_list nav=s.nav
-  %}{% endif %} {% endfor %} {% if page.sidebar.nav %} {% include nav_list nav=page.sidebar.nav %} {% endif %}
-  {% endif %} {% assign sum = site.posts | size %}
+  {% endif %} {% if s.text %}{{ s.text | markdownify }}{% endif %} {% if s.nav
+  %}{% include nav_list nav=s.nav %}{% endif %} {% endfor %} {% if
+  page.sidebar.nav %} {% include nav_list nav=page.sidebar.nav %} {% endif %} {%
+  endif %} {% assign sum = site.posts | size %}
   <div>
     <a href="/about/">
-      <img
-        class="sidebar-emoji"
-        draggable="false"
-        title=":smiley_cat:"
-        alt="😺"
-        src="https://twemoji.maxcdn.com/2/svg/1f63a.svg"
-        style="display: inline-block; width: 1em"
-      />
-      <span style="font-size: large; font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; color: white"
+      <i class="fas fa-user"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
         >About</span
       >
     </a>
   </div>
   <div>
-    <a href="mailto:repack.lab.io@gmail.com?subject=문의할것이있나요?" target="_blank">
-      <img
-        class="sidebar-emoji"
-        draggable="false"
-        title=":e-mail:"
-        alt="📧"
-        src="https://twemoji.maxcdn.com/2/svg/1f4e7.svg"
-        style="display: inline-block; width: 1em"
-      />
-      <span style="font-size: large; font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; color: white"
+    <a
+      href="mailto:repack.lab.io@gmail.com?subject=문의할것이있나요?"
+      target="_blank"
+    >
+      <i class="fas fa-envelope"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
         >Email</span
       >
     </a>
   </div>
   <div>
     <a href="https://github.com/ywbook" target="_blank">
-      <img
-        class="sidebar-emoji"
-        draggable="false"
-        title=":books:"
-        alt="📚"
-        src="https://twemoji.maxcdn.com/2/svg/1f4da.svg"
-        style="display: inline-block; width: 1em"
-      />
-      <span style="font-size: large; font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; color: white"
+      <i class="fab fa-github"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
         >GitHub</span
       >
     </a>
   </div>
-  <div draggable="false">
-    <img
-      class="sidebar-emoji"
-      draggable="false"
-      title=":file_folder:"
-      alt="📁"
-      src="https://twemoji.maxcdn.com/2/svg/1f4c1.svg"
-      style="display: inline-block; width: 1em"
-    />
-    <span style="font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; font-size: large; padding-right: 5px"
+  <a draggable="false">
+    <i class="fas fa-flag"></i>
+    <span
+      style="
+        font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+        font-size: large;
+        padding-right: 5px;
+        color: white;
+      "
       >전체 글 수</span
-    ><span style="font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; font-size: large">{{sum}}</span>
-    <span style="font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP'; font-size: large">개</span>
-  </div>
+    ><span
+      style="
+        font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+        font-size: large;
+        color: white;
+      "
+      >{{sum}}</span
+    >
+    <span
+      style="
+        font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+        font-size: large;
+        color: white;
+      "
+      >개</span
+    >
+  </a>
 </div>
 {% endif %}
