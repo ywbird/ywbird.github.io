@@ -38,7 +38,7 @@
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
-  + .list__item .archive__item-title {
+  +.list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
@@ -60,8 +60,9 @@
     bottom: 0;
   }
 
-  a + a {
-    opacity: 0.5;
+  a+a {
+    // opacity: 0.7;
+    // color: mix($background-color, #fff, 30%)
   }
 }
 
@@ -77,7 +78,7 @@
   margin-top: 0;
   font-size: $type-size-5;
 
-  & + p {
+  &+p {
     text-indent: 0;
   }
 
@@ -173,8 +174,10 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
+    margin-left: 0;
+    /* override margin*/
+    margin-right: 0;
+    /* override margin*/
     width: span(3 of 12);
 
     &:nth-child(2n + 1) {

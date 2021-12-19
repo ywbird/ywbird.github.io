@@ -14,14 +14,48 @@
   %}{% include nav_list nav=s.nav %}{% endif %} {% endfor %} {% if
   page.sidebar.nav %} {% include nav_list nav=page.sidebar.nav %} {% endif %} {%
   endif %} {% assign sum = site.posts | size %}
-  {% for url in site.data.navigation.sidebar %}
-    <div class="sidebar__url-containr">
-      <a href="{{ url.url }}" {%- if url.newtab -%}target="_blank"{%- endif -%}>
-        <i class="sidebar-icon {{ url.icon }}"></i>
-        <span class="sidebar__url">{{ url.label }}</span>
-      </a>
-    </div>
-  {% endfor %}
+  <div>
+    <a href="/about/">
+      <i class="fas fa-user"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
+        >About</span
+      >
+    </a>
+  </div>
+  <div>
+    <a
+      href="mailto:repack.lab.io@gmail.com?subject=문의할것이있나요?"
+      target="_blank"
+    >
+      <i class="fas fa-envelope"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
+        >Email</span
+      >
+    </a>
+  </div>
+  <div>
+    <a href="https://github.com/ywbook" target="_blank">
+      <i class="fab fa-github"></i>
+      <span
+        style="
+          font-size: large;
+          font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP';
+          color: white;
+        "
+        >GitHub</span
+      >
+    </a>
+  </div>
   <a draggable="false">
     <i class="fas fa-flag"></i>
     <span

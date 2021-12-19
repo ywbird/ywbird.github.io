@@ -1,5 +1,5 @@
 ---
-title: '[Lua] Lua 변수 타입'
+title: 'Lua 변수 타입'
 date: 2021-11-12
 toc: true
 toc_sticky: true

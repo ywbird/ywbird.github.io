@@ -8,3 +8,21 @@ main:
     url: /python/
   - title: "JavaScript"
     url: /js/
+
+
+sidebar:
+  - label: About
+    icon: fas fa-user
+    url: /about/
+
+  - label: Email
+    icon: fas fa-envelope
+    url: "mailto:repack.lab.io@gmail.com"
+
+  - label: Github
+    icon: fab fa-github
+    url: /about/
+
+  - label: About
+    icon: fas fa-user
+    url: /about/

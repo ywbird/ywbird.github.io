@@ -1,14 +1,25 @@
 .page__taxonomy-item-category {
-  background: mix($background-color, $border-color, 50%);
+  background-color: mix($background-color, #fff, 70%);
   margin-right: 3px;
   border: 0 solid;
-  border-radius: 5px;
+  border-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   padding: 3px;
   padding-top: 1px;
   padding-left: 5px;
   padding-right: 5px;
+  color: #fff;
 }
 
 .page__taxonomy-item-category:hover {
-  background: mix($background-color, $border-color, 80%);
+  color: $link-color;
+}
+
+.page_title-item-categories {
+  display: flex;
+}
+
+.page_title-item-category {
+
 }

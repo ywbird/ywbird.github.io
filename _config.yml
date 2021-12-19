@@ -107,22 +107,22 @@ author:
   location:
   email:
   links:
-    # - label: "Email"
-    #   icon: "assets/Email.svg"
-    #   url: "mailto:repack.lab.io@gmail.com"
-    # - label: "GitHub"
-    #   icon: "assets/book.svg"
-    #   url: "https://github.com/ywbook"
+    - label: "Email"
+      icon: "assets/Email.svg"
+      url: "mailto:repack.lab.io@gmail.com"
+    - label: "GitHub"
+      icon: "assets/book.svg"
+      url: "https://github.com/ywbook"
 
 # Site Footer
 footer:
   links:
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
-      # url:
-    - label: 'Facebook'
-      icon: 'fab fa-fw fa-facebook-square'
-      # url:
+    - label: 'Fonts'
+      icon: 'fas fa-fw fa-font'
+      url: /fonts/
+    - label: 'emoji by Twem<img draggable="false" style="width: 13px; margin: 0;" class="emoji" alt="❤" src="https://twemoji.maxcdn.com/v/13.1.0/svg/2764.svg">ji'
+      icon: 'far fa-fw fa-surprise'
+      url: 'https://twemoji.twitter.com/'
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/ywbird'
