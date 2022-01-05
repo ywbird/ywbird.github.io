@@ -107,12 +107,6 @@ author:
   location:
   email:
   links:
-    - label: "Email"
-      icon: "assets/Email.svg"
-      url: "mailto:repack.lab.io@gmail.com"
-    - label: "GitHub"
-      icon: "assets/book.svg"
-      url: "https://github.com/ywbook"
 
 # Site Footer
 footer:
@@ -279,6 +273,7 @@ defaults:
       toc_sticky: true
       toc_label: '목차'
       toc_icon: 'fas fa-list-ul'
+      share: false
 
   # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
   - scope:

@@ -21,8 +21,4 @@ sidebar:
 
   - label: Github
     icon: fab fa-github
-    url: /about/
-
-  - label: About
-    icon: fas fa-user
-    url: /about/
+    url: "https://www.github.com/ywbird"

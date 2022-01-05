@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'jekyll'
+gem "jekyll", "~> 4.2.1", github: 'jekyll/jekyll'
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
 gem "jekyll-gist"

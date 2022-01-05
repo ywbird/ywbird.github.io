@@ -92,7 +92,7 @@
   }
 
   .archive__item {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
 
     @include breakpoint($large) {
       width: 75%;
