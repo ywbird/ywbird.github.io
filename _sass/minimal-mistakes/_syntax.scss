@@ -328,7 +328,8 @@ figure.highlight {
   // background-color: rgb(59, 59, 59);
   color: $primary-color;
   padding: 1px;
-  background-color: mix(#fff, $background-color, 10%);
+  // background-color: mix(#fff, $background-color, 10%);
+  background-color: $base00;
   color: $text-color;
 }
 
@@ -336,6 +337,7 @@ code.language-plaintext.highlighter-rouge:not(.key) {
   // background-color: rgb(59, 59, 59);
   color: $primary-color;
   padding: 1px;
-  background-color: mix(#fff, $background-color, 10%);
+  // background-color: mix(#fff, $background-color, 10%);
+  background-color: $base00;
   color: mix(#fff, $primary-color, 50%);
 }
