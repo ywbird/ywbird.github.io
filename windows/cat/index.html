@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="😻cat 명령어란? cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World! banana.txt1Banana is yam. 123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
+<meta property="og:type" content="article">
+<meta property="og:title" content="리눅스 cat 명령어 구현하기">
+<meta property="og:url" content="https://ywbird.github.io/windows/cat/index.html">
+<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:description" content="😻cat 명령어란? cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World! banana.txt1Banana is yam. 123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-17T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-21T13:40:01.449Z">
+<meta property="article:author" content="고앵이">
+<meta name="twitter:card" content="summary">
+    
+    <link rel="canonical" href="https://ywbird.github.io/windows/cat/"/>
+    
+      
+        
+          <link rel="shortcut icon" href="/images/disk.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+        
+      
+    
+    <!-- title -->
+    <title>리눅스 cat 명령어 구현하기</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/mars&moon-ticket/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/windows/cmd-auto-start/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://ywbird.github.io/windows/cat/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://ywbird.github.io/windows/cat/&text=리눅스 cat 명령어 구현하기"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://ywbird.github.io/windows/cat/&is_video=false&description=리눅스 cat 명령어 구현하기"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=리눅스 cat 명령어 구현하기&body=Check out this article: https://ywbird.github.io/windows/cat/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://ywbird.github.io/windows/cat/&name=리눅스 cat 명령어 구현하기&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://ywbird.github.io/windows/cat/&t=리눅스 cat 명령어 구현하기"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text"> 😻cat 명령어란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text"> 🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text"> 👍해결법</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text"> 🔎코드</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text"> 🕶적용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 🎞마무리</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+      <header id="header">
+  <a href="/">
+  
+    
+      <div id="logo" style="background-image: url(/images/disk.png);"></div>
+    
+  
+    <div id="title">
+      <h1>플로피 디스크</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="/">Home</a></li><!--
+   --><!--
+     --><li><a href="/about/">About</a></li><!--
+   --><!--
+     --><li><a href="/categories/">Categories</a></li><!--
+   --><!--
+     --><li><a href="/feed.xml">RSS</a></li><!--
+   --><!--
+     --><li><a href="/search/">Search</a></li><!--
+   -->
+    </ul>
+  </div>
+</header>
+
+      
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        리눅스 cat 명령어 구현하기
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">고앵이</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-02-17T15:00:00.000Z" itemprop="datePublished">2022-02-18</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Windows/">Windows</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <hr />
+<h1 id="cat-명령어란"><a class="markdownIt-Anchor" href="#cat-명령어란"></a> 😻cat 명령어란?</h1>
+<p><code>cat</code> 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다.</p>
+<figure class="highlight text"><figcaption><span>hello.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, World!</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><figcaption><span>banana.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cat hello.txt banana.txt</span><br><span class="line">Hello, World!</span><br><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
+<h1 id="type-명령어의-문제점"><a class="markdownIt-Anchor" href="#type-명령어의-문제점"></a> 🙀type 명령어의 문제점</h1>
+<p>윈도우에는 기본적으로 <code>type</code>라는 명령어가 있습니다.<br />
+<code>type</code>는 <code>cat</code>과 비슷하지만 <code>cat</code>은 파일이 여러개라도 항상 파일의 내용만 출력하는 반면 <code>type</code>는 인자가 2개 이상이면 파일의 이름도 같이 출력돼서 문제가 있습니다.</p>
+<figure class="highlight text"><figcaption><span>hello.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, World!</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><figcaption><span>banana.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; type hello.txt banana.txt</span><br><span class="line"></span><br><span class="line">hello.txt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Hello, World!</span><br><span class="line"></span><br><span class="line">banana.txt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Banana is yam.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>이렇게 출력하죠</p>
+<h1 id="해결법"><a class="markdownIt-Anchor" href="#해결법"></a> 👍해결법</h1>
+<p>먼저 <code>doskey</code>명령어를 이용해서 만들어보겠습니다.</p>
+<p><code>batch</code>언어만을 이용하려고 했지만 인자가 여러개가 되면 리스트 객체를 이용해야 하고 <code>C/C++</code>언어를 이용하기는 VS를 깔기 귀찮아서 <code>Python</code>으로 구현했습니다 ㅎㅎ</p>
+<h1 id="코드"><a class="markdownIt-Anchor" href="#코드"></a> 🔎코드</h1>
+<p>코드는 <strong>너무</strong> 짧아요 ㅎ</p>
+<figure class="highlight python"><figcaption><span>cat.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> sys.argv[<span class="number">1</span>:]:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">open</span>(i).read(),end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><code>sys</code>모듈로 인자를 받고 <code>for</code>문을 이용해서 출력하는 방식입니다.</p>
+<h1 id="적용"><a class="markdownIt-Anchor" href="#적용"></a> 🕶적용</h1>
+<p>일종의 명령어이기 때문에 <code>system32</code>에 위치시키겠습니다.</p>
+<p><code>%windir%\system32\</code>에 들어가 준 후 코드 파일(<code>cat.py</code>)를 이동 또는 복사합니다.</p>
+<p><code>init.cmd</code>에 다음 줄을 추가해 주세요.</p>
+<blockquote>
+<p>🤿<code>init.cmd</code>쓰는법은 아래 링크에!<br />
+🎈<a href="/windows/cmd-start">Cmd 자동실행 파일 만들기</a></p>
+</blockquote>
+<figure class="highlight plaintext"><figcaption><span>C:\init.cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doskey cat=%windir%\system32\cat.py $*</span><br></pre></td></tr></table></figure>
+<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 🎞마무리</h1>
+<p>이상으로 <strong>리눅스 cat 명령어 구현하기</strong> 포스팅을 마치겠습니다.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/categories/">Categories</a></li>
+         
+          <li><a href="/feed.xml">RSS</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text"> 😻cat 명령어란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text"> 🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text"> 👍해결법</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text"> 🔎코드</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text"> 🕶적용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 🎞마무리</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://ywbird.github.io/windows/cat/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://ywbird.github.io/windows/cat/&text=리눅스 cat 명령어 구현하기"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://ywbird.github.io/windows/cat/&is_video=false&description=리눅스 cat 명령어 구현하기"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=리눅스 cat 명령어 구현하기&body=Check out this article: https://ywbird.github.io/windows/cat/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://ywbird.github.io/windows/cat/&title=리눅스 cat 명령어 구현하기"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://ywbird.github.io/windows/cat/&name=리눅스 cat 명령어 구현하기&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://ywbird.github.io/windows/cat/&t=리눅스 cat 명령어 구현하기"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> Table of Content</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021-2022
+    고앵이
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/feed.xml">RSS</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+  <!-- <script type="text/javascript">
+    const giscus_repo = 'ywbird/comments'
+    const giscus_repo_id = 'R_kgDOGNocVg'
+    const giscus_category = 'Announcements'
+    const giscus_category_id = 'DIC_kwDOGNocVs4CBQ6g'
+    const giscus_mapping = 'title'
+    const giscus_reaction_enabled = ''
+    const giscus_emit_metadata = '0'
+    const giscus_input_position = 'top'
+    const giscus_theme = 'dark_protanopia'
+    const giscus_lang = 'en'
+    const giscus_crossorigin = 'anonymous'
+  <script/> -->
+  <script
+  src="https://giscus.app/client.js"
+  data-repo="ywbird/comments"
+  data-repo-id="R_kgDOGNocVg"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOGNocVs4CBQ6g"
+  data-mapping="title"
+  data-reactions-enabled=""
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="dark_protanopia"
+  data-lang=""
+  crossorigin="anonymous"
+  async></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"position":"left","width":200,"height":400,"hOffset":20,"vOffset":-30},"mobile":{"show":false,"scale":0.4},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script></body>
+</html>
