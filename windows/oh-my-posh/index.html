@@ -10,7 +10,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="파워쉘에 oh-my-posh 설정하기">
 <meta property="og:url" content="https://ywbird.github.io/windows/oh-my-posh/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="파워쉘을 간지나게 만들어 봅시다.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/156686019-68c4d49f-1fe2-4d6c-aee9-e2c06058c7f4.png">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://github.com/dahlbyk/posh-git/wiki/images/PromptDefaultLong.png">
 <meta property="og:image" content="https://github.com/devblackops/Terminal-Icons/raw/main/media/screenshot.png">
 <meta property="article:published_time" content="2022-03-04T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-03T14:14:13.053Z">
+<meta property="article:modified_time" content="2022-06-12T11:19:57.847Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/83404333/156686019-68c4d49f-1fe2-4d6c-aee9-e2c06058c7f4.png">
@@ -39,17 +39,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -64,7 +64,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -123,7 +123,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text"> 미리보기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#powershell-7-%EC%84%A4%EC%B9%98"><span class="toc-number">2.</span> <span class="toc-text"> PowerShell 7 설치</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nerd-%ED%8F%B0%ED%8A%B8-%EC%84%A4%EC%B9%98"><span class="toc-number">3.</span> <span class="toc-text"> Nerd 폰트 설치</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#windows-terminal-preview-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">4.</span> <span class="toc-text"> Windows Terminal Preview 설치하기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#oh-my-posh-%EC%84%A4%EC%B9%98"><span class="toc-number">5.</span> <span class="toc-text"> Oh-My-Posh 설치</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#posh-git-%EC%84%A4%EC%B9%98"><span class="toc-number">5.1.</span> <span class="toc-text"> Posh-Git 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#terminal-icons-%EC%84%A4%EC%B9%98"><span class="toc-number">5.2.</span> <span class="toc-text"> Terminal-Icons 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#powershell-startup%EC%97%90-%EB%93%B1%EB%A1%9D"><span class="toc-number">5.3.</span> <span class="toc-text"> PowerShell StartUp에 등록</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text">미리보기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PowerShell-7-%EC%84%A4%EC%B9%98"><span class="toc-number">2.</span> <span class="toc-text">PowerShell 7 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nerd-%ED%8F%B0%ED%8A%B8-%EC%84%A4%EC%B9%98"><span class="toc-number">3.</span> <span class="toc-text">Nerd 폰트 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows-Terminal-Preview-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">4.</span> <span class="toc-text">Windows Terminal Preview 설치하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Oh-My-Posh-%EC%84%A4%EC%B9%98"><span class="toc-number">5.</span> <span class="toc-text">Oh-My-Posh 설치</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Posh-Git-%EC%84%A4%EC%B9%98"><span class="toc-number">5.1.</span> <span class="toc-text">Posh-Git 설치</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Terminal-Icons-%EC%84%A4%EC%B9%98"><span class="toc-number">5.2.</span> <span class="toc-text">Terminal-Icons 설치</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PowerShell-StartUp%EC%97%90-%EB%93%B1%EB%A1%9D"><span class="toc-number">5.3.</span> <span class="toc-text">PowerShell StartUp에 등록</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -138,7 +138,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -198,85 +198,67 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="미리보기"><a class="markdownIt-Anchor" href="#미리보기"></a> 미리보기</h1>
-<p><img src="https://user-images.githubusercontent.com/83404333/156686019-68c4d49f-1fe2-4d6c-aee9-e2c06058c7f4.png" alt="PowerShell with oh-my-posh" /></p>
-<p>Oh-My-Posh 공식 위키:<br />
-<a target="_blank" rel="noopener" href="https://ohmyposh.dev/">https://ohmyposh.dev/</a></p>
-<h1 id="powershell-7-설치"><a class="markdownIt-Anchor" href="#powershell-7-설치"></a> PowerShell 7 설치</h1>
-<p>PowerShell 7이 설치되여있지 않다면 설치해 주세요.</p>
+    <hr>
+<h2 id="미리보기"><a href="#미리보기" class="headerlink" title="미리보기"></a>미리보기</h2><p><img src="https://user-images.githubusercontent.com/83404333/156686019-68c4d49f-1fe2-4d6c-aee9-e2c06058c7f4.png" alt="PowerShell with oh-my-posh"></p>
+<p>Oh-My-Posh 공식 위키:<br><a target="_blank" rel="noopener" href="https://ohmyposh.dev/">https://ohmyposh.dev/</a></p>
+<h2 id="PowerShell-7-설치"><a href="#PowerShell-7-설치" class="headerlink" title="PowerShell 7 설치"></a>PowerShell 7 설치</h2><p>PowerShell 7이 설치되여있지 않다면 설치해 주세요.</p>
 <blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pwsh.exe</span><br></pre></td></tr></table></figure>
+
 <p>위 명령어를 cmd에 쳐봤을 때 오류가 뜬다면 설치되지 않은 것입니다.</p>
 </blockquote>
 <p>설치 링크: <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi">Installing PowerShell on Windows</a></p>
 <p>MSI 설치를 추천합니다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/156689168-5fb25037-3d03-455c-bdba-88c23383eff6.png" alt="" /><br />
-<img src="https://user-images.githubusercontent.com/83404333/156689172-26b72b38-bfb3-440c-b63a-8136f8c7c2e9.png" alt="" /><br />
-<img src="https://user-images.githubusercontent.com/83404333/156689178-080baffd-6f72-4c9c-b3d0-63a07bde5c72.png" alt="" /><br />
-<img src="https://user-images.githubusercontent.com/83404333/156689179-9e51ae51-3eb9-4afd-9bd9-c9a0b7c73c3b.png" alt="" /></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/156689168-5fb25037-3d03-455c-bdba-88c23383eff6.png"><br><img src="https://user-images.githubusercontent.com/83404333/156689172-26b72b38-bfb3-440c-b63a-8136f8c7c2e9.png"><br><img src="https://user-images.githubusercontent.com/83404333/156689178-080baffd-6f72-4c9c-b3d0-63a07bde5c72.png"><br><img src="https://user-images.githubusercontent.com/83404333/156689179-9e51ae51-3eb9-4afd-9bd9-c9a0b7c73c3b.png"></p>
 <blockquote>
-<p>-[x] Add ‘Run with PowerShell 7’ context menu for PowerShell files<br />
-체크하면 <code>.ps1</code>파일을 우클릭 했을때 PowerShell 7으로 열 수 있는 옵션이 추가됩니다.<br />
-<img src="https://user-images.githubusercontent.com/83404333/156690630-1e72be54-ff71-41d0-94b8-23aaf3ff57fe.png" alt="" /></p>
+<p>-[x] Add ‘Run with PowerShell 7’ context menu for PowerShell files<br>체크하면 <code>.ps1</code>파일을 우클릭 했을때 PowerShell 7으로 열 수 있는 옵션이 추가됩니다.<br><img src="https://user-images.githubusercontent.com/83404333/156690630-1e72be54-ff71-41d0-94b8-23aaf3ff57fe.png"></p>
 </blockquote>
 <p>이제 cmd에서 아래 명령어를 쳤을 때 다음과 같이 나온다면 성공입니다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/156690251-e3b1d18d-61af-488d-91a2-453bd1f213e0.png" alt="cmd" /></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/156690251-e3b1d18d-61af-488d-91a2-453bd1f213e0.png" alt="cmd"></p>
 <p>또는 시작 메뉴에서 <strong>pwsh</strong>를 검색해서 아래와 같이 나오면 성공</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/156690399-649a9a78-48d5-4f73-aa6c-b487accce1e2.png" alt="Start Menu" /></p>
-<h1 id="nerd-폰트-설치"><a class="markdownIt-Anchor" href="#nerd-폰트-설치"></a> Nerd 폰트 설치</h1>
-<p>Nerd 폰트 사이트에 들어가 자신이 자주 쓰는 프로그래밍 폰트의 Nerd 폰트 버전을 받으면 됩니다.<br />
-<a target="_blank" rel="noopener" href="https://www.nerdfonts.com/font-downloads">https://www.nerdfonts.com/font-downloads</a></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/156690399-649a9a78-48d5-4f73-aa6c-b487accce1e2.png" alt="Start Menu"></p>
+<h2 id="Nerd-폰트-설치"><a href="#Nerd-폰트-설치" class="headerlink" title="Nerd 폰트 설치"></a>Nerd 폰트 설치</h2><p>Nerd 폰트 사이트에 들어가 자신이 자주 쓰는 프로그래밍 폰트의 Nerd 폰트 버전을 받으면 됩니다.<br><a target="_blank" rel="noopener" href="https://www.nerdfonts.com/font-downloads">https://www.nerdfonts.com/font-downloads</a></p>
 <p>(저자는 현제 <code>JetBrainsMono Nerd Font</code>를 사용하고 있습니다.)</p>
-<h1 id="windows-terminal-preview-설치하기"><a class="markdownIt-Anchor" href="#windows-terminal-preview-설치하기"></a> Windows Terminal Preview 설치하기</h1>
-<p>Microsoft Store 에 들어가서 windows terminal preview 를 검색하고 다운받습니다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/156710931-8106167a-f7be-400a-80c4-5a27ce2e2356.png" alt="" /><br />
-<img src="https://user-images.githubusercontent.com/83404333/156711070-bb8c34a8-48f9-4bbf-a53f-0730ded8219e.png" alt="" /></p>
-<p>Microsoft Store 링크:<br />
-<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n8g5rfz9xk3">https://www.microsoft.com/en-us/p/windows-terminal-preview/9n8g5rfz9xk3</a></p>
+<h2 id="Windows-Terminal-Preview-설치하기"><a href="#Windows-Terminal-Preview-설치하기" class="headerlink" title="Windows Terminal Preview 설치하기"></a>Windows Terminal Preview 설치하기</h2><p>Microsoft Store 에 들어가서 windows terminal preview 를 검색하고 다운받습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/156710931-8106167a-f7be-400a-80c4-5a27ce2e2356.png"><br><img src="https://user-images.githubusercontent.com/83404333/156711070-bb8c34a8-48f9-4bbf-a53f-0730ded8219e.png"></p>
+<p>Microsoft Store 링크:<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n8g5rfz9xk3">https://www.microsoft.com/en-us/p/windows-terminal-preview/9n8g5rfz9xk3</a></p>
 <ol>
-<li>설정을 누릅니다.<img src="https://user-images.githubusercontent.com/83404333/156713051-8083a973-14d3-4925-9ad7-20c27db1d9df.png" alt="Windows Terminal Preview" /></li>
-<li>기본 시작 쉘을 PowerShell 7로 바꿔줍니다.<img src="https://user-images.githubusercontent.com/83404333/156713210-8f483558-1a97-48e0-a958-27e77b969847.png" alt="Settings" /></li>
-<li>기본 프로필을 누르고 <code>Appearance</code>를 누릅니다.<img src="https://user-images.githubusercontent.com/83404333/156713528-32003831-a251-4d99-b3e5-f1af745e10b5.png" alt="Appearance" /></li>
-<li>색 테마로 가장 무난한 <code>Campbell</code>을 선택합니다.(다른 테마를 다운받거나 불러올 수도 있습니다.)<br />
-폰트를 아까 다운받은 Nerd폰트로 바꿔줍니다.(만약 보이지 않는다면 <code>Show all fonts</code>에 체크한 후 찾습니다.)<br />
-마지막으로 <code>Save</code>를 눌러 저장한후 Windows Terminal Preview를 재시작 합니다.<br />
-<img src="https://user-images.githubusercontent.com/83404333/156713657-c9b92cd5-29ab-448d-a7f1-f04f61779c69.png" alt="Appearance" /></li>
+<li>설정을 누릅니다.<img src="https://user-images.githubusercontent.com/83404333/156713051-8083a973-14d3-4925-9ad7-20c27db1d9df.png" alt="Windows Terminal Preview"></li>
+<li>기본 시작 쉘을 PowerShell 7로 바꿔줍니다.<img src="https://user-images.githubusercontent.com/83404333/156713210-8f483558-1a97-48e0-a958-27e77b969847.png" alt="Settings"></li>
+<li>기본 프로필을 누르고 <code>Appearance</code>를 누릅니다.<img src="https://user-images.githubusercontent.com/83404333/156713528-32003831-a251-4d99-b3e5-f1af745e10b5.png" alt="Appearance"></li>
+<li>색 테마로 가장 무난한 <code>Campbell</code>을 선택합니다.(다른 테마를 다운받거나 불러올 수도 있습니다.)<br>폰트를 아까 다운받은 Nerd폰트로 바꿔줍니다.(만약 보이지 않는다면 <code>Show all fonts</code>에 체크한 후 찾습니다.)<br>마지막으로 <code>Save</code>를 눌러 저장한후 Windows Terminal Preview를 재시작 합니다.<br><img src="https://user-images.githubusercontent.com/83404333/156713657-c9b92cd5-29ab-448d-a7f1-f04f61779c69.png" alt="Appearance"></li>
 </ol>
-<h1 id="oh-my-posh-설치"><a class="markdownIt-Anchor" href="#oh-my-posh-설치"></a> Oh-My-Posh 설치</h1>
-<p>PowerShell 7을 실행한 후 다음 명령어롤 실행해 줍니다.</p>
+<h2 id="Oh-My-Posh-설치"><a href="#Oh-My-Posh-설치" class="headerlink" title="Oh-My-Posh 설치"></a>Oh-My-Posh 설치</h2><p>PowerShell 7을 실행한 후 다음 명령어롤 실행해 줍니다.</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Install-Module</span> <span class="built_in">oh</span><span class="literal">-my-posh</span> <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p><span class="emoji" alias="skull" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f480.png?v8">💀</span>만약 에러가 난다면 PowerShell 7을 관리자 권한으로 실행해 주세요.</p>
+<p><span class="emoji" alias="skull" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f480.png?v8">&amp;#x1f480;</span>만약 에러가 난다면 PowerShell 7을 관리자 권한으로 실행해 주세요.</p>
 </blockquote>
-<h2 id="posh-git-설치"><a class="markdownIt-Anchor" href="#posh-git-설치"></a> Posh-Git 설치</h2>
-<p><strong>Posh-Git</strong>은 Oh-My-Posh를 사용할 때 깃이 사용된 폴더에 들어가면 현재 깃의 상태를 알려주는 모듈이다.</p>
-<p>Posh-Git 깃헙 레포지토리:<br />
-<a target="_blank" rel="noopener" href="https://github.com/dahlbyk/posh-git">https://github.com/dahlbyk/posh-git</a></p>
+<h3 id="Posh-Git-설치"><a href="#Posh-Git-설치" class="headerlink" title="Posh-Git 설치"></a>Posh-Git 설치</h3><p><strong>Posh-Git</strong>은 Oh-My-Posh를 사용할 때 깃이 사용된 폴더에 들어가면 현재 깃의 상태를 알려주는 모듈이다.</p>
+<p>Posh-Git 깃헙 레포지토리:<br><a target="_blank" rel="noopener" href="https://github.com/dahlbyk/posh-git">https://github.com/dahlbyk/posh-git</a></p>
 <p>다음 명령어로 설치할 수 있다.</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PowerShellGet\<span class="built_in">Install-Module</span> posh<span class="literal">-git</span> <span class="literal">-Scope</span> CurrentUser <span class="literal">-Force</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://github.com/dahlbyk/posh-git/wiki/images/PromptDefaultLong.png" alt="스크린샷" /><br />
-<code>이미지 출처: Posh-Git 깃헙</code></p>
-<h2 id="terminal-icons-설치"><a class="markdownIt-Anchor" href="#terminal-icons-설치"></a> Terminal-Icons 설치</h2>
-<p><strong>Terminal-Icons</strong>은 PowerShell 용 아이콘 추가 모듈이다.</p>
+
+<p><img src="https://github.com/dahlbyk/posh-git/wiki/images/PromptDefaultLong.png" alt="스크린샷"><br><code>이미지 출처: Posh-Git 깃헙</code></p>
+<h3 id="Terminal-Icons-설치"><a href="#Terminal-Icons-설치" class="headerlink" title="Terminal-Icons 설치"></a>Terminal-Icons 설치</h3><p><strong>Terminal-Icons</strong>은 PowerShell 용 아이콘 추가 모듈이다.</p>
 <p><code>dir</code>명령어 같은 명령어를 쓰면 아이콘이 추가적으로 생긴다.</p>
-<p>Terminal-Icons 깃헙 레포지토리:<br />
-<a target="_blank" rel="noopener" href="https://github.com/devblackops/Terminal-Icons">https://github.com/devblackops/Terminal-Icons</a></p>
+<p>Terminal-Icons 깃헙 레포지토리:<br><a target="_blank" rel="noopener" href="https://github.com/devblackops/Terminal-Icons">https://github.com/devblackops/Terminal-Icons</a></p>
 <p>다음 명령어로 설치할 수 있다.</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Install-Module</span> <span class="literal">-Name</span> Terminal<span class="literal">-Icons</span> <span class="literal">-Repository</span> PSGallery</span><br></pre></td></tr></table></figure>
-<p><img src="https://github.com/devblackops/Terminal-Icons/raw/main/media/screenshot.png" alt="스크린샷" /><br />
-<code>이미지 출처: Terminal-Icons 깃헙</code></p>
-<h2 id="powershell-startup에-등록"><a class="markdownIt-Anchor" href="#powershell-startup에-등록"></a> PowerShell StartUp에 등록</h2>
-<p>PowerShell 7창에 다음과 같이 칩니다.</p>
+
+<p><img src="https://github.com/devblackops/Terminal-Icons/raw/main/media/screenshot.png" alt="스크린샷"><br><code>이미지 출처: Terminal-Icons 깃헙</code></p>
+<h3 id="PowerShell-StartUp에-등록"><a href="#PowerShell-StartUp에-등록" class="headerlink" title="PowerShell StartUp에 등록"></a>PowerShell StartUp에 등록</h3><p>PowerShell 7창에 다음과 같이 칩니다.</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code <span class="variable">$profile</span></span><br></pre></td></tr></table></figure>
+
 <p>내용을 다음과 같이 추가합니다.</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Import-Module</span> posh<span class="literal">-git</span></span><br><span class="line"><span class="built_in">Import-Module</span> <span class="built_in">oh</span><span class="literal">-my-posh</span></span><br><span class="line"><span class="built_in">Import-Module</span> <span class="literal">-Name</span> Terminal<span class="literal">-Icons</span></span><br><span class="line"><span class="built_in">Set-PoshPrompt</span> <span class="literal">-Theme</span> bubblesline</span><br></pre></td></tr></table></figure>
+
 <p>여기서 <code>Set-PoshPrompt -Theme [테마]</code>로 테마를 고를 수 있는데 테마는 직접 만들 수도 있고 기본으로 있는 테마를 고를 수도 있습니다.</p>
-<p>Oh-My-Posh 테마 목록<br />
-<a target="_blank" rel="noopener" href="https://ohmyposh.dev/docs/themes">https://ohmyposh.dev/docs/themes</a></p>
+<p>Oh-My-Posh 테마 목록<br><a target="_blank" rel="noopener" href="https://ohmyposh.dev/docs/themes">https://ohmyposh.dev/docs/themes</a></p>
 <blockquote>
 <p>❓만약 자동 완성을 사용하고 싶다면 <code>$profile</code>에</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-PSReadLineOption</span> <span class="literal">-PredictionSource</span> <span class="built_in">History</span></span><br></pre></td></tr></table></figure>
+
 <p>를 추가하시면 됩니다.</p>
 </blockquote>
 
@@ -306,7 +288,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text"> 미리보기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#powershell-7-%EC%84%A4%EC%B9%98"><span class="toc-number">2.</span> <span class="toc-text"> PowerShell 7 설치</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nerd-%ED%8F%B0%ED%8A%B8-%EC%84%A4%EC%B9%98"><span class="toc-number">3.</span> <span class="toc-text"> Nerd 폰트 설치</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#windows-terminal-preview-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">4.</span> <span class="toc-text"> Windows Terminal Preview 설치하기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#oh-my-posh-%EC%84%A4%EC%B9%98"><span class="toc-number">5.</span> <span class="toc-text"> Oh-My-Posh 설치</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#posh-git-%EC%84%A4%EC%B9%98"><span class="toc-number">5.1.</span> <span class="toc-text"> Posh-Git 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#terminal-icons-%EC%84%A4%EC%B9%98"><span class="toc-number">5.2.</span> <span class="toc-text"> Terminal-Icons 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#powershell-startup%EC%97%90-%EB%93%B1%EB%A1%9D"><span class="toc-number">5.3.</span> <span class="toc-text"> PowerShell StartUp에 등록</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text">미리보기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PowerShell-7-%EC%84%A4%EC%B9%98"><span class="toc-number">2.</span> <span class="toc-text">PowerShell 7 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nerd-%ED%8F%B0%ED%8A%B8-%EC%84%A4%EC%B9%98"><span class="toc-number">3.</span> <span class="toc-text">Nerd 폰트 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows-Terminal-Preview-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">4.</span> <span class="toc-text">Windows Terminal Preview 설치하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Oh-My-Posh-%EC%84%A4%EC%B9%98"><span class="toc-number">5.</span> <span class="toc-text">Oh-My-Posh 설치</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Posh-Git-%EC%84%A4%EC%B9%98"><span class="toc-number">5.1.</span> <span class="toc-text">Posh-Git 설치</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Terminal-Icons-%EC%84%A4%EC%B9%98"><span class="toc-number">5.2.</span> <span class="toc-text">Terminal-Icons 설치</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PowerShell-StartUp%EC%97%90-%EB%93%B1%EB%A1%9D"><span class="toc-number">5.3.</span> <span class="toc-text">PowerShell StartUp에 등록</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

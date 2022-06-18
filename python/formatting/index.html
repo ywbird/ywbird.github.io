@@ -10,11 +10,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="파이썬 포매팅">
 <meta property="og:url" content="https://ywbird.github.io/python/formatting/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="파이썬 포매팅의 쓸모와 사용법">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-11T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-03T05:22:09.809Z">
+<meta property="article:modified_time" content="2022-06-12T11:15:30.206Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
     
@@ -22,17 +22,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -47,7 +47,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -106,7 +106,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EC%93%B8%EB%AA%A8"><span class="toc-number">1.</span> <span class="toc-text"> 문자열 포매팅의 쓸모</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EB%B0%A9%EB%B2%95"><span class="toc-number">2.</span> <span class="toc-text"> 포매팅의 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-c-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.</span> <span class="toc-text"> 1 . C 방식 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 문자열 포맷 코드</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C%EC%99%80-%EC%88%AB%EC%9E%90-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 포맷 코드와 숫자 함께 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC"><span class="toc-number">2.1.2.1.</span> <span class="toc-text"> 정렬</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84"><span class="toc-number">2.1.2.1.1.</span> <span class="toc-text"> 소수점 표현</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-format-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B0%A9%EC%8B%9D"><span class="toc-number">2.2.</span> <span class="toc-text"> 2 . format 함수를 이용 방식 사용하기(파이썬 방식)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EA%B0%92%EC%9D%84-%EB%8C%80%EC%9E%85%ED%95%A0%EB%95%8C-%EB%B3%80%EC%88%98%EB%A1%9C-%EB%84%A3%EA%B8%B0"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 값을 대입할때 변수로 넣기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC-2"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 정렬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EA%B3%B5%EB%B0%B1%EC%9D%84-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EC%B1%84%EC%9A%B0%EA%B8%B0"><span class="toc-number">2.2.3.</span> <span class="toc-text"> 공백을 값으로 채우기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84-2"><span class="toc-number">2.2.4.</span> <span class="toc-text"> 소수점 표현</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-f-%ED%8F%AC%EB%A9%94%ED%8C%85-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. f 포메팅 문자 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text"> &quot;{&quot;, &quot;}&quot; 문자 사용하기</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EC%93%B8%EB%AA%A8"><span class="toc-number">1.</span> <span class="toc-text">문자열 포매팅의 쓸모</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EB%B0%A9%EB%B2%95"><span class="toc-number">2.</span> <span class="toc-text">포매팅의 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-C-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.</span> <span class="toc-text">1 . C 방식 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C"><span class="toc-number">2.1.1.</span> <span class="toc-text">문자열 포맷 코드</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C%EC%99%80-%EC%88%AB%EC%9E%90-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.2.</span> <span class="toc-text">포맷 코드와 숫자 함께 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">정렬</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84"><span class="toc-number">2.1.2.1.1.</span> <span class="toc-text">소수점 표현</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-format-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B0%A9%EC%8B%9D"><span class="toc-number">2.2.</span> <span class="toc-text">2 . format 함수를 이용 방식 사용하기(파이썬 방식)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EA%B0%92%EC%9D%84-%EB%8C%80%EC%9E%85%ED%95%A0%EB%95%8C-%EB%B3%80%EC%88%98%EB%A1%9C-%EB%84%A3%EA%B8%B0"><span class="toc-number">2.2.1.</span> <span class="toc-text">값을 대입할때 변수로 넣기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC-1"><span class="toc-number">2.2.2.</span> <span class="toc-text">정렬</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EA%B3%B5%EB%B0%B1%EC%9D%84-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EC%B1%84%EC%9A%B0%EA%B8%B0"><span class="toc-number">2.2.3.</span> <span class="toc-text">공백을 값으로 채우기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84-1"><span class="toc-number">2.2.4.</span> <span class="toc-text">소수점 표현</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-f-%ED%8F%AC%EB%A9%94%ED%8C%85-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.</span> <span class="toc-text">3. f 포메팅 문자 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#quot-quot-quot-quot-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text">&quot;{&quot;, &quot;}&quot; 문자 사용하기</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -121,7 +121,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -181,118 +181,116 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="문자열-포매팅의-쓸모"><a class="markdownIt-Anchor" href="#문자열-포매팅의-쓸모"></a> 문자열 포매팅의 쓸모</h1>
-<p>먼저 글자를 출력하는 예를 봅시다.</p>
+    <hr>
+<h2 id="문자열-포매팅의-쓸모"><a href="#문자열-포매팅의-쓸모" class="headerlink" title="문자열 포매팅의 쓸모"></a>문자열 포매팅의 쓸모</h2><p>먼저 글자를 출력하는 예를 봅시다.</p>
 <blockquote>
 <p>바나나가 <code>1</code>개가 있다.<br>바나나가 <code>2</code>개가 있다.</p>
 </blockquote>
 <p>여기서 바뀐 점은 1과 2뿐입니다.</p>
 <p>이 두 문자열을 프린팅을 할 때 두 문자열을 모두 출력하려면 다음과 같은 코드가 필요합니다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 1개가 있다.&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 2개가 있다.&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>지금은 겨우 2개라서 별로 그래 보이지 않지만 생활 코딩님이 그러셨습니다.<br />
-코딩을 할 때는 극단적으로 생각하라고. 같은 항목이 1억 개가 있다고 생각하세요.</p>
+
+<p>지금은 겨우 2개라서 별로 그래 보이지 않지만 생활 코딩님이 그러셨습니다.<br>코딩을 할 때는 극단적으로 생각하라고. 같은 항목이 1억 개가 있다고 생각하세요.</p>
 <p>그렇다면</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 1개가 있다.&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 2개가 있다.&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 3개가 있다.&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;바나나가 4개가 있다.&quot;</span>)</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br></pre></td></tr></table></figure>
-<p>이렇게 1억줄의 코드를 쓰기에는 시간이 너무 아깝지 않나요?<br />
-이때 포매팅을 쓸 수 있습니다.</p>
-<h1 id="포매팅의-방법"><a class="markdownIt-Anchor" href="#포매팅의-방법"></a> 포매팅의 방법</h1>
-<p>먼저 문자열 포매팅의 다양한 사용법을 알아보자.</p>
-<h2 id="1-c-방식-사용하기"><a class="markdownIt-Anchor" href="#1-c-방식-사용하기"></a> 1 . C 방식 사용하기</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="string">&quot;바나나가 %d개가 있다.&quot;</span> % <span class="number">1</span>)</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>이렇게 1억줄의 코드를 쓰기에는 시간이 너무 아깝지 않나요?<br>이때 포매팅을 쓸 수 있습니다.</p>
+<h2 id="포매팅의-방법"><a href="#포매팅의-방법" class="headerlink" title="포매팅의 방법"></a>포매팅의 방법</h2><p>먼저 문자열 포매팅의 다양한 사용법을 알아보자.</p>
+<h3 id="1-C-방식-사용하기"><a href="#1-C-방식-사용하기" class="headerlink" title="1 . C 방식 사용하기"></a>1 . C 방식 사용하기</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="string">&quot;바나나가 %d개가 있다.&quot;</span> % <span class="number">1</span>)</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>다음 코드에서 문자열 뒤에 붙인 <code>% 1</code> 이 문자열 안 <code>%d</code>의 위치에 들어간 것이다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="string">&quot;바나나가 %d개가 있다.&quot;</span> % <span class="number">1</span>)</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>다음처럼 변수를 넣을 수도 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>banana = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;바나나가 %d개가 있다.&quot;</span> % banana</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>만약 두 개 이상의 값을 포매팅 해야 한다면 <code>% 1</code>을 <code>% (1, 2, 3)</code> 등으로 <code>()</code>괄호 안에 넣어서 표현할 수 있습니다.</p>
 <p>만약 문자열 속에 <code>&quot;%&quot;</code> 글자를 넣고 싶다면 <code>&quot;%%&quot;</code>를 사용해야 한다. 이렇게 말이다.</p>
- <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%d%% 세일!!&quot;</span> % <span class="number">80</span></span><br><span class="line"><span class="string">&quot;80% 세일!!&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="문자열-포맷-코드"><a class="markdownIt-Anchor" href="#문자열-포맷-코드"></a> 문자열 포맷 코드</h3>
-<table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%d%% 세일!!&quot;</span> % <span class="number">80</span></span><br><span class="line"><span class="string">&quot;80% 세일!!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="문자열-포맷-코드"><a href="#문자열-포맷-코드" class="headerlink" title="문자열 포맷 코드"></a>문자열 포맷 코드</h4><table>
 <thead>
 <tr>
-<th style="text-align:center">코드</th>
-<th style="text-align:left">설명</th>
+<th align="center">코드</th>
+<th align="left">설명</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">%s</td>
-<td style="text-align:left">문자열(String)</td>
+<tbody><tr>
+<td align="center">%s</td>
+<td align="left">문자열(String)</td>
 </tr>
 <tr>
-<td style="text-align:center">%c</td>
-<td style="text-align:left">문자 1개(Character)</td>
+<td align="center">%c</td>
+<td align="left">문자 1개(Character)</td>
 </tr>
 <tr>
-<td style="text-align:center">%d</td>
-<td style="text-align:left">정수(Integer)</td>
+<td align="center">%d</td>
+<td align="left">정수(Integer)</td>
 </tr>
 <tr>
-<td style="text-align:center">%f</td>
-<td style="text-align:left">부동소수(Floating Point)</td>
+<td align="center">%f</td>
+<td align="left">부동소수(Floating Point)</td>
 </tr>
 <tr>
-<td style="text-align:center">%o</td>
-<td style="text-align:left">8진수(Octal)</td>
+<td align="center">%o</td>
+<td align="left">8진수(Octal)</td>
 </tr>
 <tr>
-<td style="text-align:center">%x</td>
-<td style="text-align:left">16진수(Hexadecimal(hex))</td>
+<td align="center">%x</td>
+<td align="left">16진수(Hexadecimal(hex))</td>
 </tr>
 <tr>
-<td style="text-align:center">%%</td>
-<td style="text-align:left">문자 “%”</td>
+<td align="center">%%</td>
+<td align="left">문자 “%”</td>
 </tr>
-</tbody>
-</table>
-<h3 id="포맷-코드와-숫자-함께-사용하기"><a class="markdownIt-Anchor" href="#포맷-코드와-숫자-함께-사용하기"></a> 포맷 코드와 숫자 함께 사용하기</h3>
-<p>개인적으로 이 부분은 거의 쓰지않는다;;</p>
-<h4 id="정렬"><a class="markdownIt-Anchor" href="#정렬"></a> 정렬</h4>
-<p>다음과 같이 <code>%&lt;숫자&gt;s</code>를 넣으면 &lt;숫자&gt; 만큼의 공백(&quot; &quot;)의 속에 포맷을 한 값을 공백 뒤에 넣는다.</p>
+</tbody></table>
+<h4 id="포맷-코드와-숫자-함께-사용하기"><a href="#포맷-코드와-숫자-함께-사용하기" class="headerlink" title="포맷 코드와 숫자 함께 사용하기"></a>포맷 코드와 숫자 함께 사용하기</h4><p>개인적으로 이 부분은 거의 쓰지않는다;;</p>
+<h5 id="정렬"><a href="#정렬" class="headerlink" title="정렬"></a>정렬</h5><p>다음과 같이 <code>%&lt;숫자&gt;s</code>를 넣으면 &lt;숫자&gt; 만큼의 공백(“ “)의 속에 포맷을 한 값을 공백 뒤에 넣는다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%15s&quot;</span> % <span class="string">&quot;nyan&quot;</span></span><br><span class="line"><span class="string">&#x27;           nyan&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>다음과같이 코드를 짠다면</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%-15s&quot;</span> % <span class="string">&quot;nyan&quot;</span></span><br><span class="line"><span class="string">&#x27;nyan           &#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>다음과같이 앞에 포맷값이 들어간다.</p>
-<h5 id="소수점-표현"><a class="markdownIt-Anchor" href="#소수점-표현"></a> 소수점 표현</h5>
-<p>다음과같이 <code>%&lt;숫자1&gt;.&lt;숫자2&gt;f</code>를 넣으면 &lt;숫자1&gt; 은 공백 정렬과 같은 효과, &lt;숫자2&gt;는 소수점 아래 &lt;숫자2&gt;까지 나올 숫자의 개수를 말한다.</p>
+<h6 id="소수점-표현"><a href="#소수점-표현" class="headerlink" title="소수점 표현"></a>소수점 표현</h6><p>다음과같이 <code>%&lt;숫자1&gt;.&lt;숫자2&gt;f</code>를 넣으면 &lt;숫자1&gt; 은 공백 정렬과 같은 효과, &lt;숫자2&gt;는 소수점 아래 &lt;숫자2&gt;까지 나올 숫자의 개수를 말한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%0.6f&quot;</span> % <span class="number">3.14159265358979323846264</span></span><br><span class="line"><span class="string">&#x27;3.141592&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;%15.6f&quot;</span> % <span class="number">3.14159265358979323846264</span></span><br><span class="line"><span class="string">&#x27;       3.141592&#x27;</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-format-함수를-이용-방식-사용하기파이썬-방식"><a class="markdownIt-Anchor" href="#2-format-함수를-이용-방식-사용하기파이썬-방식"></a> 2 . format 함수를 이용 방식 사용하기(파이썬 방식)</h2>
-<p>format 함수 방식은 앞에나온 C 방식보다 더 쉽고 나은 방식이다.</p>
+
+<h3 id="2-format-함수를-이용-방식-사용하기-파이썬-방식"><a href="#2-format-함수를-이용-방식-사용하기-파이썬-방식" class="headerlink" title="2 . format 함수를 이용 방식 사용하기(파이썬 방식)"></a>2 . format 함수를 이용 방식 사용하기(파이썬 방식)</h3><p>format 함수 방식은 앞에나온 C 방식보다 더 쉽고 나은 방식이다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;바나나가 &#123;0&#125;개가 있다.&quot;</span>.<span class="built_in">format</span>(<span class="number">1</span>)</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p><code>&#123;0&#125;</code> 부분이 <code>.fotmat()</code> 에 나오는 인덱스 값이다.</p>
 <p><code>&#123;0&#125;</code>에 <code>.format(1, 2, 3)</code>에서 0번째인 1을 넣는다.</p>
 <p>만약 두개이상의 값을 넣을려면 당연하게도 문자열에 <code>&#123;0&#125;</code>외에도 <code>&#123;1&#125;</code>, <code>&#123;2&#125;</code>등을 넣어주면 된다.</p>
-<h3 id="값을-대입할때-변수로-넣기"><a class="markdownIt-Anchor" href="#값을-대입할때-변수로-넣기"></a> 값을 대입할때 변수로 넣기</h3>
-<p>다음과같이 인덱스를 넣을때 변수에 넣을 수 있다.</p>
+<h4 id="값을-대입할때-변수로-넣기"><a href="#값을-대입할때-변수로-넣기" class="headerlink" title="값을 대입할때 변수로 넣기"></a>값을 대입할때 변수로 넣기</h4><p>다음과같이 인덱스를 넣을때 변수에 넣을 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;바나나가 &#123;banana&#125;개가 있다.&quot;</span>.<span class="built_in">format</span>(banana=<span class="number">1</span>)</span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="정렬-2"><a class="markdownIt-Anchor" href="#정렬-2"></a> 정렬</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:&lt;10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan      &#x27;</span></span><br></pre></td></tr></table></figure>
-<p><code>:&lt;[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(&quot; &quot;)의 왼쪽에 삽입한다.</p>
+
+<h4 id="정렬-1"><a href="#정렬-1" class="headerlink" title="정렬"></a>정렬</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:&lt;10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan      &#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>:&lt;[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(“ “)의 왼쪽에 삽입한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:&gt;10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan      &#x27;</span></span><br></pre></td></tr></table></figure>
-<p><code>:&gt;[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(&quot; &quot;)의 오른쪽에 삽입한다.</p>
+
+<p><code>:&gt;[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(“ “)의 오른쪽에 삽입한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:^10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan      &#x27;</span></span><br></pre></td></tr></table></figure>
-<p><code>:^[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(&quot; &quot;)의 가운데에 삽입한다.</p>
-<h3 id="공백을-값으로-채우기"><a class="markdownIt-Anchor" href="#공백을-값으로-채우기"></a> 공백을 값으로 채우기</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:-&lt;10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan------&#x27;</span></span><br></pre></td></tr></table></figure>
-<p><code>:[문자][기호][숫자]</code>를 사용하면 공백(&quot; &quot;) 대신 문자가 채우게 된다.</p>
-<h3 id="소수점-표현-2"><a class="markdownIt-Anchor" href="#소수점-표현-2"></a> 소수점 표현</h3>
-<p>다음과같이 <code>%&lt;숫자1&gt;.&lt;숫자2&gt;f</code>를 넣으면 &lt;숫자1&gt; 은 공백 정렬과 같은 효과, &lt;숫자2&gt;는 소수점 아래 &lt;숫자2&gt;까지 나올 숫자의 개수를 말한다.</p>
+
+<p><code>:^[숫자]</code>를 사용하면 포맷된 값을 [숫자]만큼 공백(“ “)의 가운데에 삽입한다.</p>
+<h4 id="공백을-값으로-채우기"><a href="#공백을-값으로-채우기" class="headerlink" title="공백을 값으로 채우기"></a>공백을 값으로 채우기</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:-&lt;10&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;nyan&quot;</span>)</span><br><span class="line"><span class="string">&#x27;nyan------&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>:[문자][기호][숫자]</code>를 사용하면 공백(“ “) 대신 문자가 채우게 된다.</p>
+<h4 id="소수점-표현-1"><a href="#소수점-표현-1" class="headerlink" title="소수점 표현"></a>소수점 표현</h4><p>다음과같이 <code>%&lt;숫자1&gt;.&lt;숫자2&gt;f</code>를 넣으면 &lt;숫자1&gt; 은 공백 정렬과 같은 효과, &lt;숫자2&gt;는 소수점 아래 &lt;숫자2&gt;까지 나올 숫자의 개수를 말한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;&#123;0:0.6f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.14159265358979323846264</span>)</span><br><span class="line"><span class="string">&#x27;       3.141592&#x27;</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-f-포메팅-문자-사용하기"><a class="markdownIt-Anchor" href="#3-f-포메팅-문자-사용하기"></a> 3. f 포메팅 문자 사용하기</h2>
-<p>저자는 방식을 가장 많이 사용한다</p>
+
+<h3 id="3-f-포메팅-문자-사용하기"><a href="#3-f-포메팅-문자-사용하기" class="headerlink" title="3. f 포메팅 문자 사용하기"></a>3. f 포메팅 문자 사용하기</h3><p>저자는 방식을 가장 많이 사용한다</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>banana = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">f&#x27;바나나가 <span class="subst">&#123;banana&#125;</span>개가 있다.&#x27;</span></span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>또는</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">f&#x27;바나나가 <span class="subst">&#123;<span class="number">1</span>&#125;</span>개가 있다.&#x27;</span></span><br><span class="line"><span class="string">&#x27;바나나가 1개가 있다.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>이처럼 문자열 앞에 <code>f</code>를 붙여주고 포메팅 할 부분에 <code>&#123;&#125;</code>를 넣고 그 안에 값을 넣는 방식으로 가장 심플하고 쉽게 쓸 수 있다.</p>
 <p>문자열 앞에 <code>f</code>를 붙여준다는점을 제외하고는 앞의 format() 함수 사용과 별차이점이 없기때문에 따로 설명하지는 않겠다.</p>
-<h3 id="문자-사용하기"><a class="markdownIt-Anchor" href="#문자-사용하기"></a> <code>&quot;&#123;&quot;</code>, <code>&quot;&#125;&quot;</code> 문자 사용하기</h3>
-<p><code>&quot;&#123;&quot;, &quot;&#125;&quot;</code>문자를 사용할때는 <code>&quot;&#123;&#123;", "&#125;&#125;&quot;</code>를 사용하면 된다.</p>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 마무리</h1>
-<p>이상으로 <strong>파이썬 문자열 포메팅</strong> 포스팅을 마치겠습니다.</p>
+<h4 id="quot-quot-quot-quot-문자-사용하기"><a href="#quot-quot-quot-quot-문자-사용하기" class="headerlink" title="&quot;{&quot;, &quot;}&quot; 문자 사용하기"></a><code>&quot;&#123;&quot;</code>, <code>&quot;&#125;&quot;</code> 문자 사용하기</h4><p><code>&quot;&#123;&quot;, &quot;&#125;&quot;</code>문자를 사용할때는 <code>&quot;&#123;&#123;", "&#125;&#125;&quot;</code>를 사용하면 된다.</p>
+<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이상으로 <strong>파이썬 문자열 포메팅</strong> 포스팅을 마치겠습니다.</p>
 <blockquote>
-<p>📌 이 포스팅은 <strong>박응용</strong> 님의 <strong>DOIT! 점프투 파이썬</strong>을 보고 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br />
-🎈 <a target="_blank" rel="noopener" href="https://wikidocs.net/book/1"><strong>강의 링크</strong></a></p>
+<p>📌 이 포스팅은 <strong>박응용</strong> 님의 <strong>DOIT! 점프투 파이썬</strong>을 보고 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br>🎈 <a target="_blank" rel="noopener" href="https://wikidocs.net/book/1"><strong>강의 링크</strong></a></p>
 </blockquote>
 
   </div>
@@ -321,7 +319,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EC%93%B8%EB%AA%A8"><span class="toc-number">1.</span> <span class="toc-text"> 문자열 포매팅의 쓸모</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EB%B0%A9%EB%B2%95"><span class="toc-number">2.</span> <span class="toc-text"> 포매팅의 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-c-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.</span> <span class="toc-text"> 1 . C 방식 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 문자열 포맷 코드</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C%EC%99%80-%EC%88%AB%EC%9E%90-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 포맷 코드와 숫자 함께 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC"><span class="toc-number">2.1.2.1.</span> <span class="toc-text"> 정렬</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84"><span class="toc-number">2.1.2.1.1.</span> <span class="toc-text"> 소수점 표현</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-format-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B0%A9%EC%8B%9D"><span class="toc-number">2.2.</span> <span class="toc-text"> 2 . format 함수를 이용 방식 사용하기(파이썬 방식)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EA%B0%92%EC%9D%84-%EB%8C%80%EC%9E%85%ED%95%A0%EB%95%8C-%EB%B3%80%EC%88%98%EB%A1%9C-%EB%84%A3%EA%B8%B0"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 값을 대입할때 변수로 넣기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC-2"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 정렬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EA%B3%B5%EB%B0%B1%EC%9D%84-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EC%B1%84%EC%9A%B0%EA%B8%B0"><span class="toc-number">2.2.3.</span> <span class="toc-text"> 공백을 값으로 채우기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84-2"><span class="toc-number">2.2.4.</span> <span class="toc-text"> 소수점 표현</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-f-%ED%8F%AC%EB%A9%94%ED%8C%85-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. f 포메팅 문자 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text"> &quot;{&quot;, &quot;}&quot; 문자 사용하기</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EC%93%B8%EB%AA%A8"><span class="toc-number">1.</span> <span class="toc-text">문자열 포매팅의 쓸모</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8F%AC%EB%A7%A4%ED%8C%85%EC%9D%98-%EB%B0%A9%EB%B2%95"><span class="toc-number">2.</span> <span class="toc-text">포매팅의 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-C-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.</span> <span class="toc-text">1 . C 방식 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C"><span class="toc-number">2.1.1.</span> <span class="toc-text">문자열 포맷 코드</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%ED%8F%AC%EB%A7%B7-%EC%BD%94%EB%93%9C%EC%99%80-%EC%88%AB%EC%9E%90-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.1.2.</span> <span class="toc-text">포맷 코드와 숫자 함께 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">정렬</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84"><span class="toc-number">2.1.2.1.1.</span> <span class="toc-text">소수점 표현</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-format-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9-%EB%B0%A9%EC%8B%9D-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B0%A9%EC%8B%9D"><span class="toc-number">2.2.</span> <span class="toc-text">2 . format 함수를 이용 방식 사용하기(파이썬 방식)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EA%B0%92%EC%9D%84-%EB%8C%80%EC%9E%85%ED%95%A0%EB%95%8C-%EB%B3%80%EC%88%98%EB%A1%9C-%EB%84%A3%EA%B8%B0"><span class="toc-number">2.2.1.</span> <span class="toc-text">값을 대입할때 변수로 넣기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%A0%95%EB%A0%AC-1"><span class="toc-number">2.2.2.</span> <span class="toc-text">정렬</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EA%B3%B5%EB%B0%B1%EC%9D%84-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EC%B1%84%EC%9A%B0%EA%B8%B0"><span class="toc-number">2.2.3.</span> <span class="toc-text">공백을 값으로 채우기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%86%8C%EC%88%98%EC%A0%90-%ED%91%9C%ED%98%84-1"><span class="toc-number">2.2.4.</span> <span class="toc-text">소수점 표현</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-f-%ED%8F%AC%EB%A9%94%ED%8C%85-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.</span> <span class="toc-text">3. f 포메팅 문자 사용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#quot-quot-quot-quot-%EB%AC%B8%EC%9E%90-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text">&quot;{&quot;, &quot;}&quot; 문자 사용하기</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

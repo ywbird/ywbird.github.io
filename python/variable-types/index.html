@@ -10,14 +10,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="파이썬 변수의 종류들">
 <meta property="og:url" content="https://ywbird.github.io/python/variable-types/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="파이썬의 여러 변수의 속성">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/134754912-fd4c8242-c420-44b0-8250-f82c6aced737.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/134755959-1f4938a4-cea7-48ed-827b-a41c02f0bbd5.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/134756378-6462c42e-ffbc-4c1e-84af-e03def184afb.png">
 <meta property="article:published_time" content="2021-09-18T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-03T05:22:39.232Z">
+<meta property="article:modified_time" content="2022-06-12T11:16:16.089Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/83404333/134754912-fd4c8242-c420-44b0-8250-f82c6aced737.png">
@@ -26,17 +26,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -51,7 +51,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -110,7 +110,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%AA%A9%EC%B0%A8"><span class="toc-number">1.</span> <span class="toc-text"> 간단한 목차</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%88%AB%EC%9E%90-%EB%B3%80%EC%88%98"><span class="toc-number">2.</span> <span class="toc-text"> 숫자 변수</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98"><span class="toc-number">3.</span> <span class="toc-text"> 문자열 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98%EC%9D%98-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95"><span class="toc-number">3.1.</span> <span class="toc-text"> 문자열 변수의 표현 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.</span> <span class="toc-text"> &#39;&#39;로 감싸기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0-2"><span class="toc-number">3.1.1.1.</span> <span class="toc-text"> &quot;&quot;로 감싸기</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%97%AC%EB%9F%AC%EC%A4%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 여러줄 만들기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%86%8D%EC%97%90-%EC%99%80-%EA%B0%80-%EB%91%98%EB%8B%A4-%EB%93%A4%EC%96%B4%EA%B0%80%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 문자열 속에 &quot;와 &#39;가 둘다 들어가있는 경우</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98%EC%9D%98-%EB%B3%80%EC%88%98"><span class="toc-number">4.</span> <span class="toc-text"> 리스트 종류의 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.</span> <span class="toc-text"> 리스트</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 리스트 만들기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8B%B1"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 인덱싱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1"><span class="toc-number">4.1.3.</span> <span class="toc-text"> 슬라이싱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%86%8D%EC%9D%98-%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.4.</span> <span class="toc-text"> 리스트 속의 리스트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text"> 리스트 값 바꾸기</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8A%9C%ED%94%8C"><span class="toc-number">4.2.</span> <span class="toc-text"> 튜플</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC"><span class="toc-number">4.3.</span> <span class="toc-text"> 딕셔너리</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EA%B1%B0%EC%A7%93-%EC%A7%84%EC%8B%A4-%EB%B3%80%EC%88%98"><span class="toc-number">5.</span> <span class="toc-text"> 거짓, 진실 변수</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%AA%A9%EC%B0%A8"><span class="toc-number">1.</span> <span class="toc-text">간단한 목차</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%88%AB%EC%9E%90-%EB%B3%80%EC%88%98"><span class="toc-number">2.</span> <span class="toc-text">숫자 변수</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98"><span class="toc-number">3.</span> <span class="toc-text">문자열 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98%EC%9D%98-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95"><span class="toc-number">3.1.</span> <span class="toc-text">문자열 변수의 표현 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#39-39-%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.</span> <span class="toc-text">&#39;&#39;로 감싸기</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#quot-quot-%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">&quot;&quot;로 감싸기</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%97%AC%EB%9F%AC%EC%A4%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.1.2.</span> <span class="toc-text">여러줄 만들기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%86%8D%EC%97%90-quot-%EC%99%80-39-%EA%B0%80-%EB%91%98%EB%8B%A4-%EB%93%A4%EC%96%B4%EA%B0%80%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="toc-number">3.1.3.</span> <span class="toc-text">문자열 속에 &quot;와 &#39;가 둘다 들어가있는 경우</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98%EC%9D%98-%EB%B3%80%EC%88%98"><span class="toc-number">4.</span> <span class="toc-text">리스트 종류의 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.</span> <span class="toc-text">리스트</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">4.1.1.</span> <span class="toc-text">리스트 만들기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8B%B1"><span class="toc-number">4.1.2.</span> <span class="toc-text">인덱싱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1"><span class="toc-number">4.1.3.</span> <span class="toc-text">슬라이싱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%86%8D%EC%9D%98-%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.4.</span> <span class="toc-text">리스트 속의 리스트</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text">리스트 값 바꾸기</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8A%9C%ED%94%8C"><span class="toc-number">4.2.</span> <span class="toc-text">튜플</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC"><span class="toc-number">4.3.</span> <span class="toc-text">딕셔너리</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B1%B0%EC%A7%93-%EC%A7%84%EC%8B%A4-%EB%B3%80%EC%88%98"><span class="toc-number">5.</span> <span class="toc-text">거짓, 진실 변수</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -125,7 +125,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -185,135 +185,134 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="간단한-목차"><a class="markdownIt-Anchor" href="#간단한-목차"></a> 간단한 목차</h1>
-<ul>
+    <hr>
+<h2 id="간단한-목차"><a href="#간단한-목차" class="headerlink" title="간단한 목차"></a>간단한 목차</h2><ul>
 <li><a href="#%EC%88%AB%EC%9E%90-%EB%B3%80%EC%88%98">숫자 변수</a></li>
 <li><a href="#%EB%AC%B8%EC%9E%90-%EB%B3%80%EC%88%98">문자열 변수</a></li>
 <li><a href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98%EC%9D%98-%EB%B3%80%EC%88%98">리스트 종류의 변수</a></li>
 <li><a href="#%EA%B1%B0%EC%A7%93-%EC%A7%84%EC%8B%A4-%EB%B3%80%EC%88%98">거짓, 진실 변수</a></li>
 </ul>
-<h1 id="숫자-변수"><a class="markdownIt-Anchor" href="#숫자-변수"></a> 숫자 변수</h1>
-<p>숫자 변수는 말그대로 숫자 변수이다.</p>
+<h2 id="숫자-변수"><a href="#숫자-변수" class="headerlink" title="숫자 변수"></a>숫자 변수</h2><p>숫자 변수는 말그대로 숫자 변수이다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
 <p>처럼 수를 담을 수 있다.</p>
 <p>자주 사용하지는 않지만 8진수 16진수 같은 것이 있다.</p>
 <p>8진수를 만드려면 변수를 지정할때 <code>0o</code>로 시작하면 된다.</p>
 <p>16진수를 만드려면 변수를 지정할때 <code>0x</code>로 시작하면 된다.</p>
-<h1 id="문자열-변수"><a class="markdownIt-Anchor" href="#문자열-변수"></a> 문자열 변수</h1>
-<p>문자열 변수는</p>
+<h2 id="문자열-변수"><a href="#문자열-변수" class="headerlink" title="문자열 변수"></a>문자열 변수</h2><p>문자열 변수는</p>
 <blockquote>
 <p>“바나나가 1개가 있다.”</p>
 </blockquote>
 <p>처럼 문자열을 말한다.</p>
 <p><a href="/post/python-formatting/">문자열 포메팅</a> 기능을 사용할 수 있다.</p>
-<h2 id="문자열-변수의-표현-방법"><a class="markdownIt-Anchor" href="#문자열-변수의-표현-방법"></a> 문자열 변수의 표현 방법</h2>
-<h3 id="로-감싸기"><a class="markdownIt-Anchor" href="#로-감싸기"></a> <code>''</code>로 감싸기</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;One banana.&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;One banana.&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>이처럼 문자열을 <code>''</code>로 감쌀 수 있다.</p>
-<h4 id="로-감싸기-2"><a class="markdownIt-Anchor" href="#로-감싸기-2"></a> <code>&quot;&quot;</code>로 감싸기</h4>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&quot;One banana.&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;One banana.&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="문자열-변수의-표현-방법"><a href="#문자열-변수의-표현-방법" class="headerlink" title="문자열 변수의 표현 방법"></a>문자열 변수의 표현 방법</h3><h4 id="39-39-로-감싸기"><a href="#39-39-로-감싸기" class="headerlink" title="&#39;&#39;로 감싸기"></a><code>&#39;&#39;</code>로 감싸기</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;One banana.&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;One banana.&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>이처럼 문자열을 <code>&#39;&#39;</code>로 감쌀 수 있다.</p>
+<h5 id="quot-quot-로-감싸기"><a href="#quot-quot-로-감싸기" class="headerlink" title="&quot;&quot;로 감싸기"></a><code>&quot;&quot;</code>로 감싸기</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&quot;One banana.&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;One banana.&#x27;</span></span><br></pre></td></tr></table></figure>
+
 <p>이처럼 문자열을 <code>&quot;&quot;</code>로 감쌀 수 있다.</p>
-<h3 id="여러줄-만들기"><a class="markdownIt-Anchor" href="#여러줄-만들기"></a> 여러줄 만들기</h3>
-<p>파이썬에서 문자열을 여러 줄로 만드는 데에는 여러 가지 방법이 있다.</p>
+<h4 id="여러줄-만들기"><a href="#여러줄-만들기" class="headerlink" title="여러줄 만들기"></a>여러줄 만들기</h4><p>파이썬에서 문자열을 여러 줄로 만드는 데에는 여러 가지 방법이 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&quot;&quot;&quot;Wow!</span></span><br><span class="line"><span class="string">There&#x27;s one banana!&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<p>이처럼 문자열을 <code>&quot;&quot;&quot;[문자열]&quot;&quot;&quot;</code> 또는 <code>'''[문자열]'''</code>로 둘러싸주면 여러 줄 표현이 가능하다.</p>
+
+<p>이처럼 문자열을 <code>&quot;&quot;&quot;[문자열]&quot;&quot;&quot;</code> 또는 <code>&#39;&#39;&#39;[문자열]&#39;&#39;&#39;</code>로 둘러싸주면 여러 줄 표현이 가능하다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&quot;Wow!\nThere&#x27;s one banana!&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>이처럼 문자열 내에 이스케이프 코드를 넣어서 표현할 수 있다.</p>
-<h3 id="문자열-속에-와-가-둘다-들어가있는-경우"><a class="markdownIt-Anchor" href="#문자열-속에-와-가-둘다-들어가있는-경우"></a> 문자열 속에 <code>&quot;</code>와 <code>'</code>가 둘다 들어가있는 경우</h3>
-<blockquote>
+<h4 id="문자열-속에-quot-와-39-가-둘다-들어가있는-경우"><a href="#문자열-속에-quot-와-39-가-둘다-들어가있는-경우" class="headerlink" title="문자열 속에 &quot;와 &#39;가 둘다 들어가있는 경우"></a>문자열 속에 <code>&quot;</code>와 <code>&#39;</code>가 둘다 들어가있는 경우</h4><blockquote>
 <p>“바나나가 1개가 있다.” 바나나가 말했다.</p>
 </blockquote>
-<p>이처럼 문자열 속에 <code>&quot;</code>가 있는 경우에는 다음처럼 문자열을 <code>'</code>로 감싸서 해결 할 수 있다.</p>
+<p>이처럼 문자열 속에 <code>&quot;</code>가 있는 경우에는 다음처럼 문자열을 <code>&#39;</code>로 감싸서 해결 할 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;&quot;바나나가 1개가 있다.&quot; 바나나가 말했다.&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;&quot;바나나가 1개가 있다.&quot; 바나나가 말했다.&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>문자열 속에 <code>'</code>가 있는 경우에도 전과 반대로 <code>&quot;</code>로 감싸서 해결할 수 있다.</p>
-<p><strong>하지만</strong> 만약 다음처럼 문자열 안에 <code>&quot;</code>와 <code>'</code>가 둘 다 들어간다면 어떨까?</p>
+
+<p>문자열 속에 <code>&#39;</code>가 있는 경우에도 전과 반대로 <code>&quot;</code>로 감싸서 해결할 수 있다.</p>
+<p><strong>하지만</strong> 만약 다음처럼 문자열 안에 <code>&quot;</code>와 <code>&#39;</code>가 둘 다 들어간다면 어떨까?</p>
 <blockquote>
-<p>그녀는 &quot;그는 '그건 참 쉽지’라고 생각했다.&quot;라고 말했어.</p>
+<p>그녀는 “그는 ‘그건 참 쉽지’라고 생각했다.”라고 말했어.</p>
 </blockquote>
-<p>이스케이프 코드를 쓰면 된다.<br />
-<code>'</code>또는 <code>&quot;</code> 자리에 <code>\'</code> 또는 <code>\&quot;</code>를 다음처럼 넣어주면 된다.</p>
+<p>이스케이프 코드를 쓰면 된다.<br><code>&#39;</code>또는 <code>&quot;</code> 자리에 <code>\&#39;</code> 또는 <code>\&quot;</code>를 다음처럼 넣어주면 된다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;그녀는 \&quot;그는 \&#x27;그건 참 쉽지\&#x27;라고 생각했다.\&quot;라고 말했어.&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">&#x27;그녀는 &quot;그는 \&#x27;그건 참 쉽지\&#x27;라고 생각했다.&quot;라고 말했어.&#x27;</span></span><br></pre></td></tr></table></figure>
-<h1 id="리스트-종류의-변수"><a class="markdownIt-Anchor" href="#리스트-종류의-변수"></a> 리스트 종류의 변수</h1>
-<h2 id="리스트"><a class="markdownIt-Anchor" href="#리스트"></a> 리스트</h2>
-<h3 id="리스트-만들기"><a class="markdownIt-Anchor" href="#리스트-만들기"></a> 리스트 만들기</h3>
-<p>리스트는 다음과 같이 만들 수 있다.<br />
-값들을 대괄호 <code>[]</code> 안에 쉼표 <code>,</code>로 감싸주면 된다.</p>
+
+<h2 id="리스트-종류의-변수"><a href="#리스트-종류의-변수" class="headerlink" title="리스트 종류의 변수"></a>리스트 종류의 변수</h2><h3 id="리스트"><a href="#리스트" class="headerlink" title="리스트"></a>리스트</h3><h4 id="리스트-만들기"><a href="#리스트-만들기" class="headerlink" title="리스트 만들기"></a>리스트 만들기</h4><p>리스트는 다음과 같이 만들 수 있다.<br>값들을 대괄호 <code>[]</code> 안에 쉼표 <code>,</code>로 감싸주면 된다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>() <span class="comment">#빈 리스트를 생성함</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">list</span>(<span class="string">&#x27;banana&#x27;</span>) <span class="comment">#banana 문자열을 글자단위로 쪼개서 리스트로 만든다.</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;a&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<h3 id="인덱싱"><a class="markdownIt-Anchor" href="#인덱싱"></a> 인덱싱</h3>
-<p>그리고 다음과 같이 리스트 값을 불러올 수 있다.<br />
-이를 인덱싱 한다고 한다.</p>
+
+<h4 id="인덱싱"><a href="#인덱싱" class="headerlink" title="인덱싱"></a>인덱싱</h4><p>그리고 다음과 같이 리스트 값을 불러올 수 있다.<br>이를 인덱싱 한다고 한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">0</span>]</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">2</span>]</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>※이때 파이썬은 숫자를 0부터 샌다.<br />
-따라서 0은 첫 번째, 1은 두 번째, … <code>n</code>은 <code>n+1</code>번째인 식으로 말이다.</p>
+<p>※이때 파이썬은 숫자를 0부터 샌다.<br>따라서 0은 첫 번째, 1은 두 번째, … <code>n</code>은 <code>n+1</code>번째인 식으로 말이다.</p>
 </blockquote>
-<h3 id="슬라이싱"><a class="markdownIt-Anchor" href="#슬라이싱"></a> 슬라이싱</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">3</span>]</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<p>이와같이 <code>[1:3]</code>은 리스트 값 1(=2)부터 리스트 값 3(=4) 전까지를 말한다.</p>
+<h4 id="슬라이싱"><a href="#슬라이싱" class="headerlink" title="슬라이싱"></a>슬라이싱</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">1</span>:<span class="number">3</span>]</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+
+<p>이와같이 <code>[1:3]</code>은 리스트 값 1(&#x3D;2)부터 리스트 값 3(&#x3D;4) 전까지를 말한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">2</span>:] <span class="comment">#예 1</span></span><br><span class="line">[<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[:<span class="number">3</span>] <span class="comment">#예 2</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<p><code>예 1</code>과같이 이와같이 <code>[2:]</code>는 리스트 값 2(=3)부터 리스트 끝까지를 말한다.<br />
-<code>예 2</code>과같이 이와같이 <code>[:3]</code>는 리스트 값 3(=4)바로 앞(리스트 값 <code>a[2]</code>)부터 리스트의 맨 처음까지를 말한다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/134754912-fd4c8242-c420-44b0-8250-f82c6aced737.png" alt="슬라이싱" /></p>
-<h3 id="리스트-속의-리스트"><a class="markdownIt-Anchor" href="#리스트-속의-리스트"></a> 리스트 속의 리스트</h3>
-<p>다음과 같이 리스트 속의 리스트를 포함시킬 수 있다. 또 값을 불러올 수도 있다</p>
+
+<p><code>예 1</code>과같이 이와같이 <code>[2:]</code>는 리스트 값 2(&#x3D;3)부터 리스트 끝까지를 말한다.<br><code>예 2</code>과같이 이와같이 <code>[:3]</code>는 리스트 값 3(&#x3D;4)바로 앞(리스트 값 <code>a[2]</code>)부터 리스트의 맨 처음까지를 말한다.</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/134754912-fd4c8242-c420-44b0-8250-f82c6aced737.png" alt="슬라이싱"></p>
+<h4 id="리스트-속의-리스트"><a href="#리스트-속의-리스트" class="headerlink" title="리스트 속의 리스트"></a>리스트 속의 리스트</h4><p>다음과 같이 리스트 속의 리스트를 포함시킬 수 있다. 또 값을 불러올 수도 있다</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">3</span>][<span class="number">2</span>]</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
-<h3 id="리스트-값-바꾸기"><a class="markdownIt-Anchor" href="#리스트-값-바꾸기"></a> 리스트 값 바꾸기</h3>
-<p>리스트 값도 바꿀 수 있다.</p>
+
+<h4 id="리스트-값-바꾸기"><a href="#리스트-값-바꾸기" class="headerlink" title="리스트 값 바꾸기"></a>리스트 값 바꾸기</h4><p>리스트 값도 바꿀 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">2</span>] = <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="number">2</span>]</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
 <p>리스트 관련 함수는 <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/python_ref_list.asp">여기</a>서 확인 할 수 있다.</p>
-<h2 id="튜플"><a class="markdownIt-Anchor" href="#튜플"></a> 튜플</h2>
-<p>튜플은 리스트와 거의 비슷하지만 리스트와는 달리 값을 바꿀 수 없고 바꾸기 위해서는 튜플을 재정의 해줘야 한다.</p>
+<h3 id="튜플"><a href="#튜플" class="headerlink" title="튜플"></a>튜플</h3><p>튜플은 리스트와 거의 비슷하지만 리스트와는 달리 값을 바꿀 수 없고 바꾸기 위해서는 튜플을 재정의 해줘야 한다.</p>
 <p>튜플은 다음과같이 만들 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">tuple</span>() <span class="comment">#빈 튜플을 생성함</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">tuple</span>(<span class="string">&#x27;banana&#x27;</span>) <span class="comment">#banana 문자열을 글자단위로 쪼개서 튜플로 만든다.</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">(<span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;a&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
 <p>그 외의 튜플 사용법은 삭제, 추가(값 변경)를 할 수 없다는 점을 제외하고는 인덱싱, 슬라이싱 같은 것은 리스트 사용법과 같다.</p>
 <p>튜플 관련 함수는 <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/python_ref_tuple.asp">여기</a>서 확인 할 수 있다.</p>
-<h2 id="딕셔너리"><a class="markdownIt-Anchor" href="#딕셔너리"></a> 딕셔너리</h2>
-<p>딕셔너리(dictionary) 타입은 말그대로 <code>사전</code> 이라는 뜻이다.<br />
-딕셔너리는 <code>&#123;&#125;</code> 안에 <code>key</code>값 뒤에 <code>:</code>뒤에 <code>value</code>를 넣어주면 된다.</p>
+<h3 id="딕셔너리"><a href="#딕셔너리" class="headerlink" title="딕셔너리"></a>딕셔너리</h3><p>딕셔너리(dictionary) 타입은 말그대로 <code>사전</code> 이라는 뜻이다.<br>딕셔너리는 <code>&#123;&#125;</code> 안에 <code>key</code>값 뒤에 <code>:</code>뒤에 <code>value</code>를 넣어주면 된다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">dict</span>()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = &#123;<span class="string">&#x27;1&#x27;</span>:<span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;2&#x27;</span>:<span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;3&#x27;</span>:<span class="string">&#x27;love&#x27;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">&#123;<span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;3&#x27;</span>: <span class="string">&#x27;love&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+
 <p>다음과 같이 값을 불러올 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = &#123;<span class="string">&#x27;1&#x27;</span>:<span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;2&#x27;</span>:<span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;3&#x27;</span>:<span class="string">&#x27;love&#x27;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">&#123;<span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;3&#x27;</span>: <span class="string">&#x27;love&#x27;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a[<span class="string">&#x27;1&#x27;</span>] <span class="comment">#&#x27;1&#x27; 값에 해당하는 값을 도출</span></span><br><span class="line"><span class="string">&#x27;banana&#x27;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://user-images.githubusercontent.com/83404333/134755959-1f4938a4-cea7-48ed-827b-a41c02f0bbd5.png" alt="sli" /></p>
-<p>‘1’ 값에 <code>':'</code>를 통해 'banana’를 대입 시킨 것</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/134756378-6462c42e-ffbc-4c1e-84af-e03def184afb.png" alt="dict" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/83404333/134755959-1f4938a4-cea7-48ed-827b-a41c02f0bbd5.png" alt="sli"></p>
+<p>‘1’ 값에 <code>&#39;:&#39;</code>를 통해 ‘banana’를 대입 시킨 것</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/134756378-6462c42e-ffbc-4c1e-84af-e03def184afb.png" alt="dict"></p>
 <p>딕셔너리 관련 함수는 <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/python_ref_dictionary.asp">여기</a>서 확인 할 수 있다.</p>
-<h1 id="거짓-진실-변수"><a class="markdownIt-Anchor" href="#거짓-진실-변수"></a> 거짓, 진실 변수</h1>
-<p>거짓, 진실 변수는 말그대로 거짓, 진실을 다루는 변수 이다.<br />
-이를 불(bool) 이라고 한다.</p>
-<p><code>True</code>와 <code>False</code>로 이루어집니다.<br />
-또는 <code>True</code>를 비어있지 않은 변수(문자열, 리스트, 튜플, 딕셔너리 등등)로 대체할 수 있습니다.<br />
-또는 <code>False</code>를 비어있는 변수(문자열, 리스트, 튜플, 딕셔너리 등등)로 대체할 수 있습니다.</p>
+<h2 id="거짓-진실-변수"><a href="#거짓-진실-변수" class="headerlink" title="거짓, 진실 변수"></a>거짓, 진실 변수</h2><p>거짓, 진실 변수는 말그대로 거짓, 진실을 다루는 변수 이다.<br>이를 불(bool) 이라고 한다.</p>
+<p><code>True</code>와 <code>False</code>로 이루어집니다.<br>또는 <code>True</code>를 비어있지 않은 변수(문자열, 리스트, 튜플, 딕셔너리 등등)로 대체할 수 있습니다.<br>또는 <code>False</code>를 비어있는 변수(문자열, 리스트, 튜플, 딕셔너리 등등)로 대체할 수 있습니다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b</span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
 <p>이때 임의의 변수가 진실(<code>True</code>)인지 거짓(<code>False</code>)인지 확인하는 변수로 앞에서 말한 진실과 거짓을 대체하는 방법을 보겠습니다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>※<code>bool([변수])</code>로 <code>[변수]</code>가 <code>진실</code>인지 <code>거짓</code>인지 알아낼 수 있다.</p>
 </blockquote>
 <p>위의 함수를 이용해서 확인해 보면</p>
 <details markdown="1">
 <summary>파이썬 코드…</summary>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;banana&#x27;</span> <span class="comment">#문자열</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a =  []</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = (<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a =  ()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = &#123;<span class="string">&#x27;1&#x27;</span>:<span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;2&#x27;</span>:<span class="string">&#x27;one&#x27;</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a =  &#123;&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">bool</span>(a)</span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
 </details>
+
 <p>불 변수를 활용하는 대표적인 방법은 <code>if</code> 또는 <code>while</code>문이다.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span> <span class="comment">#참</span></span><br><span class="line"><span class="keyword">while</span> a: <span class="comment">#a가 `참` 인동안 반복 </span></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">  a -= <span class="number">1</span> <span class="comment">#a를 1씩 줄인다.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span> <span class="comment">#참</span></span><br><span class="line"><span class="keyword">while</span> a: <span class="comment">#a가 `참` 인동안 반복</span></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">  a -= <span class="number">1</span> <span class="comment">#a를 1씩 줄인다.</span></span><br></pre></td></tr></table></figure>
+
 <details markdown="1">
 <summary>결과</summary>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
 </details>
+
 <br>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span> <span class="comment">#참</span></span><br><span class="line"><span class="keyword">if</span> a: <span class="built_in">print</span>(<span class="string">&#x27;true&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>: <span class="built_in">print</span>(<span class="string">&#x27;false)</span></span><br></pre></td></tr></table></figure>
+
 <details markdown="1">
 <summary>결과</summary>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">true</span><br></pre></td></tr></table></figure>
 </details>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 마무리</h1>
-<p>이상으로 <strong>파이썬 변수의 종류들</strong> 포스팅을 마치겠습니다.</p>
+
+<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이상으로 <strong>파이썬 변수의 종류들</strong> 포스팅을 마치겠습니다.</p>
 <blockquote>
-<p>📌 이 포스팅은 <strong>박응용</strong> 님의 <strong>DOIT! 점프투 파이썬</strong>을 보고 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br />
-🎈 <a target="_blank" rel="noopener" href="https://wikidocs.net/book/1"><strong>강의 링크</strong></a></p>
+<p>📌 이 포스팅은 <strong>박응용</strong> 님의 <strong>DOIT! 점프투 파이썬</strong>을 보고 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br>🎈 <a target="_blank" rel="noopener" href="https://wikidocs.net/book/1"><strong>강의 링크</strong></a></p>
 </blockquote>
 
   </div>
@@ -342,7 +341,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%AA%A9%EC%B0%A8"><span class="toc-number">1.</span> <span class="toc-text"> 간단한 목차</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%88%AB%EC%9E%90-%EB%B3%80%EC%88%98"><span class="toc-number">2.</span> <span class="toc-text"> 숫자 변수</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98"><span class="toc-number">3.</span> <span class="toc-text"> 문자열 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98%EC%9D%98-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95"><span class="toc-number">3.1.</span> <span class="toc-text"> 문자열 변수의 표현 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.</span> <span class="toc-text"> &#39;&#39;로 감싸기</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0-2"><span class="toc-number">3.1.1.1.</span> <span class="toc-text"> &quot;&quot;로 감싸기</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%97%AC%EB%9F%AC%EC%A4%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 여러줄 만들기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%86%8D%EC%97%90-%EC%99%80-%EA%B0%80-%EB%91%98%EB%8B%A4-%EB%93%A4%EC%96%B4%EA%B0%80%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 문자열 속에 &quot;와 &#39;가 둘다 들어가있는 경우</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98%EC%9D%98-%EB%B3%80%EC%88%98"><span class="toc-number">4.</span> <span class="toc-text"> 리스트 종류의 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.</span> <span class="toc-text"> 리스트</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 리스트 만들기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8B%B1"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 인덱싱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1"><span class="toc-number">4.1.3.</span> <span class="toc-text"> 슬라이싱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%86%8D%EC%9D%98-%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.4.</span> <span class="toc-text"> 리스트 속의 리스트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text"> 리스트 값 바꾸기</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8A%9C%ED%94%8C"><span class="toc-number">4.2.</span> <span class="toc-text"> 튜플</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC"><span class="toc-number">4.3.</span> <span class="toc-text"> 딕셔너리</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EA%B1%B0%EC%A7%93-%EC%A7%84%EC%8B%A4-%EB%B3%80%EC%88%98"><span class="toc-number">5.</span> <span class="toc-text"> 거짓, 진실 변수</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%AA%A9%EC%B0%A8"><span class="toc-number">1.</span> <span class="toc-text">간단한 목차</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%88%AB%EC%9E%90-%EB%B3%80%EC%88%98"><span class="toc-number">2.</span> <span class="toc-text">숫자 변수</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98"><span class="toc-number">3.</span> <span class="toc-text">문자열 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%80%EC%88%98%EC%9D%98-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95"><span class="toc-number">3.1.</span> <span class="toc-text">문자열 변수의 표현 방법</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#39-39-%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.</span> <span class="toc-text">&#39;&#39;로 감싸기</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#quot-quot-%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">&quot;&quot;로 감싸기</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%97%AC%EB%9F%AC%EC%A4%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.1.2.</span> <span class="toc-text">여러줄 만들기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%86%8D%EC%97%90-quot-%EC%99%80-39-%EA%B0%80-%EB%91%98%EB%8B%A4-%EB%93%A4%EC%96%B4%EA%B0%80%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="toc-number">3.1.3.</span> <span class="toc-text">문자열 속에 &quot;와 &#39;가 둘다 들어가있는 경우</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98%EC%9D%98-%EB%B3%80%EC%88%98"><span class="toc-number">4.</span> <span class="toc-text">리스트 종류의 변수</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.</span> <span class="toc-text">리스트</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">4.1.1.</span> <span class="toc-text">리스트 만들기</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8B%B1"><span class="toc-number">4.1.2.</span> <span class="toc-text">인덱싱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1"><span class="toc-number">4.1.3.</span> <span class="toc-text">슬라이싱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%86%8D%EC%9D%98-%EB%A6%AC%EC%8A%A4%ED%8A%B8"><span class="toc-number">4.1.4.</span> <span class="toc-text">리스트 속의 리스트</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text">리스트 값 바꾸기</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8A%9C%ED%94%8C"><span class="toc-number">4.2.</span> <span class="toc-text">튜플</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC"><span class="toc-number">4.3.</span> <span class="toc-text">딕셔너리</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B1%B0%EC%A7%93-%EC%A7%84%EC%8B%A4-%EB%B3%80%EC%88%98"><span class="toc-number">5.</span> <span class="toc-text">거짓, 진실 변수</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

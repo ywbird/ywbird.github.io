@@ -10,7 +10,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="I WANNA MAKER toggle 구현하기">
 <meta property="og:url" content="https://ywbird.github.io/iwm/toggle/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="I WANNA MAKER에서 toggle 기능을 만들어 봅시다.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_06cb37111347d86d9a3b04e20c373eaa2249d6a6.600x338.jpg?t=1644805039">
@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/159151019-05b1940d-de8b-4787-81ab-0e12b61894ff.gif">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/159151047-43269e2a-34a1-4e30-9b17-100595c4de62.png">
 <meta property="article:published_time" content="2022-03-18T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-15T04:05:19.744Z">
+<meta property="article:modified_time" content="2022-06-12T11:13:34.701Z">
 <meta property="article:author" content="고앵이">
 <meta property="article:tag" content="I_Wanna_Maker">
 <meta property="article:tag" content="toggle">
@@ -36,17 +36,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -61,7 +61,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -88,6 +88,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/design/font/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Next post" href="/windows/oh-my-posh/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -118,7 +120,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B4%EC%84%9C"><span class="toc-number">1.</span> <span class="toc-text"> 들어가면서…</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#toggle-%EC%9D%B4%EB%9E%80"><span class="toc-number">2.</span> <span class="toc-text"> toggle 이란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text"> 만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%A6%AC%EA%B1%B0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 오브젝트 트리거 설치하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 회로 블럭 설치하기.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%84%A3%EA%B8%B0"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 이벤트 넣기</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%82%AC%EC%9A%A9"><span class="toc-number">4.</span> <span class="toc-text"> 사용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">5.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B4%EC%84%9C%E2%80%A6"><span class="toc-number">1.</span> <span class="toc-text">들어가면서…</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#toggle-%EC%9D%B4%EB%9E%80"><span class="toc-number">2.</span> <span class="toc-text">toggle 이란?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text">만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%A6%AC%EA%B1%B0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.1.</span> <span class="toc-text">1. 오브젝트 트리거 설치하기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.2.</span> <span class="toc-text">2. 회로 블럭 설치하기.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%84%A3%EA%B8%B0"><span class="toc-number">3.3.</span> <span class="toc-text">3. 이벤트 넣기</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%82%AC%EC%9A%A9"><span class="toc-number">4.</span> <span class="toc-text">사용</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">5.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -133,7 +135,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -198,13 +200,11 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="들어가면서"><a class="markdownIt-Anchor" href="#들어가면서"></a> 들어가면서…</h1>
-<p>자! 새로운 시리즈 입니다. <a target="_blank" rel="noopener" href="https://iwbtg.kayin.moe/index.html">I WANNA BE THE GUY</a>, <a target="_blank" rel="noopener" href="https://namu.wiki/w/I%20Wanna%20Be%20The%20Boshy">I Wanna Be The Boshy</a>등의 게임 맵을 직접 디자인 할 수 있는 게임 입니다.</p>
+    <h2 id="들어가면서…"><a href="#들어가면서…" class="headerlink" title="들어가면서…"></a>들어가면서…</h2><p>자! 새로운 시리즈 입니다. <a target="_blank" rel="noopener" href="https://iwbtg.kayin.moe/index.html">I WANNA BE THE GUY</a>, <a target="_blank" rel="noopener" href="https://namu.wiki/w/I%20Wanna%20Be%20The%20Boshy">I Wanna Be The Boshy</a>등의 게임 맵을 직접 디자인 할 수 있는 게임 입니다.</p>
 <p>인지도가 그렇게 높지는 않지만 레벨이 16만 개 정도이고 하는 사람은 많지 않지만 썩은물이 넘쳐나는 게임입니다.</p>
 <p>스팀에서 무료로 배포하고 있습니다.</p>
 <p>링크: <a target="_blank" rel="noopener" href="https://store.steampowered.com/app/1114940/">https://store.steampowered.com/app/1114940/</a></p>
-<p><img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_06cb37111347d86d9a3b04e20c373eaa2249d6a6.600x338.jpg?t=1644805039" alt="" /><br />
-<img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_1994e2b8938e00a0128aa69aa4bafce5ffdf9c70.600x338.jpg?t=1644805039" alt="" /></p>
+<p><img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_06cb37111347d86d9a3b04e20c373eaa2249d6a6.600x338.jpg?t=1644805039"><br><img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_1994e2b8938e00a0128aa69aa4bafce5ffdf9c70.600x338.jpg?t=1644805039"></p>
 <!-- ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_549394f1634b17948319948e9c4708b39323879b.600x338.jpg?t=1644805039)
 ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_105d2fe02257693033b9cdc22564d632cc6e1970.600x338.jpg?t=1644805039)
 ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_cbc534b6a2bb762ddf0ff9f8cd0f20a271704733.600x338.jpg?t=1644805039)
@@ -212,22 +212,18 @@
 ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_5ac6d54d7f5681c2ed1dcec460f4f56743a2e3e0.600x338.jpg?t=1644805039)
 ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_b4e9960f17f3b02622b7f78bf3921efbde46c90c.600x338.jpg?t=1644805039)
 ![](https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_6b3cc028402027c2afb6740ded79731f7ab27978.600x338.jpg?t=1644805039) -->
-<p><img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_9744a85967b80ca90cb0420806a6642c0e834aad.600x338.jpg?t=1644805039" alt="" /></p>
+
+<p><img src="https://cdn.akamai.steamstatic.com/steam/apps/1114940/ss_9744a85967b80ca90cb0420806a6642c0e834aad.600x338.jpg?t=1644805039"></p>
 <p><code>이미지 출처 I WANNA MAKER 스팀 페이지</code></p>
-<h1 id="toggle-이란"><a class="markdownIt-Anchor" href="#toggle-이란"></a> toggle 이란?</h1>
-<p>toggle(토글)이란 두 값이 있을 때 스위치를 한번 누르면 한 값이 되고, 다시 한번 누르면 다른 값으로 변하는 것이다.<br />
-대표적으로 checkbox이다. 아래처럼 말이다.</p>
+<h2 id="toggle-이란"><a href="#toggle-이란" class="headerlink" title="toggle 이란?"></a>toggle 이란?</h2><p>toggle(토글)이란 두 값이 있을 때 스위치를 한번 누르면 한 값이 되고, 다시 한번 누르면 다른 값으로 변하는 것이다.<br>대표적으로 checkbox이다. 아래처럼 말이다.</p>
 <input type="checkbox" />
-<h1 id="만들기"><a class="markdownIt-Anchor" href="#만들기"></a> 만들기</h1>
-<p><code>I WANNA MAKER 에디터에 관한 기초적인 지식은 알고있어야 한다.</code> (추후에 포스팅 예정)<br><br></p>
-<h2 id="1-오브젝트-트리거-설치하기"><a class="markdownIt-Anchor" href="#1-오브젝트-트리거-설치하기"></a> 1. 오브젝트 트리거 설치하기</h2>
-<p>트리거를 오브젝트 트리거를 아래와 같이 설치한다. 따로 이벤트를 넣을 필요는 없다. 첫번째 트리거 넘버를 <strong><code>A</code></strong>, 두번째 트리거 넘버를 <strong><code>B</code></strong>, 새번째 트리거 넘버를 <strong><code>C</code></strong> 라고 하자.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/159150018-c31983f5-198d-4794-b53a-6cd09f38d03c.png" alt="" /></p>
-<h2 id="2-회로-블럭-설치하기"><a class="markdownIt-Anchor" href="#2-회로-블럭-설치하기"></a> 2. 회로 블럭 설치하기.</h2>
-<p>아무 블럭(떨어지거나 상호작용이 가능한 블럭은 별로 추천하지 않는다.)을 설치한다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/159150540-e7f69f2d-5963-4b1f-9efe-4a8d5ec8e296.png" alt="" /></p>
-<h2 id="3-이벤트-넣기"><a class="markdownIt-Anchor" href="#3-이벤트-넣기"></a> 3. 이벤트 넣기</h2>
-<p><a href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">2.</a>에서 설치한 블럭에 이벤트를 넣는다.</p>
+
+<h2 id="만들기"><a href="#만들기" class="headerlink" title="만들기"></a>만들기</h2><p><code>I WANNA MAKER 에디터에 관한 기초적인 지식은 알고있어야 한다.</code> (추후에 포스팅 예정)<br><br></p>
+<h3 id="1-오브젝트-트리거-설치하기"><a href="#1-오브젝트-트리거-설치하기" class="headerlink" title="1. 오브젝트 트리거 설치하기"></a>1. 오브젝트 트리거 설치하기</h3><p>트리거를 오브젝트 트리거를 아래와 같이 설치한다. 따로 이벤트를 넣을 필요는 없다. 첫번째 트리거 넘버를 <strong><code>A</code></strong>, 두번째 트리거 넘버를 <strong><code>B</code></strong>, 새번째 트리거 넘버를 <strong><code>C</code></strong> 라고 하자.</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/159150018-c31983f5-198d-4794-b53a-6cd09f38d03c.png"></p>
+<h3 id="2-회로-블럭-설치하기"><a href="#2-회로-블럭-설치하기" class="headerlink" title="2. 회로 블럭 설치하기."></a>2. 회로 블럭 설치하기.</h3><p>아무 블럭(떨어지거나 상호작용이 가능한 블럭은 별로 추천하지 않는다.)을 설치한다.</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/159150540-e7f69f2d-5963-4b1f-9efe-4a8d5ec8e296.png"></p>
+<h3 id="3-이벤트-넣기"><a href="#3-이벤트-넣기" class="headerlink" title="3. 이벤트 넣기"></a>3. 이벤트 넣기</h3><p><a href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">2.</a>에서 설치한 블럭에 이벤트를 넣는다.</p>
 <ol>
 <li>무엇을 하면 toggle이 작동될지</li>
 <li>아까 정한 <strong><code>C</code></strong></li>
@@ -236,17 +232,14 @@
 <li>상태 <strong><code>1</code></strong> 때 무엇을 할지 (trigger 추천)</li>
 <li>상태 <strong><code>2</code></strong> 때 무엇을 할지 (trigger 추천)</li>
 </ol>
-<p><img src="https://user-images.githubusercontent.com/83404333/159150769-cf9b5694-c522-4f26-8c48-65e9f01ca188.png" alt="" /><br />
-<img src="https://user-images.githubusercontent.com/83404333/159150268-c5768d86-bce9-41fe-a598-11d1a8313a1f.png" alt="" /></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/159150769-cf9b5694-c522-4f26-8c48-65e9f01ca188.png"><br><img src="https://user-images.githubusercontent.com/83404333/159150268-c5768d86-bce9-41fe-a598-11d1a8313a1f.png"></p>
 <p><strong><code>ㄱ</code></strong> 의 경로와 <strong><code>ㄴ</code></strong> 의 경로를 다음과 같이 수정한다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/159150699-b69f08b8-b71e-40c5-bfa3-570860ab9687.png" alt="" /></p>
-<h1 id="사용"><a class="markdownIt-Anchor" href="#사용"></a> 사용</h1>
-<p><img src="https://user-images.githubusercontent.com/83404333/159151019-05b1940d-de8b-4787-81ab-0e12b61894ff.gif" alt="toggle" /></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/159150699-b69f08b8-b71e-40c5-bfa3-570860ab9687.png"></p>
+<h2 id="사용"><a href="#사용" class="headerlink" title="사용"></a>사용</h2><p><img src="https://user-images.githubusercontent.com/83404333/159151019-05b1940d-de8b-4787-81ab-0e12b61894ff.gif" alt="toggle"></p>
 <blockquote>
-<p>블럭 이벤트는 다음과 같습니다. <img src="https://user-images.githubusercontent.com/83404333/159151047-43269e2a-34a1-4e30-9b17-100595c4de62.png" alt="" /></p>
+<p>블럭 이벤트는 다음과 같습니다. <img src="https://user-images.githubusercontent.com/83404333/159151047-43269e2a-34a1-4e30-9b17-100595c4de62.png"></p>
 </blockquote>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 마무리</h1>
-<p>이상으로 <strong>I WANNA MAKER toggle 구현하기</strong> 포스팅을 마치겠습니다.</p>
+<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이상으로 <strong>I WANNA MAKER toggle 구현하기</strong> 포스팅을 마치겠습니다.</p>
 <p>자신만의 toggle 방법이 있다면 댓글에 남겨주세요!</p>
 
   </div>
@@ -275,7 +268,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B4%EC%84%9C"><span class="toc-number">1.</span> <span class="toc-text"> 들어가면서…</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#toggle-%EC%9D%B4%EB%9E%80"><span class="toc-number">2.</span> <span class="toc-text"> toggle 이란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text"> 만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%A6%AC%EA%B1%B0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 오브젝트 트리거 설치하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 회로 블럭 설치하기.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%84%A3%EA%B8%B0"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 이벤트 넣기</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%82%AC%EC%9A%A9"><span class="toc-number">4.</span> <span class="toc-text"> 사용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">5.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B4%EC%84%9C%E2%80%A6"><span class="toc-number">1.</span> <span class="toc-text">들어가면서…</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#toggle-%EC%9D%B4%EB%9E%80"><span class="toc-number">2.</span> <span class="toc-text">toggle 이란?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text">만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%A6%AC%EA%B1%B0-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.1.</span> <span class="toc-text">1. 오브젝트 트리거 설치하기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%ED%9A%8C%EB%A1%9C-%EB%B8%94%EB%9F%AD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="toc-number">3.2.</span> <span class="toc-text">2. 회로 블럭 설치하기.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%84%A3%EA%B8%B0"><span class="toc-number">3.3.</span> <span class="toc-text">3. 이벤트 넣기</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%82%AC%EC%9A%A9"><span class="toc-number">4.</span> <span class="toc-text">사용</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">5.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

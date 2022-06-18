@@ -10,13 +10,13 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="파이썬 선택 시스템">
 <meta property="og:url" content="https://ywbird.github.io/python/select/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="파이썬 선택 시스템을 만들었습니다.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/135720320-3bab0122-4472-4bb4-95d5-e8f46ad91b41.gif">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/135714208-fa85a66f-d468-4ea3-8438-0637b1b53468.png">
 <meta property="article:published_time" content="2021-10-01T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-15T03:53:53.564Z">
+<meta property="article:modified_time" content="2022-06-12T11:15:45.119Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/83404333/135720320-3bab0122-4472-4bb4-95d5-e8f46ad91b41.gif">
@@ -25,17 +25,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -50,7 +50,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -109,7 +109,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text"> 미리보기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">2.</span> <span class="toc-text"> 만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B8%ED%92%8B"><span class="toc-number">2.1.</span> <span class="toc-text"> 인풋</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%85%8D%EC%8A%A4%ED%8A%B8"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 텍스트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%98%B5%EC%85%98"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 옵션</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%95%B4%EC%84%9D"><span class="toc-number">2.2.</span> <span class="toc-text"> 해석</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text"> 모듈로 사용하기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text">미리보기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">2.</span> <span class="toc-text">만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%ED%92%8B"><span class="toc-number">2.1.</span> <span class="toc-text">인풋</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%ED%85%8D%EC%8A%A4%ED%8A%B8"><span class="toc-number">2.1.1.</span> <span class="toc-text">텍스트</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%98%B5%EC%85%98"><span class="toc-number">2.1.2.</span> <span class="toc-text">옵션</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%95%B4%EC%84%9D"><span class="toc-number">2.2.</span> <span class="toc-text">해석</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text">모듈로 사용하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -124,7 +124,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -184,56 +184,54 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="미리보기"><a class="markdownIt-Anchor" href="#미리보기"></a> 미리보기</h1>
-<p><img src="https://user-images.githubusercontent.com/83404333/135720320-3bab0122-4472-4bb4-95d5-e8f46ad91b41.gif" alt="pyselect" /></p>
+    <hr>
+<h2 id="미리보기"><a href="#미리보기" class="headerlink" title="미리보기"></a>미리보기</h2><p><img src="https://user-images.githubusercontent.com/83404333/135720320-3bab0122-4472-4bb4-95d5-e8f46ad91b41.gif" alt="pyselect"></p>
 <p>이런식으로 선택지 중 하나를 선택해서 키보드를 누르면 <code>Enter</code>를 누를필요 없이 즉시 가능합니다.</p>
-<h1 id="만들기"><a class="markdownIt-Anchor" href="#만들기"></a> 만들기</h1>
-<p>코드</p>
+<h2 id="만들기"><a href="#만들기" class="headerlink" title="만들기"></a>만들기</h2><p>코드</p>
 <p><a target="_blank" rel="noopener" href="https://gist.github.com/ywbird/76256756e63cd4d76818a1c3dd382dbe">Gist 링크</a></p>
 <figure class="highlight python"><figcaption><span>pyselect.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> msvcrt</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">select</span>(<span class="params">text, option</span>):</span><br><span class="line">    string = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> text:</span><br><span class="line">        string += <span class="string">f&#x27;<span class="subst">&#123;x&#125;</span>\n&#x27;</span></span><br><span class="line"></span><br><span class="line">    option_text = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    choice = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(option)-<span class="number">1</span>):</span><br><span class="line">        option_text += <span class="string">f&#x27;\n(<span class="subst">&#123;option[x][<span class="number">0</span>]&#125;</span>) <span class="subst">&#123;option[x][<span class="number">1</span>]&#125;</span>\n&#x27;</span></span><br><span class="line">        choice += <span class="string">f&#x27;<span class="subst">&#123;option[x][<span class="number">0</span>]&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">    input_text = <span class="string">f&#x27;\nselect[<span class="subst">&#123;choice&#125;</span>]&gt; &#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;\n&#x27;</span>+string, option_text, input_text, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            key = msvcrt.getch().decode()</span><br><span class="line">            <span class="keyword">if</span> key != <span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">                <span class="keyword">if</span> key <span class="keyword">in</span> <span class="built_in">list</span>(choice):</span><br><span class="line">                    <span class="built_in">print</span>(key)</span><br><span class="line">                    <span class="keyword">return</span> key</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    text = [<span class="string">&#x27;text 1&#x27;</span>, <span class="string">&#x27;text 2&#x27;</span>, <span class="string">&#x27;text 3&#x27;</span>]</span><br><span class="line">    option = [[<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;banana-1&#x27;</span>], [<span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>],</span><br><span class="line">              [<span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;q&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>]]</span><br><span class="line">    result = select(text, option)</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br><span class="line"></span><br><span class="line"><span class="comment">#by [ywbird.github.io]</span></span><br></pre></td></tr></table></figure>
-<h2 id="인풋"><a class="markdownIt-Anchor" href="#인풋"></a> 인풋</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select(text, option)</span><br></pre></td></tr></table></figure>
+
+<h3 id="인풋"><a href="#인풋" class="headerlink" title="인풋"></a>인풋</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select(text, option)</span><br></pre></td></tr></table></figure>
+
 <p>여기서 인풋은 텍스트와 옵션으로 나뉘여져있습니다.</p>
-<h3 id="텍스트"><a class="markdownIt-Anchor" href="#텍스트"></a> 텍스트</h3>
-<p>텍스트는 리스트 형식으로 리스트 각 요소마다 한 줄이 됩니다.</p>
+<h4 id="텍스트"><a href="#텍스트" class="headerlink" title="텍스트"></a>텍스트</h4><p>텍스트는 리스트 형식으로 리스트 각 요소마다 한 줄이 됩니다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text = [<span class="string">&#x27;text 1&#x27;</span>, <span class="string">&#x27;text 2&#x27;</span>, <span class="string">&#x27;text 3&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
 <p>이렇게 설정하면 나오는 텍스트는 다음과 같다</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">text 1</span><br><span class="line">text 2</span><br><span class="line">text 3</span><br></pre></td></tr></table></figure>
-<h3 id="옵션"><a class="markdownIt-Anchor" href="#옵션"></a> 옵션</h3>
-<p>옵션은 리스트 내부의 리스트 형식이다.</p>
+
+<h4 id="옵션"><a href="#옵션" class="headerlink" title="옵션"></a>옵션</h4><p>옵션은 리스트 내부의 리스트 형식이다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">option = [[<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;text 1&#x27;</span>], [<span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;text 2&#x27;</span>]]</span><br></pre></td></tr></table></figure>
+
 <p>위와 같이 설정하면 다음과 같이 나온다.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(y) text 1</span><br><span class="line"></span><br><span class="line">(n) text 2</span><br></pre></td></tr></table></figure>
+
 <p>리스트 내부의 리스트에서 첫 번째 요소는 키값(무조건 한글자!) 두 번째 요소는 표시 값이다.</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/135714208-fa85a66f-d468-4ea3-8438-0637b1b53468.png" alt="option" /></p>
+<p><img src="https://user-images.githubusercontent.com/83404333/135714208-fa85a66f-d468-4ea3-8438-0637b1b53468.png" alt="option"></p>
 <p>이런 느낌?</p>
-<p><s>옵션 부분을 딕셔너리를 이용할 수 있지만 함수 쓰고 귀찮아서… ㅎ</s></p>
-<h2 id="해석"><a class="markdownIt-Anchor" href="#해석"></a> 해석</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pyselect.py</span></span><br><span class="line"><span class="keyword">import</span> msvcrt</span><br></pre></td></tr></table></figure>
-<p>모듈 <code>msvcrt</code> 는 “MS VC++ 런타임의 유용한 루틴” 라고 합니다.<br />
-이 프로젝트에서는 키보드 인풋을 받기위한 모듈이라고 생각하면 됩니다.</p>
-<hr />
+<p><del>옵션 부분을 딕셔너리를 이용할 수 있지만 함수 쓰고 귀찮아서.. ㅎ</del></p>
+<h3 id="해석"><a href="#해석" class="headerlink" title="해석"></a>해석</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pyselect.py</span></span><br><span class="line"><span class="keyword">import</span> msvcrt</span><br></pre></td></tr></table></figure>
+
+<p>모듈 <code>msvcrt</code> 는 “MS VC++ 런타임의 유용한 루틴” 라고 합니다.<br>이 프로젝트에서는 키보드 인풋을 받기위한 모듈이라고 생각하면 됩니다.</p>
+<hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">select</span>(<span class="params">text, option</span>):</span><br><span class="line">    string = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> text:</span><br><span class="line">        string += <span class="string">f&#x27;<span class="subst">&#123;x&#125;</span>\n&#x27;</span></span><br><span class="line"></span><br><span class="line">    option_text = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    choice = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(option)-<span class="number">1</span>):</span><br><span class="line">        option_text += <span class="string">f&#x27;\n(<span class="subst">&#123;option[x][<span class="number">0</span>]&#125;</span>) <span class="subst">&#123;option[x][<span class="number">1</span>]&#125;</span>\n&#x27;</span></span><br><span class="line">        choice += <span class="string">f&#x27;<span class="subst">&#123;option[x][<span class="number">0</span>]&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">    input_text = <span class="string">f&#x27;\nselect[<span class="subst">&#123;choice&#125;</span>]&gt; &#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;\n&#x27;</span>+string, option_text, input_text, end=<span class="string">&#x27;&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
 <p>이 부분은 텍스트와 옵션을 텍스트 형태로 변환시켜준후 프린트하는 부분입니다.</p>
-<hr />
+<hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">    key = msvcrt.getch().decode()</span><br><span class="line">        <span class="keyword">if</span> key != <span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">            <span class="keyword">if</span> key <span class="keyword">in</span> <span class="built_in">list</span>(choice):</span><br><span class="line">                <span class="built_in">print</span>(key)</span><br><span class="line">                <span class="keyword">return</span> key</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<p>이 부분은 키보드 인풋을 받는 부분이다.<br />
-msvcrt 의 <code>getch()</code>함수를 통해서 인풋을 받는다.<br />
-<code>decode()</code>함수를 이용해서 키보드 인풋을 이용해 텍스트로 변환한다.<br />
-만약 변환한 글자가 <code>option</code>의 키보드 값중에 있을경우 그 값을 반환한다.</p>
-<hr />
+
+<p>이 부분은 키보드 인풋을 받는 부분이다.<br>msvcrt 의 <code>getch()</code>함수를 통해서 인풋을 받는다.<br><code>decode()</code>함수를 이용해서 키보드 인풋을 이용해 텍스트로 변환한다.<br>만약 변환한 글자가 <code>option</code>의 키보드 값중에 있을경우 그 값을 반환한다.</p>
+<hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    text = [<span class="string">&#x27;text 1&#x27;</span>, <span class="string">&#x27;text 2&#x27;</span>, <span class="string">&#x27;text 3&#x27;</span>]</span><br><span class="line">    option = [[<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;banana-1&#x27;</span>], [<span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>],</span><br><span class="line">              [<span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;q&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>]]</span><br><span class="line">    result = select(text, option)</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
-<p>이 부분은 이 파일을 모듈로 사용하지 않을 경우에 실행하게 만든 부분.<br />
-실행경우 <a href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0">미리보기</a>에 나왔던 코드가 나온다.</p>
-<h1 id="모듈로-사용하기"><a class="markdownIt-Anchor" href="#모듈로-사용하기"></a> 모듈로 사용하기</h1>
-<p>코드 맨 윗줄에 다음과 같은 코드로 임포트 하면 된다.</p>
+
+<p>이 부분은 이 파일을 모듈로 사용하지 않을 경우에 실행하게 만든 부분.<br>실행경우 <a href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0">미리보기</a>에 나왔던 코드가 나온다.</p>
+<h2 id="모듈로-사용하기"><a href="#모듈로-사용하기" class="headerlink" title="모듈로 사용하기"></a>모듈로 사용하기</h2><p>코드 맨 윗줄에 다음과 같은 코드로 임포트 하면 된다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyselect</span><br></pre></td></tr></table></figure>
+
 <p>그 후 사용할 때는 다음과 같이 사용할 수 있다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">text = [<span class="string">&#x27;text 1&#x27;</span>, <span class="string">&#x27;text 2&#x27;</span>, <span class="string">&#x27;text 3&#x27;</span>]</span><br><span class="line">option = [[<span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;banana-1&#x27;</span>], [<span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>],</span><br><span class="line">          [<span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>], [<span class="string">&#x27;q&#x27;</span>, <span class="string">&#x27;banana-2&#x27;</span>]]</span><br><span class="line">ans = pyselect.select()</span><br></pre></td></tr></table></figure>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 마무리</h1>
-<p>이상으로 <strong>파이썬 선택 시스템</strong> 포스팅을 마치겠습니다.<br />
-긴 글 읽어주셔서 감사합니다.</p>
+
+<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이상으로 <strong>파이썬 선택 시스템</strong> 포스팅을 마치겠습니다.<br>긴 글 읽어주셔서 감사합니다.</p>
 
   </div>
 </article>
@@ -261,7 +259,7 @@ msvcrt 의 <code>getch()</code>함수를 통해서 인풋을 받는다.<br />
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text"> 미리보기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">2.</span> <span class="toc-text"> 만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B8%ED%92%8B"><span class="toc-number">2.1.</span> <span class="toc-text"> 인풋</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%85%8D%EC%8A%A4%ED%8A%B8"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 텍스트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%98%B5%EC%85%98"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 옵션</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%95%B4%EC%84%9D"><span class="toc-number">2.2.</span> <span class="toc-text"> 해석</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text"> 모듈로 사용하기</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0"><span class="toc-number">1.</span> <span class="toc-text">미리보기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">2.</span> <span class="toc-text">만들기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%ED%92%8B"><span class="toc-number">2.1.</span> <span class="toc-text">인풋</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%ED%85%8D%EC%8A%A4%ED%8A%B8"><span class="toc-number">2.1.1.</span> <span class="toc-text">텍스트</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EC%98%B5%EC%85%98"><span class="toc-number">2.1.2.</span> <span class="toc-text">옵션</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%95%B4%EC%84%9D"><span class="toc-number">2.2.</span> <span class="toc-text">해석</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">3.</span> <span class="toc-text">모듈로 사용하기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="😻cat 명령어란? cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World! banana.txt1Banana is yam. 123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
+    <meta name="description" content="😻cat 명령어란?cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World!  banana.txt1Banana is yam.  123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
 <meta property="og:type" content="article">
 <meta property="og:title" content="리눅스 cat 명령어 구현하기">
 <meta property="og:url" content="https://ywbird.github.io/windows/cat/index.html">
-<meta property="og:site_name" content="플로피 디스크">
-<meta property="og:description" content="😻cat 명령어란? cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World! banana.txt1Banana is yam. 123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
+<meta property="og:site_name" content="고앵이 블로그">
+<meta property="og:description" content="😻cat 명령어란?cat 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다. hello.txt1Hello, World!  banana.txt1Banana is yam.  123$ cat hello.txt banana.txtHello, World!Banana is yam.  🙀type 명령어의 문제">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-17T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-02-21T13:40:01.449Z">
+<meta property="article:modified_time" content="2022-06-12T11:19:52.068Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
     
@@ -22,17 +22,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -47,7 +47,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -106,7 +106,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text"> 😻cat 명령어란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text"> 🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text"> 👍해결법</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text"> 🔎코드</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text"> 🕶적용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 🎞마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%BBcat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text">😻cat 명령어란?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%99%80type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text">🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%91%8D%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text">👍해결법</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%8E%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text">🔎코드</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%95%B6%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text">🕶적용</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%9E%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text">🎞마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -121,7 +121,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -181,37 +181,37 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="cat-명령어란"><a class="markdownIt-Anchor" href="#cat-명령어란"></a> 😻cat 명령어란?</h1>
-<p><code>cat</code> 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다.</p>
+    <hr>
+<h2 id="😻cat-명령어란"><a href="#😻cat-명령어란" class="headerlink" title="😻cat 명령어란?"></a>😻cat 명령어란?</h2><p><code>cat</code> 명령어는 linux에서 지원하는 명령어이며, 명령어의 인자로 파일의 이름을 받아서 출력하는 명령어 입니다.</p>
 <figure class="highlight text"><figcaption><span>hello.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, World!</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight text"><figcaption><span>banana.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cat hello.txt banana.txt</span><br><span class="line">Hello, World!</span><br><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
-<h1 id="type-명령어의-문제점"><a class="markdownIt-Anchor" href="#type-명령어의-문제점"></a> 🙀type 명령어의 문제점</h1>
-<p>윈도우에는 기본적으로 <code>type</code>라는 명령어가 있습니다.<br />
-<code>type</code>는 <code>cat</code>과 비슷하지만 <code>cat</code>은 파일이 여러개라도 항상 파일의 내용만 출력하는 반면 <code>type</code>는 인자가 2개 이상이면 파일의 이름도 같이 출력돼서 문제가 있습니다.</p>
+
+<h2 id="🙀type-명령어의-문제점"><a href="#🙀type-명령어의-문제점" class="headerlink" title="🙀type 명령어의 문제점"></a>🙀type 명령어의 문제점</h2><p>윈도우에는 기본적으로 <code>type</code>라는 명령어가 있습니다.<br><code>type</code>는 <code>cat</code>과 비슷하지만 <code>cat</code>은 파일이 여러개라도 항상 파일의 내용만 출력하는 반면 <code>type</code>는 인자가 2개 이상이면 파일의 이름도 같이 출력돼서 문제가 있습니다.</p>
 <figure class="highlight text"><figcaption><span>hello.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, World!</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight text"><figcaption><span>banana.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana is yam.</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; type hello.txt banana.txt</span><br><span class="line"></span><br><span class="line">hello.txt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Hello, World!</span><br><span class="line"></span><br><span class="line">banana.txt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Banana is yam.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>이렇게 출력하죠</p>
-<h1 id="해결법"><a class="markdownIt-Anchor" href="#해결법"></a> 👍해결법</h1>
-<p>먼저 <code>doskey</code>명령어를 이용해서 만들어보겠습니다.</p>
+<h2 id="👍해결법"><a href="#👍해결법" class="headerlink" title="👍해결법"></a>👍해결법</h2><p>먼저 <code>doskey</code>명령어를 이용해서 만들어보겠습니다.</p>
 <p><code>batch</code>언어만을 이용하려고 했지만 인자가 여러개가 되면 리스트 객체를 이용해야 하고 <code>C/C++</code>언어를 이용하기는 VS를 깔기 귀찮아서 <code>Python</code>으로 구현했습니다 ㅎㅎ</p>
-<h1 id="코드"><a class="markdownIt-Anchor" href="#코드"></a> 🔎코드</h1>
-<p>코드는 <strong>너무</strong> 짧아요 ㅎ</p>
+<h2 id="🔎코드"><a href="#🔎코드" class="headerlink" title="🔎코드"></a>🔎코드</h2><p>코드는 <strong>너무</strong> 짧아요 ㅎ</p>
 <figure class="highlight python"><figcaption><span>cat.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> sys.argv[<span class="number">1</span>:]:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">open</span>(i).read(),end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p><code>sys</code>모듈로 인자를 받고 <code>for</code>문을 이용해서 출력하는 방식입니다.</p>
-<h1 id="적용"><a class="markdownIt-Anchor" href="#적용"></a> 🕶적용</h1>
-<p>일종의 명령어이기 때문에 <code>system32</code>에 위치시키겠습니다.</p>
+<h2 id="🕶적용"><a href="#🕶적용" class="headerlink" title="🕶적용"></a>🕶적용</h2><p>일종의 명령어이기 때문에 <code>system32</code>에 위치시키겠습니다.</p>
 <p><code>%windir%\system32\</code>에 들어가 준 후 코드 파일(<code>cat.py</code>)를 이동 또는 복사합니다.</p>
 <p><code>init.cmd</code>에 다음 줄을 추가해 주세요.</p>
 <blockquote>
-<p>🤿<code>init.cmd</code>쓰는법은 아래 링크에!<br />
-🎈<a href="/windows/cmd-start">Cmd 자동실행 파일 만들기</a></p>
+<p>🤿<code>init.cmd</code>쓰는법은 아래 링크에!<br>🎈<a href="/windows/cmd-start">Cmd 자동실행 파일 만들기</a></p>
 </blockquote>
 <figure class="highlight plaintext"><figcaption><span>C:\init.cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doskey cat=%windir%\system32\cat.py $*</span><br></pre></td></tr></table></figure>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 🎞마무리</h1>
-<p>이상으로 <strong>리눅스 cat 명령어 구현하기</strong> 포스팅을 마치겠습니다.</p>
+
+<h2 id="🎞마무리"><a href="#🎞마무리" class="headerlink" title="🎞마무리"></a>🎞마무리</h2><p>이상으로 <strong>리눅스 cat 명령어 구현하기</strong> 포스팅을 마치겠습니다.</p>
 
   </div>
 </article>
@@ -239,7 +239,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text"> 😻cat 명령어란?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text"> 🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text"> 👍해결법</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text"> 🔎코드</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text"> 🕶적용</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text"> 🎞마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%BBcat-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%9E%80"><span class="toc-number">1.</span> <span class="toc-text">😻cat 명령어란?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%99%80type-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-number">2.</span> <span class="toc-text">🙀type 명령어의 문제점</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%91%8D%ED%95%B4%EA%B2%B0%EB%B2%95"><span class="toc-number">3.</span> <span class="toc-text">👍해결법</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%8E%EC%BD%94%EB%93%9C"><span class="toc-number">4.</span> <span class="toc-text">🔎코드</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%95%B6%EC%A0%81%EC%9A%A9"><span class="toc-number">5.</span> <span class="toc-text">🕶적용</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%9E%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">6.</span> <span class="toc-text">🎞마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

@@ -10,12 +10,12 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="자바스크립트 while 문과 for 문">
 <meta property="og:url" content="https://ywbird.github.io/JavaScript/while-for/index.html">
-<meta property="og:site_name" content="플로피 디스크">
+<meta property="og:site_name" content="고앵이 블로그">
 <meta property="og:description" content="자바스크립트 while 문과 for 문을 다루는 방법">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/83404333/136023228-c49ddae6-3cca-430d-aaeb-4f9bf95c6b37.gif">
 <meta property="article:published_time" content="2021-10-04T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-15T04:00:18.724Z">
+<meta property="article:modified_time" content="2022-06-12T11:13:49.881Z">
 <meta property="article:author" content="고앵이">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/83404333/136023228-c49ddae6-3cca-430d-aaeb-4f9bf95c6b37.gif">
@@ -24,17 +24,17 @@
     
       
         
-          <link rel="shortcut icon" href="/images/disk.png">
+          <link rel="shortcut icon" href="/images/nyan.jpg">
         
       
       
         
-          <link rel="icon" type="image/png" href="/images/disk.png" sizes="192x192">
+          <link rel="icon" type="image/png" href="/images/nyan.jpg" sizes="192x192">
         
       
       
         
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/disk.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/nyan.jpg">
         
       
     
@@ -49,7 +49,7 @@
     <!-- rss -->
     
     
-      <link rel="alternate" href="/true" title="플로피 디스크" type="application/atom+xml" />
+      <link rel="alternate" href="/true" title="고앵이 블로그" type="application/atom+xml" />
     
 	<!-- mathjax -->
 	
@@ -108,7 +108,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#while-%EB%AC%B8"><span class="toc-number">1.</span> <span class="toc-text"> while 문</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for-%EB%AC%B8"><span class="toc-number">2.</span> <span class="toc-text"> for 문</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%95%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text"> 정리</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#while-%EB%AC%B8"><span class="toc-number">1.</span> <span class="toc-text">while 문</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for-%EB%AC%B8"><span class="toc-number">2.</span> <span class="toc-text">for 문</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%A0%95%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text">정리</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -123,7 +123,7 @@
     
   
     <div id="title">
-      <h1>플로피 디스크</h1>
+      <h1>고앵이 블로그</h1>
     </div>
   </a>
   <div id="nav">
@@ -183,33 +183,30 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr />
-<h1 id="while-문"><a class="markdownIt-Anchor" href="#while-문"></a> while 문</h1>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span>; <span class="comment">//i 를 설정한다.</span></span><br><span class="line"><span class="keyword">while</span> (i &lt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="comment">//앞의 i &lt; 100 값이 true(참)인동안 반복된다.</span></span><br><span class="line">  i++; <span class="comment">//i 값에 1을 더한다.</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(i); <span class="comment">//i 값을 출력한다.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <hr>
+<h2 id="while-문"><a href="#while-문" class="headerlink" title="while 문"></a>while 문</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span>; <span class="comment">//i 를 설정한다.</span></span><br><span class="line"><span class="keyword">while</span> (i &lt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="comment">//앞의 i &lt; 100 값이 true(참)인동안 반복된다.</span></span><br><span class="line">  i++; <span class="comment">//i 값에 1을 더한다.</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(i); <span class="comment">//i 값을 출력한다.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>위의 코드는 <code>i</code>의 값이 100 초과인동안 반복되고 매 반복마다 콘솔에 <code>i</code>값을 출력한후 <code>i</code>에다가 1씩 더한다.</p>
 <p>위에서 말했듯 while 문은 <code>()</code> 내부에 있는 조건의 값이 <u>true(참)인 동안 반복</u> 된다.</p>
 <blockquote>
 <p>❗ 참인동안 반복이고 거짓이 되는순간 반복이 끝난다. 맨날 까먹어서 저도 고생했어요 😭</p>
 <p>❗ 만약 조건 부분이 절대 끝나지 않도록 설정한다면 브라우저가 폭8 할 테니까 절대로 하지 말 것!!</p>
 </blockquote>
-<h1 id="for-문"><a class="markdownIt-Anchor" href="#for-문"></a> for 문</h1>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">  <span class="comment">//초기값을 설정한다.</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(i); <span class="comment">//i 값을 출력한다.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="for-문"><a href="#for-문" class="headerlink" title="for 문"></a>for 문</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">  <span class="comment">//초기값을 설정한다.</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(i); <span class="comment">//i 값을 출력한다.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>for 문은 <code>i</code> 변수값과 조건문, 매번 반복이 끝날때마다 실행할 코드를 설정할 수 있어서 좋다.</p>
 <p>for 문은 while문을 훨신 간편히 쓸 수 있다. 거의 for문을 쓴다.</p>
 <blockquote>
 <p>✨물론 무조건 for 문을 쓰라는것은 아닙니다. while 문을 쓰는것이 좋을때도 물론 있습니다.</p>
 </blockquote>
 <p>위의 코드는 <code>i</code>의 값이 100 초과인동안 반복되고 매 반복마다 <code>i</code>에다가 1씩 더한후 콘솔에 <code>i</code>값을 출력한다.</p>
-<h1 id="정리"><a class="markdownIt-Anchor" href="#정리"></a> 정리</h1>
-<p>이런 면에서 for 문과 while 문의 차이점은 거의 없습니다.</p>
+<h2 id="정리"><a href="#정리" class="headerlink" title="정리"></a>정리</h2><p>이런 면에서 for 문과 while 문의 차이점은 거의 없습니다.</p>
 <p>하지만 쓰임새가 다를 수 있으므로 잘 구분해서 써주시길!</p>
-<p>표현한다면 이런느낌…?</p>
-<p><img src="https://user-images.githubusercontent.com/83404333/136023228-c49ddae6-3cca-430d-aaeb-4f9bf95c6b37.gif" alt="for&amp;while" /></p>
-<h1 id="마무리"><a class="markdownIt-Anchor" href="#마무리"></a> 마무리</h1>
-<p>이상으로 <strong>자바스크립트 while 문과 for 문</strong> 포스팅을 마치겠습니다.</p>
+<p>표현한다면 이런느낌..?</p>
+<p><img src="https://user-images.githubusercontent.com/83404333/136023228-c49ddae6-3cca-430d-aaeb-4f9bf95c6b37.gif" alt="for&amp;while"></p>
+<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이상으로 <strong>자바스크립트 while 문과 for 문</strong> 포스팅을 마치겠습니다.</p>
 <blockquote>
-<p>📌 이 포스팅은 <strong>ZeroCho</strong> 님의 <strong>렛츠기릿 자바스크립트</strong>로 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br />
-<a target="_blank" rel="noopener" href="https://www.inflearn.com/course/%EB%A0%88%EC%B8%A0%EA%B8%B0%EB%A6%BF-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/">🎈<strong>강의 링크</strong></a></p>
+<p>📌 이 포스팅은 <strong>ZeroCho</strong> 님의 <strong>렛츠기릿 자바스크립트</strong>로 배우고 만들었습니다. 비슷한 부분이 있을 수 있습니다.<br><a target="_blank" rel="noopener" href="https://www.inflearn.com/course/%EB%A0%88%EC%B8%A0%EA%B8%B0%EB%A6%BF-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/">🎈<strong>강의 링크</strong></a></p>
 </blockquote>
 
   </div>
@@ -238,7 +235,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#while-%EB%AC%B8"><span class="toc-number">1.</span> <span class="toc-text"> while 문</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for-%EB%AC%B8"><span class="toc-number">2.</span> <span class="toc-text"> for 문</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EC%A0%95%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text"> 정리</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text"> 마무리</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#while-%EB%AC%B8"><span class="toc-number">1.</span> <span class="toc-text">while 문</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for-%EB%AC%B8"><span class="toc-number">2.</span> <span class="toc-text">for 문</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%A0%95%EB%A6%AC"><span class="toc-number">3.</span> <span class="toc-text">정리</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-number">4.</span> <span class="toc-text">마무리</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

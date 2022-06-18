@@ -9,64 +9,8 @@
 
 
     <url>
-        <loc>https://ywbird.github.io/windows/oh-my-posh/</loc>
-        <lastmod>2022-06-03T14:14:13.053Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/pack/ankaid-private/</loc>
-        <lastmod>2022-05-13T11:58:27.185Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/pack/pixel-party/</loc>
-        <lastmod>2022-05-13T11:56:55.501Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/lua/start/</loc>
-        <lastmod>2022-05-13T11:51:33.769Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/iwm/toggle/</loc>
-        <lastmod>2022-04-15T04:05:19.744Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/pack/needs/</loc>
-        <lastmod>2022-04-15T04:03:59.437Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/lua/setup/</loc>
-        <lastmod>2022-04-15T04:02:31.460Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/JavaScript/while-for/</loc>
-        <lastmod>2022-04-15T04:00:18.724Z</lastmod>
+        <loc>https://ywbird.github.io/design/font/</loc>
+        <lastmod>2022-06-18T06:47:15.537Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,31 +18,15 @@
 
     <url>
         <loc>https://ywbird.github.io/mars%26moon-ticket/</loc>
-        <lastmod>2022-04-15T03:59:27.071Z</lastmod>
+        <lastmod>2022-06-12T11:20:00.736Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://ywbird.github.io/python/select/</loc>
-        <lastmod>2022-04-15T03:53:53.564Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/windows/auto-cmd-setup/</loc>
-        <lastmod>2022-04-15T03:51:40.758Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/python/sticker/</loc>
-        <lastmod>2022-03-30T03:35:09.543Z</lastmod>
+        <loc>https://ywbird.github.io/windows/oh-my-posh/</loc>
+        <lastmod>2022-06-12T11:19:57.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -106,39 +34,7 @@
 
     <url>
         <loc>https://ywbird.github.io/windows/cmd-auto-start/</loc>
-        <lastmod>2022-03-03T05:23:10.560Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/python/variable-types/</loc>
-        <lastmod>2022-03-03T05:22:39.232Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/python/formatting/</loc>
-        <lastmod>2022-03-03T05:22:09.809Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/pack/default/</loc>
-        <lastmod>2022-03-03T05:21:13.400Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/Blog/blog-start/</loc>
-        <lastmod>2022-03-03T05:19:31.488Z</lastmod>
+        <lastmod>2022-06-12T11:19:54.586Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -146,7 +42,119 @@
 
     <url>
         <loc>https://ywbird.github.io/windows/cat/</loc>
-        <lastmod>2022-02-21T13:40:01.449Z</lastmod>
+        <lastmod>2022-06-12T11:19:52.068Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/windows/auto-cmd-setup/</loc>
+        <lastmod>2022-06-12T11:19:49.701Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/python/variable-types/</loc>
+        <lastmod>2022-06-12T11:16:16.089Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/python/sticker/</loc>
+        <lastmod>2022-06-12T11:15:59.726Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/python/select/</loc>
+        <lastmod>2022-06-12T11:15:45.119Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/python/formatting/</loc>
+        <lastmod>2022-06-12T11:15:30.206Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/pack/pixel-party/</loc>
+        <lastmod>2022-06-12T11:14:59.936Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/pack/needs/</loc>
+        <lastmod>2022-06-12T11:14:45.703Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/pack/default/</loc>
+        <lastmod>2022-06-12T11:14:39.395Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/pack/ankaid-private/</loc>
+        <lastmod>2022-06-12T11:14:26.660Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/lua/start/</loc>
+        <lastmod>2022-06-12T11:14:21.175Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/lua/setup/</loc>
+        <lastmod>2022-06-12T11:14:11.442Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/JavaScript/while-for/</loc>
+        <lastmod>2022-06-12T11:13:49.881Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/iwm/toggle/</loc>
+        <lastmod>2022-06-12T11:13:34.701Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/Blog/blog-start/</loc>
+        <lastmod>2022-06-12T11:13:16.596Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
