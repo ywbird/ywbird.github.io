@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://ywbird.github.io/JavaScript/javascript-is-weird/</loc>
+        <lastmod>2022-07-24T07:52:31.274Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ywbird.github.io/JavaScript/while-for/</loc>
+        <lastmod>2022-07-23T06:43:22.527Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://ywbird.github.io/design/font/</loc>
         <lastmod>2022-06-18T06:57:49.697Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -131,14 +147,6 @@
     <url>
         <loc>https://ywbird.github.io/lua/setup/</loc>
         <lastmod>2022-06-12T11:14:11.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ywbird.github.io/JavaScript/while-for/</loc>
-        <lastmod>2022-06-12T11:13:49.881Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
